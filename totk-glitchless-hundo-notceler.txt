@@ -9,17 +9,51 @@ _project:
   version: 2.2.10
 _route:
   - Great Sky Island:
-    - _Warp::ROA
-    - _Special::StartPos Sky:
-        hide-icon-on-map: true
+    - _Special::StartPos Sky
+    - Activate terminal:
+        coord: [0374, 2281, -1752]
+    - Proceed to exit:
+        movements:
+          - to: [0405, 2286, -1748]
+          - to: [0411, 2286, -1737]
+          - to: [0413, 2281, -1719]
+          - to: [0413, 2286, -1698]
+          - to: [0413, 2289, -1692]
+          - to: [0413, 2289, -1680]
+          - to: [0409, 2289, -1675]
+          - to: [0399, 2279, -1665]
+          - to: [0391, 2280, -1656]
+          - to: [0372, 2227, -1635]
     - _Chest<Archaic Legwear>:
-        coord: [361.13, 2334.30, -1631.99]
+        coord: [361.13, 2228, -1631.99]
+    - Title Cut Scene:
+        movements:
+          - to: [368, 2227, -1624]
+          - to: [370, 2226, -1609]
+          - to: [370, 2226, -1600]
+          - to: [371, 2227, -1591]
+          - to: [371, 2227, -1583]
+          - to: [372, 2227, -1574]
+          - to: [373, 2227, -1565]
+    - Land in water:
+        coord: [0387, 1546, -1421]
     - _Enemy<Soldier Construct I>:
         coord: [391.37, 1640.55, -1333.67]
     - _Npc::Steward Construct_07:
         comment: Find Princess Zelda
+    - _KeyItem::PurahPad
     - _Location::GreatSkyIsland:
         hide-icon-on-map: true
+    - Activate terminal and continue to next dive:
+        movements:
+          - to: [457.96, 1640.88, -1309.00]
+          - to: [460, 1534, -1304]
+          - to: [474, 1534, -1285]
+          - to: [478, 1535, -1279]
+          - to: [481, 1535, -1272]
+          - to: [475, 1535, -1240]
+    - _Item<Hot-Footed Frog>:
+        coord: [478.37, 1521.50, -1224.10]
     - _Enemy<Soldier Construct I>:
         coord: [431.96, 1523.61, -1199.08]
     - _Enemy<Soldier Construct I>:
@@ -28,6 +62,11 @@ _route:
         coord: [450.66, 1520.26, -1086.93]
     - _Enemy<Soldier Construct I>:
         coord: [486.95, 1518.59, -1064.10]
+    - Continue to Temple of Time:
+        movements:
+          - to: [0453, 1415, -1032]
+          - to: [0453, 1416, -1014]
+          - to: [0453, 1417, -0992]
     - _Enemy<Soldier Construct I>:
         coord: [453.30, 1552.01, -897.25]
     - _Location::TempleofTime
@@ -44,9 +83,28 @@ _route:
         coord: [341.53, 1531.77, -912.49]
     - _Enemy<Soldier Construct I>:
         coord: [312.12, 1531.64, -930.73]
+    - Continue to Ukouh Shrine:
+        movements:
+          - to: [0315, 1426, -907]
+          - to: [0300, 1426, -907]
+          - to: [0289, 1433, -0891]
+          - to: [0277, 1438, -0887]
+          - to: [0270, 1442, -0888]
+          - to: [0261, 1444, -0894]
+          - to: [0257, 1451, -0911]
+          - to: [0260, 1455, -0917]
+          - to: [0268, 1459, -0924]
+          - to: [0273, 1459, -0925]
     - _Shrine::Ukouh:
         comment: ウコウホの祠
+    - _KeyItem::Ultrahand
+    - Continue to korok:
+        movements:
+          - to: [0257, 1451, -0911]
+          - to: [0268, 1443, -0888]
+          - to: [0274, 1436, -0885]
     - _Korok::GSI01
+    - _KeyItem::KorokSeed
     - _Npc::Rauru_01
     - _Npc::Maker Construct
     - _Equipment::Weapon<Axe>:
@@ -94,6 +152,8 @@ _route:
         coord: [19.72, 1495.37, -1307.63]
     - _Shrine::In-isa:
         comment: インイサの祠
+    - _KeyItem::Fuse
+    - _KeyItem::EnergyCell
     - _Chest<Arrow x5>:
         coord: [24.30, 1513.76, -1527.69]
     - _Korok::GSI11
@@ -174,11 +234,23 @@ _route:
     - _Npc::Rauru_03
     - _Dispenser::S06
     - _Korok::GSI17::Start
+    - Ride the rail:
+        movements:
+          - to: [458.1875, 1549, -1698]
+          - to: [460.3125, 1549, -1768.875]
     - _Korok::GSI17::End
     - _Chest<Zonaite>:
         coord: [431.96, 1554.57, -1807.92]
+    - Ride the rail:
+        movements:
+          - to: [476.75, 1549, -1782.375]
+          - to: [570.1875, 1549, -1728.5625]
     - _Chest<Portable Pot>:
         coord: [571.60, 1574.48, -1674.44]
+    - Dive to the pond:
+        coord: [537.5625, 1549, -1666.9375]
+    - _Item<Ancient Arowana>:
+        coord: [541.22, 1547.35, -1656.75]
     - _Item<Spicy Pepper>:
         coord: [572.66, 1549.91, -1607.25]
     - _Item<Spicy Pepper>:
@@ -206,11 +278,18 @@ _route:
     - _Bubbulfrog::BottomlessCave
     - _Chest<Amber>:
         coord: [758.59, 1597.68, -1377.07]
+    - _Enemy<Like Like>:
+        coord: [780.52, 1612.50, -1377.75]
+    - _Enemy<Like Like>:
+        coord: [758.74, 1657.00, -1368.11]
     - _Chest<Flame Emitter>:
         coord: [768.30, 1650.36, -1369.63]
     - _Cave::Bottomless01
     - _Shrine::Gutanbac:
         comment: グタンバチの祠
+    - _KeyItem::Ascend
+    - _Chest<Amber>:
+        coord: [853.82, 1656.75, -1444.36]
     - _Enemy<Captain Construct I>:
         coord: [828.60, 1670.11, -1447.48]
     - _Enemy<Captain Construct I>:
@@ -230,18 +309,35 @@ _route:
         coord: [568.48, 1522.15, -1169.92]
     - _Chest<Wing x3>:
         coord: [513.34, 1540.64, -1100.15]
+    - Continue to Temple of Time:
+        movements:
+          - to: [0453, 1415, -1032]
+          - to: [0453, 1416, -1014]
+          - to: [0453, 1417, -0992]
     - _Npc<Rauru>:
         comment: The Closed Door
         coord: [453.51, 1556.17, -849.75]
+    - _MainQuest::TheClosedDoor
+    - _KeyItem::Recall
     - _Npc<Rauru>:
         comment: Find Princess Zelda
         coord: [453.51, 1573.44, -763.25]
     - _Warp::ROA
-    - _Shrine::Nachoyah:
-        comment: ナチョヤハの祠
+    - Ascend to surface:
+        movements:
+          - to: [0343, 2280, -1755]
+    - _Korok::GSI15
     - _Chest<Wing x3>:
         coord: [379.57, 2441.25, -1698.73]
-    - _Korok::GSI15
+    - _Shrine::Nachoyah:
+        comment: ナチョヤハの祠
+    - Ride a wing:
+        movements:
+          - to: [0379, 2297, -1637]
+          - to: [0379, 2295, -1614]
+          - to: [0379, 2291, -1549]
+    - _Chest<Large Zonai Charge>:
+        coord: [501.28, 1893.86, -1613.06]
     - _Chest<Large Zonaite>:
         coord: [588.93, 1579.45, -912.35]
     - _Npc::Rauru_06
@@ -261,17 +357,11 @@ _route:
   - Paraglider:
     - _Item<Sundelion>:
         line-color: rgb(0, 176, 240)
-        coord: [404.37, 168.55, -688.89]
-    - _Item<Sundelion>:
         coord: [469.02, 144.87, -773.63]
     - _Item<Sundelion>:
         coord: [555.89, 127.77, -817.17]
-    - _Item<Stambulb>:
-        coord: [621.96, 152.85, -682.53]
     - _Korok::LL62
     - _Well::BottomlessPond
-    - _Chest<Boomerang>:
-        coord: [682.97, 109.86, -808.69]
     - _Item<Fire Fruit>:
         coord: [381.12, 126.06, -962.53]
     - _Item<Sundelion>:
@@ -279,36 +369,27 @@ _route:
     - _Shrine::Tajikats:
         comment: タジカツの祠
     - _Place::RiversideStable
-    -  Point x2 - Registration:
+    -  Point Point - Registration:
+        notes: 1
+    - _KeyItem::PonyPointsCard
+    - Pony Point - Register Horse:
         notes: 2
     - Pony Point - Sleep:
         notes: 3
     - Beedle:
         coord: [304.88, 115.34, -1096.56]
-        notes: Buy Thunderwing Butterfly and Electric Darner
-    - _Item<Staminoka Bass>:
-        coord: [342.88, 114.41, -1121.50]
-    - _Item<Staminoka Bass>:
-        coord: [365.29, 114.41, -1138.02]
-    - _Well::RiversideStable
-    - _Item<Staminoka Bass>:
-        coord: [390.76, 114.41, -1091.11]
+        notes: Buy everything
+    - Scan Amiibo
     - _Location::HorwellBridge
     - _Item<Fire Fruit>:
         coord: [774.41, 118.25, -996.07]
     - _Addison::A40
+    - _KeyItem::SleepoverTicket
     - _Location::EagusBridge
     - _Enemy<Lizalfos>:
         coord: [1073.65, 146.51, -780.70]
     - _Korok::SS32
-    - _Well::LanayruWetlands
-    - _Enemy<Lizalfos>:
-        coord: [1338.56, 115.51, -441.28]
     - _Korok::SS25
-    - _Enemy<Lizalfos>:
-        coord: [1492.69, 115.09, -524.38]
-    - _Enemy<Blue Lizalfos>:
-        coord: [1761.85, 114.70, -520.09]
     - _Korok::SS24
     - _Korok::SS23
     - _Item<Fleet-Lotus Seeds x9>:
@@ -323,8 +404,8 @@ _route:
           - to: [1961.26, 115.89, -385.72]
           - to: [1930.60, 115.89, -373.20]
           - to: [1927.16, 115.89, -372.86]
-    - _Item<Splash Fruit>:
-        coord: [1862.45, 119.08, -318.95]
+    - _Enemy<Blue-Maned Lynel>:
+        coord: [1996.21, 115.02, -306.56]
     - _Item<Fleet-Lotus Seeds x11>:
         movements:
           - marker: all
@@ -339,10 +420,6 @@ _route:
           - to: [1922.01, 115.89, -260.23]
           - to: [1902.20, 115.89, -245.89]
           - to: [1907.08, 115.89, -238.26]
-    - _Enemy<Lizalfos>:
-        coord: [1858.68, 119.43, -214.38]
-    - _Enemy<Lizalfos>:
-        coord: [1891.00, 120.93, -152.00]
     - _Korok::SS18
     - _Item<leet-Lotus Seeds x9>:
         movements:
@@ -356,8 +433,6 @@ _route:
           - to: [1770.63, 115.89, -156.84]
           - to: [1753.38, 115.89, -163.34]
           - to: [1725.55, 115.88, -167.83]
-    - _Enemy<Lizalfos>:
-        coord: [1697.19, 115.01, -142.59]
     - _Item<Fleet-Lotus Seeds x7>:
         movements:
           - marker: all
@@ -368,8 +443,9 @@ _route:
           - to: [1733.99, 115.87, -42.77]
           - to: [1689.69, 115.87, -45.03]
           - to: [1684.73, 115.87, -44.97]
-    - _Location<Acticvate Jonsau Shrine>:
-        coord: [1743.66, 144.45, 17.59]
+    - _Shrine::Jonsau:
+        comment: ジョンサウの祠
+        notes: Strong Construct Bow
     - _Item<Fleet-Lotus Seeds x5>:
         movements:
           - marker: all
@@ -378,12 +454,13 @@ _route:
           - to: [1541.11, 115.87, 66.74]
           - to: [1524.20, 115.87, 83.33]
           - to: [1516.88, 115.87, 85.60]
-    - _Item<Lizalfos:
-        movements:
-          - marker: all
-          - to: [1430.62, 122.00, 35.96]
-          - to: [1422.38, 115.01, 38.47]
+    - _Location::MoorGarrisonRuins
+    - _Well::MoorGarrisonRuins
+    - _Korok::SS15
+    - _Well::ZauzIsland
+    - _Enemy::Hinox::GZ04
     - _Korok::SS19
+    - _Well::LanayruWetlands
     - _Korok::SS21
     - _Korok::SS20
     - _Item<Defeat ememy camp>:
@@ -396,16 +473,19 @@ _route:
         coord: [886.95, 132.67, -197.33]
     - _Npc::Ami:
         comment: An Unvited Guest
+    - _SideQuest::AnUninvitedGuest
     - Pony Point x2 - Quest:
         notes: 5
+    - _Item<Splash Fruit>:
+        coord: [867.78, 129.63, -147.18]
+    - Beedle:
+        notes: Buy arrows, Frogs and Butterflies
     - _Place::WetlandStable
     - Pony Point - First Visit:
         notes: 6
     - Pony Point - Sleep:
         notes: 7
-    - _Item<Splash Fruit>:
-        coord: [867.78, 129.63, -147.18]
-    - _Chest<Arrow x5>:
+    - Continue to Crenel Hills:
         movements:
           - to: [897.25, 161, -22.25]
           - to: [1001.25, 161, 19.75]
@@ -414,13 +494,10 @@ _route:
           - to: [1004.125, 161, 436.125]
           - to: [1021.25, 161, 521.875]
           - to: [1014, 161, 604.375]
-          - to: [1028.81, 161.41, 694.78]
-    - _Chest<Luminous Stone>:
-        coord: [1026.55, 161.55, 694.90]
-    - _Item<Start SS05>:
+    - _Item<Flower start for SS05>:
         coord: [974.06, 189.12, 673.38]
     - _Korok::SS05
-    - _Item<Start SS03>:
+    - _Item<Flower start for SS03>:
         coord: [841.21, 232.94, 693.74]
     - _Korok::SS03
     - _Shrine::Ren-iz:
@@ -448,6 +525,7 @@ _route:
     - _Well::RebonaeBridge
     - _Npc::Dillie_01:
         comment: Fell into a Well!
+    - _SideQuest::FellintoaWell
     - _Korok::LL46
     - _Addison::A38
     - _Item<Fire Fruit>:
@@ -457,8 +535,6 @@ _route:
         coord: [586.01, 130.73, 12.06]
     - _Enemy<Captain Construct I>:
         coord: [503.39, 132.95, 80.62]
-    - _Item<Stambulb>:
-        coord: [608.97, 122.31, 347.45]
     - _Item<Rock for LL39>:
         coord: [696.46, 115.46, 341.78]
     - _Korok::LL39
@@ -489,8 +565,6 @@ _route:
     - _Chest<Bomb Flower x3>:
         coord: [205.33, 118.91, -15.22]
     - _Korok::LL53
-    - _Item<Sundelion>:
-        coord: [219.00, 126.13, -307.26]
     - _Location::RanchRuins
     - _Korok::LL54
     - _Cave::RanchRuins00
@@ -509,6 +583,7 @@ _route:
     - _Place::LookoutLanding
     - _Npc::Purah_Normal:
         comment: Crisis at Hyrule Castle
+    - _MainQuest::TotheKingdomofHyrule
     - _Korok::LL42
     - _Korok::LL41
     - _Addison::A30
@@ -531,6 +606,10 @@ _route:
     - _Korok::LL22
     - _Korok::LL21
     - _Korok::LL26
+    - _Location::ObservationRoom
+    - _Cave::RoyalHiddenPassage01
+    - _Chest<Diamond>:
+       coord: [-253.72, 193.21, 761.67]
     - _Item<Arrow x10>:
         coord: [-265.04, 209.81, 745.65]
     - _Warp::Shrine::Kyononis
@@ -538,14 +617,23 @@ _route:
         comment: Crisis at Hyrule Castle
     - _Npc::Purah_Normal:
         comment: Regional Phenomena
+    - _Npc::Scorpis:
+        comment: Emergency Shelter
+    - _Location::EmergencyShelter<Emergency Shelter>:
+        hide-icon-on-map: true
     - Goddess Statue:
         coord: [-241.75, 114.70, 85.85]
     - _Npc::Burmano:
         comment: Today's Menu
+    - _SideQuest::TodaysMenu
     - Cook Food:
         coord: [-269.40, 113.50, 101.90]
+    - _Shop<General Store>:
+        coord: [-205.77, 125.37, 76.56]
+        notes: Buy everything needed
     - _Npc::Purah_01:
         comment: Regional Phenomena
+    - _KeyItem::Paraglider
     - _Tower::LookoutLanding:
         comment: 監視砦の鳥望台
     - _Npc::Purah_Normal:
@@ -559,55 +647,163 @@ _route:
         comment: ジオシニオの祠
     - _Chasm::HyruleField
 
-  - Autobuild:
-    - _Chasm<Hyrule Field Chasm>:
-        coord: [-255.25, 162, -299.25]
+  - Activate Depths:
+    - _Chasm::HyruleField::Depths
     - _Lightroot::Nisoij
-    - _Chest<Arrow x10>:
-        coord: [-505.54, -359.81, -6.74]
-    - _Enemy::Frox::DC05
-    - _Lightroot::Sinonoyk
-    - _Lightroot::Gadohsi
-    - _Chest<Large Crystallized Charge>:
-        coord: [-977.93, -421.39, 248.88]
-    - _Location::GustafCanyonMine
-    - _Enemy::Hinox::DC01
-    - _Enemy::Hinox::DC03
-    - _Location::GiantsGrove
-    - _Chest<Large Crystallized Charge>:
-        coord: [-1146.81, -375.47, -204.44]
-    - _Lightroot::Iayusus
-    - _Npc::Robbie_02:
-        comment: Camera Work in the Depths
-    - SNAP Statue
-    - _Chest<Miner's Top>:
-        coord: [-1077.17, -408.56, -557.20]
-    - _Location::DaphnesCanyonMine
-    - _Enemy::Hinox::DC04
-    - _Lightroot::Nihcayam
-    - _Enemy::Talus::DC04:
-        notes: Butt
-    - _Enemy::Frox::DC09
+
+  - South Hyrule Sky Archipelago:
+    - _Warp::Shrine::In-isa:
+        level: Sky
+    - _Location::SouthHyruleSkyArchipelago:
+        hide-icon-on-map: true
+    - _Enemy<Soldier Construct I>:
+        coord: [-831.51, 1041.79, -1641.43]
+    - _Korok::HFS02
+    - _OldMap::SouthHyrule_02<Old Map>
+    - _KeyItem::OldMap
+    - _Enemy<Soldier Construct I>:
+        coord: [-838.56, 966.99, -1551.38]
+    - _Enemy<Soldier Construct II>:
+        coord: [-900.97, 1111.67, -1730.36]
+    - _Item<Endura Shroom>:
+        coord: [-926.70, 1111.67, -1755.82]
+    - _SagesWill::SouthHyrule<Sage's Will>
+    - _Chest<Magic Rod>:
+        coord: [-986.27, 1116.85, -1739.21]
+    - _Item<Endura Shroom>:
+        coord: [-1007.50, 1124.42, -1708.46]
+    - _Dispenser::S10:
+        notes: Time Bomb, Small Wheel, Light, Rocket
+    - _Location<The South Hyrule Sky Crystal>:
+        coord: [-1257.24, 1127.17, -1486.96]
+    - _OldMap::SouthHyrule<Old Map>
+    - _Item<Hearty Radish>:
+        coord: [-1328.86, 1113.53, -1373.65]
+    - _Item<Hearty Radish>:
+        coord: [-1327.06, 1113.63, -1368.47]
+    - _Shrine::Jinodok::Start
+    - _Shrine::Jinodok:
+        comment: ジノドカオの祠
+        notes: Diamond
+    - Launch to island with Korok:
+        coord: [-1267.78, 1133.53, -1575.57]
+    - _Korok::HFS01
+    - _Enemy::FluxConstruct::SC03
+    - _OldMap::SouthHyrule_03<Old Map>
+    - Ride air platform up to island:
+        coord: [-1461.11, 916.22, -1629.38]
+    - _OldMap::SouthHyrule_01<Old Map>
+
+  - East Gerudo Sky Archipelago 1:
+    - _Location::EastGerudoSkyArchipelago:
+        hide-icon-on-map: true
+    - _Item<Starting block for GCS01>:
+        coord: [-1829.72, 1305.17, -1917.68]
+    - _Korok::GCS01
+    - _SagesWill::SouthHyrule_01<Sage's Will>
+    - _OldMap::SouthHyrule_04<Old Map>
+    - _Dispenser::S16:
+        notes: Beam Emitter, Sled, Mirror, Steering Stick, Stake
+    - _Shrine::Rakashog:
+        comment: ラカショゴの祠
+    - Finish amiibo
+    - Launch toward Gerudo Canyon Skyview Tower:
+        coord: [-1806.20, 1274.58, -2062.92]
+
+  - Gerudo Town 1:
+    - _Tower::GerudoCanyon:
+        comment: ゲルドキャニオン鳥望台
+    - _Place::GerudoTown
+    - _Shrine::Soryotanog:
+        comment: ソリョタニゴの祠
+        notes: Arrow x10
+    - _Location<Gerudo Secret Club>:
+        movements:
+          - to: [-3803, 0034, -2939]
+          - to: [-3809, 0033, -2940]
+          - to: [-3824, 0028, -2953]
+          - to: [-3831, 0025, -2947]
+          - to: [-3829, 0025, -2926]
+          - to: [-3822, 0024, -2895]
+          - to: [-3818, 0025, -2893]
+          - to: [-3810, 0025, -2891]
+          - to: [-3791, 0025, -2908]
+          - to: [-3790, 0032, -2911]
+          - to: [-3791, 0032, -2919]
+          - to: [-3791, 0043, -2920]
+        notes: Buy snow and sand boots
+
+  - Continue to Great Plateau:
+    - _Warp::Shrine::Jinodok:
+        level: Sky
+    - Launch toward gate at River of the Dead:
+        coord: [-1267.78, 1133.53, -1575.57]
+    - Glide toward gate:
+        coord: [-981.99, 1133, -2017.43]
+
+  - Great Plateau 1:
+    - _Location::GreatPlateau:
+        hide-icon-on-map: true
+    - Land at gate:
+        coord: [-981.99, 247.93, -2017.43]
+    - _Korok::HF60
+    - _Korok::HF57
+    - _Korok::HF52
+    - _Item<Arrow x5>:
+        coord: [-910.49, 181.58, -1671.08]
+    - _Korok::HF47
+    - _Chest<Royal Broadsword>:
+        coord: [-967.18, 188.01, -1556.92]
+    - _Addison::A33
+    - _Cave::GreatPlateauFoothill00
+    - _Bubbulfrog::GreatPlateauFoothillCave
+    - _Shrine::Kyokugon:
+        comment: キョクゴニの祠
+    - _Korok::HF42
+    - _Item<Release the water>:
+        coord: [-574.79, 109.45, -1526.64]
+    - _Item<Talk to statue>:
+        coord: [-587.31, 134.42, -1542.53]
+    - _Location::TempleofTimeRuins
+    - _Npc<Mysterious Voice>:
+        comment: A Call from the Depths
+        coord: [-823.26, 225.44, -2031.48]
+    - _Korok::HF64
+    - _Chest<Nostalgic Fabric>:
+        coord: [-811.25, 263.59, -1963.41]
+    - _Korok::HF65
+    - _Item<Starting block for HF54>:
+        coord: [-683.04, 199.90, -1842.77]
+    - _Korok::HF54
+    - _Item<Statue Eye>:
+        coord: [-686.23, 169.17, -1535.72]
+    - _Chasm::GreatPlateauNorth
+
+  - Statue Eye 1 Depths and Autobuild:
+    - _Chasm::GreatPlateauNorth::Depths
+    - _KeyItem::Poe
+    - _Item<Pick up eye>:
+        coord: [-665.66, -412.12, -1499.17]
     - _Lightroot::Nogukoyk
-    - _Chest<Arrow x10>:
-        coord: [-658.62, -412.17, -1683.34]
     - _Item<Grand Poe>:
         coord: [-648.60, -412.91, -1784.90]
     - _Item<Grand Poe>:
         coord: [-658.00, -410.28, -1794.70]
+    - _Location<Deliver eye to statue>:
+        coord: [-776.0625, -410, -1899.25]
     - _Location::GreatAbandonedCentralMine
-    - _Npc::Steward Construct_20:
-        comment: Autobuild
+    - _Npc::Steward Construct_20
+    - _KeyItem::Autobuild
     - _Npc::Master_Kohga_Central_Mine:
         comment: Master Kohga of the Yiga Clan
-    - SNAP Master Kohga
     - _Chest<Huge Crystallized Charge>:
         coord: [-815.27, -415.18, -1934.66]
+    - _KeyItem::CrystallizedCharge
     - _Special::StartPos Depths
-    - _Shop::ForgeConstruct10
+    - _Shop::ForgeConstruct10:
+        notes: Buy everything
     - _SchemaStone::CentralMine
-    - SNAP Statue at entrance:
-        coord: [-858.02, -448.40, -1973.19]
+    - _KeyItem::SchemaStone
     - _Lightroot::Koradat
     - _Item<Grand Poe>:
         coord: [-1031.94, -508.81, -1917.70]
@@ -623,6 +819,8 @@ _route:
     - _Lightroot::Mu-ustust
     - _Enemy<Lynel>:
         coord: [-1438.63, -379.50, -1261.72]
+
+  - Central Hyrule Depths:
     - _Warp::Lightroot::Nogukoyk
     - _Location::GroveofTime
     - _Chest<Large Crystallized Charge>:
@@ -649,23 +847,48 @@ _route:
     - _Chest<Large Crystallized Charge>:
         coord: [555.21, -365.97, 281.18]
     - _Lightroot::Oyimay
+    - _Lightroot::Sinonoyk
+    - _Enemy::Frox::DC05
+    - _Lightroot::Gadohsi
+    - _Chest<Large Crystallized Charge>:
+        coord: [-977.93, -421.39, 248.88]
+    - _Location::GustafCanyonMine
+    - _Enemy::Hinox::DC01
+    - _Enemy::Hinox::DC03
+    - _Location::GiantsGrove
+    - _Chest<Large Crystallized Charge>:
+        coord: [-1146.81, -375.47, -204.44]
+    - _Lightroot::Iayusus
+    - _Npc::Robbie_02:
+        comment: Camera Work in the Depths
+    - _KeyItem::Camera
+    - SNAP Statue
+    - _Chest<Miner's Top>:
+        coord: [-1077.17, -408.56, -557.20]
+    - _Location::DaphnesCanyonMine
+    - _Enemy::Hinox::DC04
+    - _Lightroot::Nihcayam
+    - _Enemy::Talus::DC04:
+        notes: Butt
+    - SNAP Frox
+    - _Enemy::Frox::DC09
+
+  - Upgrade Battery 1:
+      - _Warp::Shrine::Nachoyah
+      - _Shop::CrystalRefinery
 
   - Lindor's Brow Skyview Tower:
     - _Warp::Shrine::Jiosin
     - _Korok::LL50
-    - _Item<Sundelion>:
-        coord: [-606.45, 132.34, -39.66]
     - _Korok::LL47
     - _Korok::LL48
     - _Korok::LL44
     - _Addison::A31
     - _Item<Fire Fruit>:
         coord: [-823.33, 156.54, 473.52]
-    - _Item<Sundelion>:
-        coord: [-827.61, 155.96, 483.00]
     - _Shrine::Ishodag:
         comment: イショダグンの祠
-        note: Opal
+        note: Opal, Need rocket shield
     - _Well::MountGustaf
     - _Korok::LL40
     - _Well::CarokBridge
@@ -684,21 +907,24 @@ _route:
     - Pickup horse for quest
     - _Npc::Zumi:
         comment: Horse-Drawn Dreams
+    - _SideQuest::HorseDrawnDreams
     - _Place::NewSerenneStable
     - Pony Point - First Visit:
         notes: 8
     - Pony Point - Sleep:
         notes: 9
     - _Well::NewSerenneStable
+    - Beedle:
+        notes: Buy arrows, warm darner, sunset firefly
     - _Shrine::Sinakawak:
         comment: シナカワカの祠
-    - Cook food
     - _Npc::Cado_08:
         comment: Impa and the Geoglyphs
     - _Npc::Impa_05:
         comment: Impa and the Geoglyphs
     - _Enemy::Talus::GR03
     - _Tear::G00<Memory 3 Tear 1 - Where Am I?>
+    - _MainQuest::ImpaandtheGeoglyphs
     - _Npc::Impa_06:
         comment: The Dragon's Tears
     - _Addison::A21
@@ -706,11 +932,13 @@ _route:
         coord: [-1456.79, 245.04, 1277.72]
     - _Npc::Hestu:
         comment: Hestu's Concerns
+    - _SideAdv::HestusConcerns
     - _Korok::LB18
     - _Cave::Lindor'sBrow00
     - _Bubbulfrog::Lindor'sBrowCave
     - _Shrine::Taki-ihaban:
         comment: タキイハバノの祠
+        notes: Large Zonai Charge
     - _Tower::Lindor'sBrow:
         comment: ラブラー山 鳥望台
 
@@ -745,13 +973,14 @@ _route:
         coord: [-2308.50, 393.00, 1879.50]
     - _Well::TabanthaVillageRuins
     - _Korok::PS30
-    - _Tear::G01<Memory 4 Tear 2>    
+    - _Tear::G01<Memory 4 Tear 2>
     - _Item<Ice Fruit>:
         coord: [-2488.54, 365.38, 1727.06]
     - _Enemy<Captain Construct I>:
         coord: [-2527.99, 363.75, 1692.83]
     - _Npc::Jogo:
         comment: Open the Door
+    - _SideQuest::OpentheDoor
     - _Korok::LB05
     - _Cave::TabanthaHills00
     - _Bubbulfrog::TabanthaHillsCave
@@ -759,6 +988,7 @@ _route:
         coord: [-2799.32, 413.92, 1839.56]
     - _Npc::Nat:
         comment: Cave Mushrooms That Glow
+    - _SideQuest::CaveMushroomsThatGlow
     - _Cave::Brightcap00
     - _Bubbulfrog::BrightcapCave
     - _Chest<Frostbite Shirt>:
@@ -780,8 +1010,40 @@ _route:
     - _Place::RitoVillage
     - _Item<Goddess Statue>:
         coord: [-3610.42, 286.45, 1805.15]
+    - _Shop::GeneralStore14:
+        notes: Buy arrows, oil jar, goat butter, cane sugar
     - _Npc::Tulin_02:
         comment: Tulin of Rito Village
+    - Make Night
+    - _Korok::RP60
+    - _Addison::A05
+    - _Item<Start Flower for LB10>:
+        coord: [-3621.34, 249.64, 1522.18]
+    - _Korok::LB10
+    - _Enemy::Hinox::GH03
+    - _Korok::RP55
+    - _Korok::RP58
+    - _Korok::RP61
+    - _Location::DragonBoneMire
+    - _Korok::RP59
+    - _Item<Start Flower for RP57>:
+        coord: [-4227.02, 215.85, 1748.32]
+    - _Korok::RP57
+    - _Chest<Rocket x3>:
+        coord: [-4156.87, 245.69, 1734.43]
+    - _Korok::RP54
+    - _Korok::RP50
+    - _Item<Ice Fruit>:
+        coord: [-4014.57, 359.85, 1992.5]
+    - _Item<Ice Fruit>:
+        coord: [-4010.71, 360.14, 1997.12]
+    - _Korok::RP45
+    - _Korok::RP46
+    - _Cave::WestLakeTotori00
+    - _Bubbulfrog::WestLakeTotoriCave
+    - _Shrine::Wao-os:
+        comment: ワオオサの祠
+    - _Korok::RP47
     - _Well::Dronoc'sPass
     - _Item<Ice Fruit>:
         coord: [-3775.71, 259.15, 2211.85]
@@ -813,17 +1075,18 @@ _route:
         coord: [-3889.49, 808.85, 2811.37]
     - _Chest<Flame Emitter>:
         coord: [-3869.76, 813.65, 2840.58]
-    - _Item<Launcher>:
+    - Launch to island with Old Map:
         coord: [-3834.43, 828.44, 2720.75]
     - _OldMap::Hebra_02<Old Map>
     - _Korok::RPS03
     - _Tablet::S02
     - _Warp::Shrine::Ijo-o
-    
+
   - Start the Wind Temple:
     - _Korok::RP35
     - _Npc::Mazli:
         comment: The Blocked Cave
+    - _SideQuest::TheBlockedCave
     - _Cave::RosproPass00
     - _Bubbulfrog::RosproPassCave
     - _Cave::HebraSouthSummit00
@@ -852,70 +1115,242 @@ _route:
     - _Korok::RP26::Start
     - _Korok::RP26::End
     - _Location<Start Wind Temple>:
-        coord: [-2783.125, 707, 2896.125]
+        coord: [-2780, 0738, 2896]
 
-  - Attack on Wind Temple:
+  - Approach Wind Temple Level 1:
     - Starting Position:
         level: Sky
-        coord: [-2782.875, 1001, 2895.875]
-    - _Item<>:
-        coord: [-2662.5625, 1001, 2953.8125]
-    - _Item<>:
-        coord: [-2674.0625, 1001, 2977.8125]
-    - _Item<>:
-        coord: [-2722, 1001, 2941.125]
-    - _Item<>:
-        coord: [-2823.625, 1001, 2994.4375]
-    - _Item<>:
-        coord: [-2844.8125, 1001, 2967.5]
-    - _Item<>:
-        coord: [-2866.25, 1001, 2979.375]
-    - _Item<>:
-        coord: [-2865.75, 1001, 2993.25]
-    - _Item<>:
-        coord: [-2850.9375, 1001, 2994.375]
-    - _Item<>:
-        coord: [-2858.4375, 1001, 3011.3125]
+        coord: [-2780, 0738, 2896]
+    - Continue to Mayaumekis Shrine:
+        movements:
+          - to: [-2714, 0729, 2925]
+          - to: [-2652, 0713, 2957]
+          - to: [-2648, 0734, 2958]
+          - to: [-2670, 0751, 2975]
+          - to: [-2671, 0765, 2979]
+          - to: [-2721, 0762, 2942]
+          - to: [-2757, 0868, 2947]
+          - to: [-2823, 0861, 2993]
+          - to: [-2843, 0863, 2964]
+          - to: [-2866, 0874, 2980]
+          - to: [-2867, 0878, 2993]
+          - to: [-2857, 0878, 2995]
+          - to: [-2859, 0871, 3009]
+          - to: [-2909, 0883, 3094]
     - _Chest<Arrow x5>:
         coord: [-2918.16, 989.05, 3092.34]
+    - Continue:
+        movements:
+          - to: [-2957, 0888, 3127]
+          - to: [-3008, 0885, 3160]
+          - to: [-2994, 0889, 3227]
+          - to: [-3021, 0897, 3247]
     - _Item<Staring Block for RPS02>:
         coord: [-3103.90, 970.78, 3259.92]
     - _Korok::RPS02
     - _Location::RisingIslandChain:
         hide-icon-on-map: true
+    - Continue:
+        movements:
+          - to: [-2972, 0829, 3054]
     - _Shrine::Mayaumekis:
         comment: マヤウメキサの祠
         notes: Arrow x10
+    - _Enemy<Soldier Construct II>:
+        coord: [-3059.66, 990.65, 3174.86]
+    - Continue:
+        movements:
+          - to: [-3079, 0889, 3201]
+          - to: [-3076, 0893, 3225]
+          - to: [-3085, 0891, 3238]
+          - to: [-3138, 0927, 3300]
+    - _Enemy<Soldier Construct II>:
+        coord: [-3150.31, 1025.67, 3321.76]
+    - _Enemy<Soldier Construct II>:
+        coord: [-3173.93, 1031.49, 3331.61]
+    - Continue:
+        movements:
+          - to: [-3234, 0917, 3294]
+    - _Enemy<Soldier Construct II>:
+        coord: [-3257.39, 1061.34, 3310.51]
     - _Chest<Portable Pot x3>:
         coord: [-3259.29, 1062.05, 3319.00]
+    - Continue:
+        movements:
+          - to: [-3231, 0948, 3316]
+          - to: [-3289, 1001, 3372]
+          - to: [-3371, 0976, 3425]
     - _Chest<Soldier II Spear>:
         coord: [-3356.58, 1078.90, 3415.02]
+    - _Enemy<Captain Construct I>:
+        coord: [-3367.49, 1098.30, 3433.64]
     - _Enemy::FluxConstruct::SH01
     - _OldMap::Hebra<Old Map>
+    - Continue:
+        movements:
+          - to: [-3500, 0932, 3539]
+          - to: [-3521, 0929, 3548]
+          - to: [-3530, 0930, 3563]
+          - to: [-3513, 0978, 3562]
     - _Chest<Arrow x10>:
         coord: [-3466.82, 1126.73, 3628.35]
+
+  - Approach Wind Temple Level 2:
+    - Continue:
+        line-color: rgb(254, 192, 0)
+        movements:
+          - to: [-3513, 0978, 3562]
+          - to: [-3535, 1034, 3530]
+          - to: [-3542, 1034, 3520]
+          - to: [-3551, 1042, 3508]
+          - to: [-3557, 1044, 3496]
+          - to: [-3563, 1051, 3482]
+          - to: [-3552, 1020, 3466]
+          - to: [-3487, 1044, 3411]
+          - to: [-3415, 1065, 3368]
+          - to: [-3351, 1095, 3346]
+          - to: [-3319, 1095, 3329]
+          - to: [-3292, 1090, 3312]
+          - to: [-3276, 1087, 3302]
+          - to: [-3251, 1096, 3277]
+          - to: [-3221, 1089, 3267]
+    - _Enemy<Soldier Construct II>:
+        coord: [-3205.72, 1196.87, 3269.40]
+    - _Enemy<Soldier Construct II>:
+        coord: [-3194.08, 1199.89, 3272.48]
+    - _Enemy<Soldier Construct II>:
+        coord: [-3184.51, 1196.91, 3263.09]
+    - Continue:
+        movements:
+          - to: [-3146, 1091, 3235]
+    - _Enemy<Soldier Construct II>:
+        coord: [-3120.86, 1196.89, 3225.41]
+    - Continue:
+        movements:
+          - to: [-3112, 1094, 3206]
+          - to: [-3082, 1091, 3178]
+    - _Enemy<Soldier Construct II>:
+        coord: [-3059.66, 1203.84, 3164.94]
+    - _Enemy<Soldier Construct II>:
+        coord: [-3057.78, 1203.99, 3155.78]
     - _Enemy<Captain Construct I>:
         coord: [-3045.24, 1208.67, 3151.44]
     - _Chest<Large Zonai Charge>:
-        coord: [-3040.17, 1188.05, 3147.26]
-    - _Korok::RPS01
+        movements:
+          - to: [-3044, 1102, 3140]
+          - to: [-3040.17, 1188.05, 3147.26]
+    - Continue:
+        movements:
+          - to: [-3032, 1102, 3153]
+          - to: [-3022, 1111, 3168]
+          - to: [-3015, 1111, 3189]
+          - to: [-3009, 1129, 3210]
+          - to: [-2996, 1137, 3223]
+
+  - Approach Wind Temple Level 3:
+    - Continue:
+        line-color: rgb(255, 80, 80)
+        movements:
+          - to: [-3007, 1232, 3242]
+          - to: [-3015, 1232, 3233]
+          - to: [-3026, 1222, 3241]
+          - to: [-3200, 1199, 3364]
+          - to: [-3214, 1339, 3374]
+          - to: [-3230, 1339, 3386]
+          - to: [-3243, 1347, 3395]
     - _Shrine::Kahatanaum:
         comment: カハタナウメの祠
         notes: Large Zonai Charge
-  
+    - Continue:
+        movements:
+          - to: [-3281, 1347, 3410]
+          - to: [-3291, 1355, 3394]
+          - to: [-3303, 1351, 3376]
+    - _Korok::RPS01
+    - Enter the Wind Temple:
+        movements:
+          - to: [-3303, 1351, 3376]
+          - to: [-3293, 1448, 3191]
+          - to: [-3290, 1448, 3175]
+          - to: [-3279, 1451, 3165]
+          - to: [-3266, 1453, 3165]
+          - to: [-3260, 1458, 3154]
+          - to: [-3257, 1543, 3130]
+          - to: [-3276, 1622, 2805]
+          - to: [-3248, 1628, 2777]
+          - to: [-3233, 1624, 2763]
+          - to: [-2832, 2013, 2699]
+          - to: [-2837, 2036, 2754]
+          - to: [-2839, 2029, 2784]
+
   - Wind Temple:
     - _Temple::Wind:
+        line-color: rgb(34, 136, 87)
         coord: [-2859.8125, 1001, 2971.25]
     - _Item<Terminal 1>:
         coord: [-2859.5, 1604.43, 3114]
+    - _Chest<Zonaite Longsword, Soldier Construct Horn>:
+        coord: [-2859.50, 1587.43, 3067.00]
+    - _Enemy<Soldier Construct II>:
+        coord: [ -2888.67, 1623.43, 3072.00]
+    - _Chest<Opal>:
+        coord: [-2888.50, 1623.43, 3097.00]
     - _Item<Terminal 2>:
         coord: [-2830.5, 1623.43, 3047.5]
+    - _Chest<Stong Construct Bow>:
+        coord: [-2716.65, 1589.37, 2965.37]
+    - Continue:
+        movements:
+          - to: [-2768, 1474, 2945]
+          - to: [-2813, 1486, 2951]
+          - to: [-2828, 1481, 2950]
+    - _Chest<Sapphire>:
+        coord: [-2828.00, 1587.53, 2901.57]
+    - Continue:
+        movements:
+          - to: [-2827, 1481, 3027]
+          - to: [-2857, 1481, 3027]
     - _Item<Terminal 3>:
-        coord: [-2857, 1623.43, 2905.5]
-    - _Item<Terminal 4>:
         coord: [-2865.53, 1587.43, 3024.5]
-    - _Item<Terminal 5>:
+    - Continue:
+        movements:
+          - to: [-2813, 1486, 3024]
+          - to: [-2751, 1428, 2991]
+    - _Enemy<Soldier Contruct II>:
+        coord: [-2859.50, 1564.93, 2988.00]
+    - _Item<Terminal 4>:
         coord: [-2859.5, 1564.93, 2982]
+    - Continue:
+        movements:
+          - to: [-2875, 1459, 2990]
+          - to: [-2873, 1459, 3012]
+          - to: [-2874, 1471, 3034]
+          - to: [-2875, 1471, 3039]
+          - to: [-2875, 1481, 3040]
+          - to: [-2875, 1481, 3047]
+    - _Enemy<Soldier Construct II>:
+        coord: [-2890, 1481, 3064]
+    - _Chest<Ruby>:
+        coord: [-2890.75, 1587.43, 3104.60]
+    - Continue:
+        movements:
+          - to: [-2891, 1481, 2949]
+    - _Enemy<Captain Construct I>:
+        coord: [-2851.50, 1593.43, 2952.50]
+    - _Chest<Zonaite Sword, Captain Construct I Horn>:
+        coord: [-2891.03, 1609.43, 2966.29]
+    - Continue:
+        movements:
+          - to: [-2891, 1503, 2922]
+          - to: [-2873, 1503, 2923]
+          - to: [-2872, 1504, 2915]
+          - to: [-2872, 1508, 2904]
+    - _Enemy<Soldier Construct II>:
+        coord: [-2869.50, 1623.43, 2898.50]
+    - _Item<Terminal 5>:
+        coord: [-2857, 1623.43, 2905.5]
+    - _Chest<Zonaite Spear, Soldier Construct II Horn>:
+        coord: [-2870.00, 1623.43, 2928.50]
     - _Item<Main Terminal>:
         coord: [-2859.5, 1623.43, 2971.5]
     - _Enemy<Colgera>
@@ -926,17 +1361,21 @@ _route:
         movements:
           - warp: true
             to: [-3590.00, 317.93, 1802.50]
+    - _MainQuest::TulinofRitoVillage
     - _Warp::Shrine::Gatakis
     - _Item<Goddess Statue>:
         coord: [-3610.42, 286.45, 1805.15]
     - _Npc::Genli:
         comment: Genli's Home Cooking
+    - _SideQuest::GenlisHomeCooking
     - _Npc::Laissa_01:
         comment: The White Bird's Guidance
     - _Npc::Molli:
         comment: Molli the Fletcher's Quest
+    - _SideQuest::MollitheFletchersQuest
     - _Npc::Bedoli:
         comment: Fish for Fletching
+    - _SideQuest::FishforFletching
     - _Npc::Teba_01:
         comment: Legacy of the Rito
     - _Npc<Tulin>:
@@ -945,37 +1384,6 @@ _route:
     - _Chest<Opal>:
         coord: [-3568.20, 267.52, 1754.87]
     - _Korok::RP56
-    - Make Night
-    - _Korok::RP60
-    - _Addison::A05
-    - _Item<Start Flower for LB10>:
-        coord: [-3621.34, 249.64, 1522.18]
-    - _Korok::LB10
-    - _Enemy::Hinox::GH03
-    - _Korok::RP55
-    - _Korok::RP58
-    - _Korok::RP61
-    - _Location::DragonBoneMire
-    - _Korok::RP59
-    - _Item<Start Flower for RP57>:
-        coord: [-4227.02, 215.85, 1748.32]
-    - _Korok::RP57
-    - _Chest<Rocket x3>:
-        coord: [-4156.87, 245.69, 1734.43]
-    - _Korok::RP54
-    - _Korok::RP50
-    - _Item<Ice Fruit>:
-        coord: [-4014.57, 359.85, 1992.5]
-    - _Item<Ice Fruit>:
-        coord: [-4010.71, 360.14, 1997.12]
-    - _Korok::RP45
-    - _Korok::RP46
-    - _Cave::WestLakeTotori00
-    - _Bubbulfrog::WestLakeTotoriCave
-    - _Shrine::Wao-os:
-        comment: ワオオサの祠
-    - _Korok::RP47
-    - _Warp::Shrine::Oromuwak
     - _Npc::Gesane_03:
         comment: The Rito Rope Bridge
     - _Chest<Kite Shield>:
@@ -983,6 +1391,7 @@ _route:
         notes: Optional
     - _Korok::RP44
     - _Korok::RP43
+    - _Korok::RP39
 
   - Hyrule Field Skyview Tower:
     - _Warp::Tower::LookoutLanding
@@ -993,15 +1402,17 @@ _route:
     - _Warp::Tower::LookoutLanding
     - _Npc::Josha:
         comment: A Mystery in the Depths
+    - _MainQuest::CameraWorkintheDepths
     - _SchemaStone::Josha
+    - _MainQuest::AMysteryintheDepths
     - _Npc::Robbie:
         comment: Hateno Village Research Lab
     - _Well::LookoutLanding
     - _Chest<Royal Claymore>:
         coord: [-251.50, 107.26, 96.99]
-    - _Location<General Store>:
-        coord: [-205.875, 107, 76.375]
-        notes: Buy Hylian Rice
+    - _Shop<General Store>:
+        coord: [-205.77, 125.37, 76.56]
+        notes: Buy everything needed
     - _Npc::Hestu_01:
         comment: Upgrade Pouches
     - _Npc::Lester:
@@ -1011,12 +1422,11 @@ _route:
         comment: Messages from an Ancient Era
     - _Warp::Shrine::Jiosin
     - _Korok::HF07
-    - _Item<Stambulb>:
-        coord: [-344.74, 128.42, -545.13]
     - _Npc::Hoz_01:
         comment: Bring Peace to Hyrule Field!
     - _Item<Defeat Enemy Camp>:
         coord: [-447.06, 132.41, -611.96]
+    - _SideAdv::BringPeacetoHyruleField
     - _Item<Fire Fruit>:
         coord: [-505.03, 130.52, -546.06]
     - _Item<Fire Fruit>:
@@ -1041,12 +1451,7 @@ _route:
         coord: [-657.09, 158.02, -1389.64]
     - _Korok::HF39
     - _Location::GatepostTownRuins
-    - _Item<Stamella Shroom>:
-        coord: [-467.95, 127.06, -1372.61]
     - _Location::KolomoGarrisonRuins
-    - _Chest<Soldier's Bow>:
-        coord: [-488.36, 141.93, -1273.87]
-        notes: Optional
     - _Item<Rock for HF31>:
         coord: [-516.79, 126.61, -1205.72]
     - _Korok::HF31
@@ -1060,234 +1465,9 @@ _route:
     - _Tower::HyruleField:
         ハイラル平原 鳥望台
 
-  - South Hyrule Sky Archipelago:
-    - _Location::SouthHyruleSkyArchipelago:
-        coord: [-741.8125, 1092, -1099.1875]
-    - _Item<Stambulb>:
-        coord: [-696.88, 1092.48, -1170.93]
-    - _Item<Sundelion>:
-        coord: [-685.74, 1092.09, -1170.61]
-    - _Item<Sundelion>:
-        coord: [-686.48, 1092.17, -1173.47]
-    - _Item<Fire Fruit>:
-        coord: [-696.64, 1093.62, -1177.93]
-    - _Item<Sundelion>:
-        coord: [-660.67, 967.18, -1293.92]
-    - _Item<Stambulb>:
-        coord: [-666.97, 967.37, -1301.40]
-    - _Item<Stambulb>:
-        coord: [-642.76, 967.19, -1320.46]
-    - _Item<Sundelion>:
-        coord: [-669.80, 967.12, -1319.16]
-    - _Item<Stambulb>:
-        coord: [-782.90, 1041.99, -1618.62]
-    - _Item<Sundelion>:
-        coord: [-789.02, 1041.65, -1615.72]
-    - _Item<Stambulb>:
-        coord: [-802.48, 1041.76, -1622.32]
-    - _Enemy<Soldier Construct I>:
-        coord: [-831.51, 1041.79, -1641.43]
-    - _Item<Dazzlefruit>:
-        coord: [-803.71, 1043.03, -1608.24]
-    - _Item<Sundelion>:
-        coord: [-809.84, 1041.52, -1599.20]
-    - _Item<Stambulb>:
-        coord: [-808.78, 966.66, -1599.04]
-    - _Korok::HFS02
-    - _Item<Dazzlefruit>:
-        coord: [-791.12, 1043.41, -1593.43]
-    - _Item<Sundelion>:
-        coord: [-792.80, 967.44, -1579.75]
-    - _Item<Sundelion>:
-        coord: [-792.56, 966.34, -1561.47]
-    - _Item<Fire Fruit>:
-        coord: [-815.88, 968.06, -1561.70]
-    - _Item<Stambulb>:
-        coord: [-825.12, 966.92, -1577.74]
-    - _Item<Sundelion>:
-        coord: [-831.66, 966.66, -1592.82]
-    - _Item<Sundelion>:
-        coord: [-819.38, 966.44, -1594.95]
-    - _OldMap::SouthHyrule_02<Old Map>
-    - _Item<Dazzlefruit>:
-        coord: [-804.06, 968.03, -1587.3]
-    - _Enemy<Soldier Construct I>:
-        coord: [-838.56, 966.99, -1551.38]
-    - _Enemy<Soldier Construct II>:
-        coord: [-900.97, 1111.67, -1730.36]
-    - _Item<Stambulb>:
-        coord: [-898.08, 1111.63, -1734.82]
-    - _Item<Sundelion>:
-        coord: [-921.31, 1111.72, -1719.59]
-    - _Item<Endura Shroom>:
-        coord: [-926.70, 1111.67, -1755.82]
-    - _SagesWill::SouthHyrule<Sage's Will>
-    - _Chest<Magic Rod>:
-        coord: [-986.27, 1116.85, -1739.21]
-    - _Item<Stambulb>:
-        coord: [-1017.73, 1123.93, -1726.15]
-    - _Item<Endura Shroom>:
-        coord: [-1007.50, 1124.42, -1708.46]
-    - _Item<Sundelion>:
-        coord: [-1027.18, 1123.90, -1702.92]
-    - _Item<Stambulb>:
-        coord: [-1260.58, 1113.36, -1685.47]
-    - _Item<Fire Fruit>:
-        coord: [-1261.82, 1114.99, -1670.69]
-    - _Item<Stambulb>:
-        coord: [-1263.32, 1113.70, -1652.47]
-    - _Item<Stambulb>:
-        coord: [-1271.48, 1113.41, -1662.48]
-    - _Item<Stambulb>:
-        coord: [-1290.07, 1114.01, -1674.91]
-    - _Item<Stambulb>:
-        coord: [-1283.47, 1113.30, -1661.49]
-    - _Item<Dazzlefruit>:
-        coord: [-1302.61, 1114.49, -1661.51]
-    - _Item<Stambulb>:
-        coord: [-1305.69, 1113.18, -1651.41]
-    - _Item<Sundelion>:
-        coord: [-1275.46, 1113.61, -1625.94]
-    - _Dispenser::S10:
-        notes: Time Bomb, Small Wheel, Light, Rocket
-    - _Item<Sundelion>:
-        coord: [-1229.18, 1113.56, -1576.46]
-    - _Item<Sundelion>:
-        coord: [-1257.51, 1113.69, -1541.56]
-    - _Location<The South Hyrule Sky Crystal>:
-        coord: [-1257.24, 1127.17, -1486.96]
-    - _Item<Dazzlefruit>:
-        coord: [-1268.25, 1114.44, -1470.16]
-    - _OldMap::SouthHyrule<Old Map>
-    - _Item<Sundelion>:
-        coord: [-1326.34, 1113.48, -1383.13]
-    - _Item<Hearty Radish>:
-        coord: [-1328.86, 1113.53, -1373.65]
-    - _Item<Hearty Radish>:
-        coord: [-1327.06, 1113.63, -1368.47]
-    - _Item<Fire Fruit>:
-        coord: [-1336.10, 1114.66, -1367.01]
-    - _Item<Dazzlefruit>:
-        coord: [-1354.01, 1114.76, -1386.08]
-    - _Item<Stambulb>:
-        coord: [-1354.23, 1114.09, -1399.78]
-    - _Shrine::Jinodok::Start
-    - _Shrine::Jinodok:
-        comment: ジノドカオの祠
-        notes: Diamond
-    - _Item<Stambulb>:
-        coord: [-1281.64, 1114.61, -1496.51]
-    - _Item<Dazzlefruit>:
-        coord: [-1272.61, 1114.85, -1497.47]
-    - Launch to island with Korok:
-        coord: [-1267.78, 1133.53, -1575.57]
-    - _Item<Sundelion>:
-        coord: [-1396.30, 1139.61, -1514.53]
-    - _Korok::HFS01
-    - _Enemy::FluxConstruct::SC03
-    - _OldMap::SouthHyrule_03<Old Map>
-    - _Item<Sundelion>:
-        coord: [-1435.47, 910.45, -1617.49]
-    - _Item<Dazzlefruit>:
-        coord: [-1432.76, 911.51, -1623.51]
-    - _Item<Sundelion>:
-        coord: [-1439.42, 910.75, -1635.31]
-    - _Item<Stambulb>:
-        coord: [-1459.23, 910.69, -1652.82]
-    - _Item<Sundelion>:
-        coord: [-1473.54, 910.71, -1636.84]
-    - _Item<Fire Fruit>:
-        coord: [-1486.23, 911.91, -1622.04]
-    - _Item<Sundelion>:
-        coord: [-1456.55, 910.69, -1597.15]
-    - _Item<Sundelion>:
-        coord: [-1443.97, 910.23, -1605.42]
-    - Ride air platform up to island:
-        coord: [-1461.11, 916.22, -1629.38]
-    - _OldMap::SouthHyrule_01<Old Map>
-    - _Tablet::S10<SNAP Ancient Tablet>
-
-  - Great Plateau:
-    - _Korok::HF62
-    - _Dispenser::G00
-    - _Korok::HF56
-    - _Item<Splash Fruit>:
-        coord: [-1710.82, 113.82, -1828.52]
-    - _Item<Splash Fruit>:
-        coord: [-1741.58, 112.66, -1811.35]
-    - _Chest<Portable Pot>:
-        coord: [-1735.63, 126.90, -1748.67]
-    - _Item<Splash Fruit>:
-        coord: [-1693.88, 112.93, -1728.97]
-    - _Korok::HF51
-    - _Shop::MiniStable
-    - Pony Point - First Visit:
-        notes: 10
-    - _Location::DigdoggSuspensionBridge
-    - _Korok::HF46
-    - _Korok::HF41
-    - _Item<Hylian Tomato>:
-        coord: [-1511.44, 141.45, -1503.93]
-    - _Item<Hylian Tomato>:
-        coord: [-1518.95, 141.45, -1502.4]
-    - _Enemy<Construct Camp>:
-        coord: [-1571.47, 143.64, -1489.48]
-    - _Chest<Portable Pot x5>:
-        coord: [-1571.55, 144.45, -1497.71]
-    - _Item<Hylian Tomato>:
-        coord: [-1555.28, 142.67, -1495.12]
-    - _Shrine::Tsutsu-um:
-        comment: ツツウメの祠
-    - _Korok::HF35
-    - Cook Food:
-        coord: [-1428.95, 137.75, -1282.91]
-    - _Place::OutskirtStable
-    - Pony Point - First Visit:
-        notes: 11
-    - Pony Point - Sleep:
-        notes: 12
-    - _Npc::Embry:
-        comment: A Picture for Outskirt Stable
-    - _Npc::Toffa:
-        comment: The Horse Guard's Request - Toffa
-    - _Well::OutskirtStable
-    - _Npc::Penn_09:
-        comment: The Beckoning Woman
-    - _Korok::HF34
-    - _Korok::HF38::Start
-    - _Korok::HF38:
-        coord: [-1302.20, 243.50, -1331.72]
-    - _Item<Fire Fruit>:
-        coord: [-1321.37, 142.23, -1415.05]
-    - _Item<Fire Fruit>:
-        coord: [-1321.21, 142.31, -1423.66]
-    - _Npc::Ralera:
-        comment: The Beckoning Woman
-    - _Npc::Ralera_01:
-        comment: The Beckoning Woman
-    - _Korok::HF37
-    - _Npc::Ralera_02:
-        comment: The Beckoning Woman
-    - _Npc::Ralera_03:
-        comment: The Beckoning Woman
-    - _Npc::Penn_11:
-        comment: The Beckoning Woman
-    - _Item<Fire Fruit>:
-        coord: [-978.26, 192.96, -1517.85]
-    - _Item<Stambulb>:
-        coord: [-973.31, 191.76, -1514.84]
-    - _Item<Fire Fruit>:
-        coord: [-966.88, 193.03, -1508.97]
-    - _Addison::A33
-    - _Cave::GreatPlateauFoothill00
-    - _Bubbulfrog::GreatPlateauFoothillCave
-    - _Shrine::Kyokugon:
-        comment: キョクゴニの祠
-    - _Korok::HF42
-    - _Item<Relase the water>:
-        coord: [-574.79, 109.45, -1526.64]
-    - _Item<Talk to statue>:
-        coord: [-587.31, 134.42, -1542.53]
+  - Great Plateau 2:
+    - _Chest<Bomb Flower x3>:
+        coord: [-772.38, 176.41, -1560.95]
     - _Korok::HF58::Start
     - _Korok::HF58::End
     - _Cave::ShrineofResurrection00
@@ -1296,65 +1476,12 @@ _route:
     - _Chest<Eightfold Longblade>:
         coord: [-1147.47, 207.33, -1934.19]
     - _Korok::HF55
-    - _Korok::HF57
-    - _Location::GreatPlateau:
-        hide-icon-on-map: true
-    - _Korok::HF60
-    - _Item<Stamella Shroom>:
-        coord: [-870.28, 204.43, -1932.26]
-    - SNAP Goddess Statue
-    - _Npc<Mysterious Voice>:
-        comment: A Call from the Depths
-        coord: [-823.26, 225.44, -2031.48]
-    - _Location::TempleofTimeRuins
-    - _Korok::HF64
-    - _Chest<Nostalgic Fabric>:
-        coord: [-811.25, 263.59, -1963.41]
-    - _Korok::HF65
-    - _Item<Starting block for HF54>:
-        coord: [-683.04, 199.90, -1842.77]
-    - _Korok::HF54
-    - _Item<Statue Eye>:
-        coord: [-686.23, 169.17, -1535.72]
-    - _Chasm::GreatPlateauNorth
-
-  - Statue Eye 1 Depths:
-    - _Chasm::GreatPlateauNorth::Depths
-    - _Item<Pick up eye>:
-        coord: [-665.66, -412.12, -1499.17]
-    - _Item<Grand Poe>:
-        coord: [-648.60, -412.91, -1784.90]
-    - _Item<Grand Poe>:
-        coord: [-658.00, -410.28, -1794.70]
-    - _Location<Deliver eye to statue>:
-        coord: [-776.0625, -410, -1899.25]
-
-  - Statue Eye 2:
-    - _Warp::Shrine::Kyokugon
-    - _Chest<Bomb Flower x3>:
-        coord: [-772.38, 176.41, -1560.95]
-    - _Item<Arrow x5>:
-        coord: [-910.49, 181.58, -1671.08]
-    - _Korok::HF52
-    - _Item<Stamella Shroom>:
-        coord: [-937.20, 186.52, -1643.60]
-    - _Korok::HF47
-    - _Chest<Royal Broadsword>:
-        coord: [-967.18, 188.01, -1556.92]
     - _Enemy::Talus::GC07
     - _Chest<Ruby>:
         coord: [-1086.82, 184.32, -1673.12]
-    - _Item<Stamella Shroom>:
-        coord: [-1141.96, 188.82, -1628.78]
     - _Item<Start flower for HF49>:
         coord: [-1173.52, 186.75, -1655.19]
     - _Korok::HF49
-    - _Item<Stamella Shroom>:
-        coord: [-1206.55, 186.65, -1715.10]
-    - _Item<Stamella Shroom>:
-        coord: [-1266.10, 187.40, -1720.58]
-    - _Item<Stamella Shroom>:
-        coord: [-1256.91, 186.78, -1706.80]
     - _Item<Fire Fruit>:
         coord: [-1344.85, 188.42, -1646.81]
     - _Item<Dazzlefruit>:
@@ -1368,11 +1495,8 @@ _route:
         coord: [-1480.91, 253.92, -1693.10]
     - _Chest<Royal Shield>:
         coord: [-1454.68, 252.04, -1771.32]
-    - _Item<Stamella Shroom>:
-        coord: [-1458.73, 252.42, -1790.97]
     - _Korok::HF67
-    - _Item<Pick up Korok for HF68>:
-        coord: [-1126.81, 249.73, -1970.13]
+    - _Korok::HF68::Start
     - _Korok::HF68:
         coord: [-1178.43, 250.51, -2088.73]
     - _Item<Ice Fruit>:
@@ -1429,12 +1553,89 @@ _route:
     - _Location::HyliaCanyonMine
     - _Chest<Miner's Trousers>:
         coord: [-1287.48, -602.15, -2249.98]
+    - _SideAdv::ACallfromtheDepths
     - _Shop::BargainerStatue
+
+  - South Hyrule Sky Archipelago Tablet:
+    - _Warp::Shrine::Jinodok:
+        level: Sky
+    - Launch to Ancient Tablet:
+        coord: [-1267.78, 1133.53, -1575.57]
+    - _Tablet::S10<SNAP Ancient Tablet>
+
+  - Outskirt Stable:
+    - _Korok::HF62
+    - _Dispenser::G00
+    - _Korok::HF56
+    - _Item<Splash Fruit>:
+        coord: [-1710.82, 113.82, -1828.52]
+    - _Item<Splash Fruit>:
+        coord: [-1741.58, 112.66, -1811.35]
+    - _Item<Splash Fruit>:
+        coord: [-1693.88, 112.93, -1728.97]
+    - _Korok::HF51
+    - _Shop::MiniStable
+    - Pony Point - First Visit:
+        notes: 10
+    - _Location::DigdoggSuspensionBridge
+    - _Korok::HF46
+    - _Korok::HF41
+    - _Item<Hylian Tomato>:
+        coord: [-1511.44, 141.45, -1503.93]
+    - _Item<Hylian Tomato>:
+        coord: [-1518.95, 141.45, -1502.4]
+    - _Enemy<Construct Camp>:
+        coord: [-1571.47, 143.64, -1489.48]
+    - _Item<Hylian Tomato>:
+        coord: [-1555.28, 142.67, -1495.12]
+    - _Shrine::Tsutsu-um:
+        comment: ツツウメの祠
+    - _Korok::HF35
+    - Cook Food:
+        coord: [-1428.95, 137.75, -1282.91]
+    - _Place::OutskirtStable
+    - Pony Point - First Visit:
+        notes: 11
+    - Pony Point - Sleep:
+        notes: 12
+    - _Npc::Embry:
+        comment: A Picture for Outskirt Stable
+    - _Npc::Toffa:
+        comment: The Horse Guard's Request - Toffa
+    - _Well::OutskirtStable
+    - _Npc::Penn_09:
+        comment: The Beckoning Woman
+    - _Korok::HF34
+    - _Korok::HF38::Start
+    - _Korok::HF38:
+        coord: [-1302.20, 243.50, -1331.72]
+    - _Item<Fire Fruit>:
+        coord: [-1321.37, 142.23, -1415.05]
+    - _Item<Fire Fruit>:
+        coord: [-1321.21, 142.31, -1423.66]
+    - _Npc::Ralera:
+        comment: The Beckoning Woman
+    - _Npc::Ralera_01:
+        comment: The Beckoning Woman
+    - _Korok::HF37
+    - _Npc::Ralera_02:
+        comment: The Beckoning Woman
+    - _Npc::Ralera_03:
+        comment: The Beckoning Woman
+    - _Npc::Penn_11:
+        comment: The Beckoning Woman
+    - _SideAdv::TheBeckoningWoman
+    - _Item<Fire Fruit>:
+        coord: [-978.26, 192.96, -1517.85]
+    - _Item<Fire Fruit>:
+        coord: [-966.88, 193.03, -1508.97]
 
   - Sahasra Slope Skyview Tower:
     - _Warp::Tower::HyruleField:
         line-color: rgb(255, 80, 80)
     - _Enemy::Talus::GC06
+    - _Chest<Ruby>:
+        coord: [-104.31, 145.89, -786.94]
     - _Korok::HF23
     - _Cave::WhistlingHill00
     - _Bubbulfrog::WhistlingHillCave
@@ -1443,12 +1644,8 @@ _route:
     - _Shrine::Teniten:
         comment: テンジテンの祠
         notes: Zonaite Spear
-    - _Item<Stambulb>:
-        coord: [1.31, 129.80, -1106.22]
     - _Item<Fire Fruit>:
         coord: [49.96, 130.61, -1102.27]
-    - _Item<Sundelion>:
-        coord: [229.20, 155.74, -953.02]
     - _Korok::HF21
     - _Item<Fire Fruit>:
         coord: [249.24, 167.56, -867.33]
@@ -1470,16 +1667,11 @@ _route:
         coord: [891.57, 118.09, -541.65]
     - _Shrine::Morok:
         comment: モロンクの祠
-    - _Chest<Large Zonai Charge>:
-        coord: [1186.51, 241.84, -793.82]
     - _Korok::SS35
     - _Item<Start flower for SS44>:
         coord: [1259.77, 257.50, -1006.09]
-    - _Item<Stambulb>:
-        coord: [1250.66, 246.37, -1028.38]
-    - _Item<Sundelion>:
-        coord: [1240.22, 246.24, -1030.34]
     - _Korok::SS44
+    - SNAP Battle Talus
     - _Enemy::Talus::GK04
     - _Item<Splash Fruit>:
         coord: [1328.17, 244.16, -1146.79]
@@ -1497,62 +1689,18 @@ _route:
         coord: [1599.125, 1042, -1179.375]
     - _Location<The North Necluda Sky Crystal>:
         coord: [1758.49, 1042.97, -1208.38]
-    - _Item<Stambulb>:
-        coord: [1785.62, 1030.41, -1222.53]
-    - _Item<Sundelion>:
-        coord: [1772.42, 1029.42, -1223.43]
     - _OldMap::Necluda_03<Old Map>
-    - _Item<Sundelion>:
-        coord: [1822.30, 1029.50, -1352.63]
-    - _Item<Sundelion>:
-        coord: [1828.66, 1029.56, -1355.74]
-    - _Item<Sundelion>:
-        coord: [1842.57, 1029.43, -1356.52]
-    - _Item<Stambulb>:
-        coord: [1847.82, 1030.35, -1370.81]
-    - _Item<Stambulb>:
-        coord: [1842.87, 1029.91, -1370.09]
-    - _Item<Sundelion>:
-        coord: [1820.44, 1029.24, -1375.79]
-    - _Item<Sundelion>:
-        coord: [1806.06, 1029.29, -1369.88]
     - _Shrine::Josiu::Start
     - _Shrine::Josiu:
         comment: ジョシウの祠
         notes: Large Zonai Charge
-    - _Item<Sundelion>:
-        coord: [1803.03, 1028.41, -1137.82]
     - _Dispenser::S14:
         notes: Canon, Wing, Spring, Time Bomb
-    - _Item<Sundelion>:
-        coord: [1795.12, 1023.72, -1102.42]
-    - Launch:
-        coord: [1823.35, 1043.80, -1129.39]
-    - _Item<Sundelion>:
-        coord: [1854.82, 1029.10, -1269.43]
-    - _Item<Stambulb>:
-        coord: [1922.05, 884.07, -1226.63]
-    - _Item<Sundelion>:
-        coord: [1952.14, 884.10, -1219.73]
-    - _Item<Stambulb>:
-        coord: [1962.86, 884.02, -1199.14]
-    - _Item<Sundelion>:
-        coord: [1943.99, 884.28, -1208.36]
-    - _Item<Dazzlefruit>:
-        coord: [1941.84, 885.47, -1216.91]
-    - _Item<Sundelion>:
-        coord: [1927.01, 883.74, -1182.87]
-    - _Item<Dazzlefruit>:
-        coord: [1849.23, 1024.39, -1177.22]
-    - _Item<Sundelion>:
-        coord: [1851.05, 1023.30, -1169.65]
     - Launch:
         coord: [1823.35, 1043.80, -1129.39]
     - _SagesWill::Necluda<Sage's Will>
     - _Item<Big Hearty Radish>:
         coord: [1840.02, 1067.09, -1013.03]
-    - _Item<Stambulb>:
-        coord: [1812.02, 1066.63, -986.96]
     - _Item<Hearty Radish>:
         coord: [1818.68, 1067.18, -977.22]
     - _Item<Endrua Shroom>:
@@ -1561,17 +1709,11 @@ _route:
         coord: [1832.33, 1067.21, -974.35]
     - _Item<Dazzlefruit>:
         coord: [1830.79, 1067.80, -972.39]
-    - _Item<Sundelion>:
-        coord: [1874.64, 1066.76, -963.02]
-    - _Item<Sundelion>:
-        coord: [1880.91, 1066.99, -977.18]
     - _Item<Endrua Shroom>:
         coord: [1860.25, 1067.09, -999.03]
     - _OldMap::Necluda_04<Old Map>
     - _Item<Splash Fruit>:
         coord: [1825.89, 1032.28, -975.97]
-    - _Item<Stambulb>:
-        coord: [1835.79, 1032.20, -968.20]
     - _Korok::SSS01
 
   - Kakariko 1:
@@ -1591,8 +1733,6 @@ _route:
         coord: [1651.79, 320.68, -1181.36]
     - _Item<Deciphered Slab 2>:
         coord: [1634.51, 323.95, -1177.73]
-    - _Chest<Strong Zonaite Sword>:
-        coord: [1663.58, 318.74, -1182.28]
     - _Npc::Olkin_01:
         comment: Codgers' Quarrel
     - _Cave::CuccoHideaway00
@@ -1607,11 +1747,7 @@ _route:
         coord: [1937.84, 272.63, -1080.23]
     - _Cave::KakarikoVillage00
     - _Bubbulfrog::KakarikoVillageCave
-    - _Item<Stamella Shroom>:
-        coord: [1971.21, 286.86, -922.54]
     - _Korok::SS40
-    - _Item<Stamella Shroom>:
-        coord: [2050.78, 284.81, -933.59]
     - _Item<Deciphered Slab 4>:
         coord: [1901.46, 305.32, -810.25]
     - _Korok::SS36
@@ -1622,13 +1758,16 @@ _route:
         comment: Messages from an Ancient Era
     - _Npc::Bugut:
         comment: A Trip through History
+    - _SideQuest::ATripthroughhistory
     - _Npc::Lasli:
         comment: Gloom-Borne Illness
     - _Well::KakarikoVillage
     - _Npc::Trissa:
         comment: Codgers' Quarrel
+    - _SideQuest::CodgersQuarrel
     - _Npc::Dai_01:
         comment: Out of the Inn
+    - _SideQuest::OutoftheInn
     - Cook food:
         coord: [1800.25, 219.63, -1012.57]
     - _Item<Goddess Statue>:
@@ -1648,30 +1787,35 @@ _route:
     - _Chasm::NaydraSnowfield::Depths
 
   - Farm Naydra Surface:
-    - Exit Naydra Snowfield Chasm:
-        coord: [3604.375, 200, -1344.1875]
-    - _Shrine::Jikais
-    - _Tower::RabellaWetlands:
-        comment: ラベラ湿地帯 鳥望台
-    - Re-enter East Hill Chasm:
-        coord: [1974.49, 220.50, -846.13]
-
-  - Mount Lanayru Skyview Tower:
     - _Chasm::NaydraSnowfield
     - _Npc::Nazbi:
         comment: The High Spring and the Light Rings
     - _Location::SpringofWisdom
+    - SNAP Goddess Statue
     - _Npc<Goddess Statue of Wisdom>:
         comment: Goddess Statue of Wisdom
         coord: [3910.78, 574.69, -1328.30]
     - _Tower::MountLanayru:
         comment: ラネール山 鳥望台
 
-  - High Spring:
+  - Ancient Tablet 07:
     - Recharge at High Spring Island:
         coord: [3988.5, 1001, -1558.4375]
     - _Location<Send Ancient Tablet to surface>:
         coord: [3918.64, 1300.00, -2471.20]
+
+  - Rabella Wetlands Skyview Tower:
+    - _Korok::ML20
+    - _Shrine::Jikais
+    - _Item<Boulder for ML10>:
+        coord: [4435.19, 137.13, -1432.99]
+    - _Korok::ML10
+    - _Korok::ML11
+    - _Tower::RabellaWetlands:
+        comment: ラベラ湿地帯 鳥望台
+    - _Warp::Tower::MountLanayru
+
+  - High Spring:
     - _Item<Activate terminal>:
         coord: [3964.57, 1225.72, -1538.53]
     - Return to surface:
@@ -1701,23 +1845,11 @@ _route:
           - to: [4411.875, 1001, -1021.0625]
     - _Location<The South Lanayru Sky Crystal>:
         coord: [4613.31, 1908.90, -947.13]
-    - _Item<Sundelion>:
-        coord: [4605.35, 1896.02, -997.09]
-    - _Item<Sundelion>:
-        coord: [4604.06, 1896.15, -998.47]
     - _Item<Dazzlefruit>:
         coord: [4595.56, 1897.08, -1007.28]
     - _Dispenser::S07
-    - _Item<Sundelion>:
-        coord: [4696.97, 1895.49, -896.93]
     - _Item<Hearty Radish>:
         coord: [4704.63, 1899.32, -878.34]
-    - _Item<Sundelion>:
-        coord: [4706.76, 1899.31, -874.57]
-    - _Item<Stambulb>:
-        coord: [4737.47, 1899.21, -880.39]
-    - _Item<Stambulb>:
-        coord: [4741.95, 1899.85, -875.61]
     - _Item<Endura Shroom>:
         coord: [4738.62, 1899.28, -862.72]
     - _Item<Fleet-Lotus Seeds>:
@@ -1726,80 +1858,38 @@ _route:
         coord: [4726.28, 1899.58, -861.69]
     - _Item<Dazzlefruit>:
         coord: [4712.93, 1900.48, -854.21]
-    - _Item<Stambulb>:
-        coord: [4722.95, 1899.32, -849.48]
-    - _Item<Stambulb>:
-        coord: [4721.94, 1899.37, -845.74]
-    - _Item<Sundelion>:
-        coord: [4700.91, 1898.60, -846.22]
     - Ride up to island to get crystal:
         coord: [4688.25, 1899, -906.875]
-    - _Item<Stambulb>:
-        coord: [4789.21, 2042.37, -844.82]
     - _Item<Splash Fruit>:
         coord: [4798.75, 2045.22, -827.32]
     - _Korok::MLS01
-    - _Item<Stambulb>:
-        coord: [4827.37, 2041.99, -856.97]
     - _Item<Dazzlefruit>:
         coord: [4836.71, 2043.81, -845.20]
-    - _Item<Sundelion>:
-        coord: [4843.17, 2042.29, -848.39]
-    - _Item<Stambulb>:
-        coord: [4838.66, 2043.70, -837.00]
     - _Item<Dazzlefruit>:
         coord: [4843.89, 2045.54, -813.10]
-    - _Item<Stambulb>:
-        coord: [4829.73, 2045.44, -815.03]
     - _Item<Dazzlefruit>:
         coord: [4830.71, 2047.29, -808.27]
     - _Item<Dazzlefruit>:
         coord: [4803.50, 2045.90, -804.46]
-    - _Item<Sundelion>:
-        coord: [4807.07, 2043.41, -788.43]
     - _Item<Big Hearty Radish>:
         coord: [4780.87, 2043.89, -792.58]
     - _OldMap::ValorIsland<Old Map>
-    - _Item<Sundelion>:
-        coord: [4770.58, 1946.24, -837.27]
     - _Item<Dazzlefruit>:
         coord: [4802.77, 2002.42, -845.23]
     - _Item<Dazzlefruit>:
         coord: [4802.60, 2002.75, -838.05]
-    - _Item<Stambulb>:
-        coord: [4827.12, 2001.22, -811.30]
-    - _Item<Stambulb>:
-        coord: [4825.92, 2001.47, -808.97]
-    - _Item<Stambulb>:
-        coord: [4800.59, 2001.84, -797.66]
     - _Shrine::Mayanas::Start
     - _Shrine::Mayanas:
         comment: マヤナシの祠
         notes: Mighty Zonaite Shield
     - _OldMap::ValorIsland_01<Old Map>
-    - _Item<Stambulb>:
-        coord: [4539.27, 1226.16, -862.96]
-    - _Item<Sundelion>:
-        coord: [4568.85, 1225.81, -853.29]
     - _Item<Dazzlefruit>:
         coord: [4575.01, 1226.73, -850.68]
-    - _Item<Stambulb>:
-        coord: [4569.01, 1225.67, -838.15]
     - _Dispenser::S24:
         notes: Spring, Hydrant, Beam Emitter, Sterring Stick
     - _Npc::Steward Construct_05
-    - _Item<Sundelion>:
-        coord: [4432.00, 2721.96, -863.39]
     - _Item<Dazzlefruit>:
         coord: [4420.33, 2723.31, -867.33]
-    - _Item<Stambulb>:
-        coord: [4404.28, 2722.22, -877.23]
-    - _Item<Stambulb>:
-        coord: [4429.95, 2720.76, -905.61]
-    - _Item<Sundelion>:
-        coord: [4442.70, 2722.36, -907.61]
-    - _Item<Stambulb>:
-        coord: [4437.09, 2721.29, -901.73]
     - _Location::ValorIsland:
         coord: [4441.70, 2724.25, -871.23]
         notes: Activate terminal
@@ -1833,12 +1923,15 @@ _route:
         comment: マヤヒシカの祠
     - _Npc::Robbie_01:
         comment: Hateno Village Research Lab
+    - _SideAdv::HatenoVillageResearchLab
     - _Npc::Robbie_01:
         comment: Presenting The Travel Medallion!
     - _Npc::Robbie_01:
         comment: Presenting Hero's Path Mode!
+    - _SideAdv::PresentingHerosPathMode
     - _Npc::Robbie_01:
         comment: Presenting Sensor+!
+    - _SideAdv::PresentingSensor+
     - _TechLab::Hateno
     - _Korok::ML29
     - _Korok::ML21
@@ -1850,17 +1943,18 @@ _route:
         coord: [3631.95, 280.62, -2047.22]
     - _Npc::Dantz_01:
         comment: Dantz's Prize Cows
+    - _SideQuest::DantzsPriceCows
     - _Npc::Koyin_01:
         comment: A Letter to Koyin
+    - _SideAdv::ALettertoKoyin
     - _Place::HatenoVillage
     - _Shrine::Zanmik:
         comment: ザンミカカの祠
         notes: Strong Zonaite Longsword
     - _Item<Goddess Statue>:
         coord: [3439.16, 236.02, -2098.46]
-    - _Item<General Store>:
-        coord: [3360.75, 236, -2171.75]
-        notes: Buy Hylian Rice
+    - _Shop::GeneralStore07:
+        notes: Buy everything needed
     - _Korok::ML31
     - _Korok::ML34
     - _Well::Zelda'sSecret:
@@ -1877,16 +1971,11 @@ _route:
     - ToD Noon
     - _Npc::Symin:
         comment: Teach Me a Lesson I
-    - _Item<Stamella Shroom>:
-        coord: [3255.58, 181.82, -1829.79]
+    - _SideQuest::TeachMeaLessonI
     - _Addison::A71
     - _Enemy::Talus::GL02
-    - _Item<Stamella Shroom>:
-        coord: [2890.48, 166.60, -1804.18]
     - _Addison::A61
     - _Korok::SS58
-    - _Item<Stamella Shroom>:
-        coord: [2481.61, 119.02, -1509.62]
     - _Cave::RobredDropoff00
     - _Bubbulfrog::RobredDropoffCave
     - _Chest<Barbarian Helm>:
@@ -1906,6 +1995,7 @@ _route:
         coord: [-3224.51, 454.74, 2456.73]
     - _Npc::Verla:
         comment: Crossing the Cold Pool
+    - _SideQuest::CrossingtheColdPool
     - _Cave::TalontoPeak00
     - _Bubbulfrog::TalontoPeakCave
     - _Item<Ice Fruit>:
@@ -1969,7 +2059,7 @@ _route:
     - _Korok::PSS02
     - _Shrine::Tenbez:
         comment: テンベザイの祠
-        notes: Large Zonai Charge    
+        notes: Large Zonai Charge
 
   - North Lomei Labyrinth:
     - _Location::NorthLomeiLabyrinth:
@@ -2029,12 +2119,6 @@ _route:
           - to: [-813.0625, 1169.98, 3622.25]
           - to: [-813.125, 1169.98, 3612.6875]
           - to: [-792.4375, 1169.98, 3612.375]
-          - to: [-792.3125, 1169.98, 3622.5]
-    - _Chest<Mighty Zonaite Sword>:
-        coord: [-803.75, 1189.88, 3622.50]
-    - Continue to terminal 2:
-        movements:
-          - to: [-792.1875, 1189, 3622.375]
           - to: [-792.125, 1189, 3612.25]
           - to: [-787.75, 1189, 3612.375]
           - to: [-787.875, 1189, 3592.5625]
@@ -2087,18 +2171,13 @@ _route:
     - _Enemy::FluxConstruct::DH01
     - _Item<Terminal>:
         coord: [-844.25, -576.78, 3554.40]
+    - _SideQuest::TheNorthLomeiProphecy
     - _Chest<Evil Spirit Greaves>:
         coord: [-814.75, -581.97, 3534.40]
     - _Lightroot::Ikatoayam:
         comment: キタオヤマの根
-    - _Chest<Soldier III Blade>:
-        coord: [-869.75, -576.78, 3514.40]
-    - _Chest<Soldier III Spear>:
-        coord: [-834.75, -576.78, 3479.40]
     - _Chest<Zonaite Bow>:
         coord: [-759.75, -576.78, 3514.40]
-    - _Chest<Soldier III Reaper>:
-        coord: [-794.75, -576.78, 3589.40]
     - _Lightroot::U-nazohso:
         comment: ウンザヨシオの根
     - _Enemy::Frox::DH01
@@ -2108,8 +2187,6 @@ _route:
         coord: [-2236.875, -500, 3345.25]
     - _Chest<Huge Crystallized Charge>:
         coord: [-2255.80, -914.10, 3294.51]
-    - _Item<Ghost>:
-        coord: [-2292.64, -910.96, 3190.04]
     - _Warp::Lightroot::Narusis
     - _Chest<Sea-Breeze Boomerang>:
         coord: [-2736.66, -1014.63, 2918.00]
@@ -2117,12 +2194,9 @@ _route:
     - _Chest<Large Crystallized Charge>:
         coord: [-2865.42, -826.41, 2920.35]
     - _YigaSchema::Floodlights
-    - _Item<Ghost>:
-        coord: [-2940.17, -898.09, 3072.55]
+    - _KeyItem::YigaSchematic
     - _Lightroot::Mu-ufatur:
         comment: メウフタルの根
-    - _Item<Ghost>:
-        coord: [-3144.62, -845.97, 3164.03]
     - _Chest<Large Crystallized Charge>:
         coord: [-3709.16, -677.22, 3097.61]
     - _YigaSchema::Excavator
@@ -2134,10 +2208,6 @@ _route:
     - _Lightroot::Muotue:
         comment: メウトウエの根
     - _Enemy::Hinox::DH01
-    - _Item<Ghost>:
-        coord: [-3678.53, -656.01, 3738.19]
-    - _Item<Ghost>:
-        coord: [-3891.96, -761.85, 3679.84]
     - _Location::HebraDarkSkeleton:
         coord: [-3927.75, -752, 3690.5]
     - _Chest<Cap of the Wild>:
@@ -2151,20 +2221,12 @@ _route:
     - _Item<Grand Poe>:
         coord: [-4248.86, -687.29, 3490.21]
     - _Enemy::Talus::GH01
-    - _Item<Ghost>:
-        coord: [-4542.95, -626.28, 3326.43]
     - _Enemy<Colgera>:
         coord: [-4340.875, -626, 3125.5]
     - _Chest<Huge Crystallized Charge>:
         coord: [-4360.15, -733.40, 3074.64]
-    - _Item<Ghost>:
-        coord: [-4411.87, -734.26, 3000.41]
-    - _Item<Ghost>:
-        coord: [-4425.88, -698.50, 2920.01]
     - _Lightroot::Nupisoyuat:
         comment: ニプシヨウタの根
-    - _Item<Ghost>:
-        coord: [-4240.50, -528.01, 2834.62]
     - _Location::SturnidaLavafalls:
         coord: [-4104.125, -528, 2803.375]
     - _Chest<Cap of Time>:
@@ -2173,18 +2235,10 @@ _route:
         coord: [-4069.36, -352.49, 2797.04]
     - _Enemy::Frox::DH04
     - _Enemy::Talus::DH02
-    - _Item<Ghost>:
-        coord: [-4526.40, -446.84, 2240.97]
     - _Enemy::FluxConstruct::DH02
     - _Enemy::Talus::DH04
-    - _Item<Ghost>:
-        coord: [-4360.64, -445.98, 1929.68]
-    - _Item<Ghost>:
-        coord: [-4257.46, -495.21, 1890.29]
     - _Lightroot::So-oaw:
         comment: サオオワの根
-    - _Chest<Arrow x10>:
-        coord: [-3808.29, -477.91, 2125.06]
     - _Enemy::Talus::DH03
     - _Location::CorvashCanyonMine
     - _Chest<Trousers of the Hero>:
@@ -2192,19 +2246,11 @@ _route:
     - _Lightroot::Worihas:
         comment: ワロヒサの根
     - _Enemy::Frox::DH03
-    - _Item<Ghost>:
-        coord: [-2816.52, -680.79, 2282.08]
     - _Enemy::Hinox::DH02
     - _Warp::Lightroot::U-nazohso
-    - _Item<Ghost>:
-        coord: [-1541.88, -570.13, 3524.21]
-    - _Item<Ghost>:
-        coord: [-1578.68, -576.76, 3325.94]
     - _Chest<Large Crystallized Charge>:
         coord: [-1749.38, -574.25, 3105.98]
     - _YigaSchema::WhirlingBasher
-    - _Chest<Arrow x10>:
-        coord: [-1592.42, -585.54, 2856.02]
     - _Lightroot::Muihcoro:
         comment: ムウチロオの根
     - _Lightroot::Yisuayam:
@@ -2225,14 +2271,10 @@ _route:
         coord: [-1901.28, -576.69, 2095.82]
     - _YigaSchema::SprinklerSystem
     - _Enemy::Frox::DH06
-    - _Item<Ghost>:
-        coord: [-2506.12, -589.14, 1703.39]
     - _Enemy::FluxConstruct::DH03
     - _Lightroot::Kawumoro:
         comment: カワムロオの根
     - _Enemy::Talus::DR01
-    - _Item<Ghost>:
-        coord: [-2869.28, -293.44, 1431.09]
     - _Enemy::Talus::DR02
     - _Enemy::Talus::DR03
     - _Lightroot::Koro-nui:
@@ -2240,120 +2282,119 @@ _route:
     - _Chest<Large Crystallized Charge>:
         coord: [-3382.27, -513.66, 665.21]
     - _YigaSchema::AllPurposeRaft
-    - _Item<Ghost>:
-        coord: [-3772.62, -413.90, 220.91]
-    - _Item<Ghost>:
-        coord: [-4008.81, -329.08, 157.44]
     - _Lightroot::Sasag:
         comment: ササガの根
     - _Enemy::Frox::DH08
-    - _Item<Ghost>:
-        coord: [-3921.88, -440.59, 898.78]
     - _Enemy::Frox::DH07
     - _Lightroot::Kataki:
         comment: クタカイの根
     - _Enemy::Hinox::DH03
-    - _Chest<Arrow x10>:
-        coord: [-3569.74, -478.79, 1507.86]
     - _Location::CuhoCanyonMine
     - _Chest<Tunic of the Wind>:
         coord: [-3788.98, -576.76, 1344.09]
 
-  - Upgrade Battery:
-      - _Warp::Shrine::Nachoyah
-      - _Shop::CrystalRefinery
-      - _Warp::Shrine::Gutanbac:
-          level: Sky
-      - Buy from Device Dispenser:
+  - Buy Charges and Upgrade Battery:
+    - Warp to Great Abandoned Central Mine
+    - _Warp::Shrine::Nachoyah
+    - _Location<Crystal Refinery>:
+        hide-icon-on-map: true
+        notes: Zonai Devices
+        coord: [357.17, 2410.96, -1651.34]
+    - _Warp::Shrine::Gutanbac:
+        level: Sky
+    - Buy from Device Dispenser:
           coord: [769.09, 1684.46, -1259.54]
 
   - Lookout Landing:
-      - _Warp::Tower::LookoutLanding
-      - _Npc::Karson_Rito_Rope_Bridge:
-          comment: The Rito Rope Bridge
-      - General Store:
-          coord: [-205.875, 100, 76.5]
-          notes: Buy Hylian Rice
-      - _Npc::Hestu_01:
-          comment: Pouch upgrades
-      - Goddess Statue:
-          coord: [-241.75, 114.70, 85.85]
-      - Cook food:
-          coord: [-269.40, 113.50, 101.90]
-      - _Warp::Tower::Lindor'sBrow
+    - _Warp::Tower::LookoutLanding
+    - _Npc::Karson_Rito_Rope_Bridge:
+        comment: The Rito Rope Bridge
+    - _Shop<General Store>:
+        coord: [-205.77, 125.37, 76.56]
+        notes: Buy everything needed
+    - _Npc::Hestu_01:
+        comment: Pouch upgrades
+    - Goddess Statue:
+        coord: [-241.75, 114.70, 85.85]
+    - _Warp::Tower::Lindor'sBrow
 
   - Lightcast Island:
-      - Continue to Tabantha Sky Archipelago:
-          coord: [-2196.1875, 1001, 953.6875]
-      - _Location::TabanthaSkyArchipelago:
-          coord: [-3822.8125, 1001, 634.9375]
-      - _OldMap::Tabantha_01<Old Map>
-      - _Item<Starting bloack for LBS05>:
-          coord: [-3960.01, 1610.81, 649.91]
-      - _Korok::LBS05
-      - _Item<Endrua Shroom>:
-          coord: [-3978.84, 1606.50, 738.15]
-      - _Item<Endura Shroom>:
-          coord: [-3979.23, 1607.52, 742.08]
-      - _Location::LightcastIsland
-      - _Item<Starting block for LBS01>:
-          coord: [-3612.40, 1919.96, 1030.28]
-      - _Korok::LBS01
-      - _Item<Activate Terminal>:
-           coord: [-3684.8, 1902.41, 1060.34]
-      - _Item<Hearty Bass>:
-          coord: [-3645.07, 1895.22, 1016.06]
-      - _Item<Hearty Bass>:
-          coord: [-3618.44, 1895.22, 1064.22]
-      - _Item<Heary Bass>:
-          coord: [-3584.65, 1895.22, 1066.33]
-      - _Item<Hearty Bass>:
-          coord: [-3612.95, 1895.22, 953.55]
-      - _Korok::LBS03
-      - _Chest<Star Fragment>:
-          coord: [-3633.06, 1874.85, 1049.88]
-      - _Chest<Zonaite Helm>:
-          coord: [-3593.30, 1836.96, 942.66]
-      - _Shrine::Ga-ahisas:
-          comment: ガアヒササの祠
-          notes: Star Fragment
-      - _Dispenser::S00:
-          notes: Mirror, Balloon, Spring, Wing, Hover Stone
-      - _Korok::LBS02
-      - _Enemy::FluxConstruct::SH03
-      - _Npc<The Tabantha Sky Crystal>
-      - _Shrine::Ganos::Start
-      - _Item<Ice Fruit>:
-          coord: [-3577.44, 1544.79, 586.45]
-      - _Shrine::Ganos:
-          comment: ガノサの祠
-          notes: Diamond
-      - _Dispenser::S13
-      - _Item<Sundelion>:
-          coord: [-3597.79, 1800.79, 426.36]
-      - _Item<Dazzlefruit>:
-          coord: [-3605.85, 1802.64, 414.40]
-      - _Item<Stambulb>:
-          coord: [-3601.19, 1801.46, 404.35]
-      - _Item<Hearty Radish>:
-          coord: [-3625.17, 1801.69, 387.45]
-      - _Item<Stambulb>:
-          coord: [-3632.19, 1801.35, 390.02]
-      - _Item<Fleet-Lotus Seeds>:
-          coord: [-3613.42, 1801.72, 401.10]
-      - _Item<Fleetp-Lotus Seeds>:
-          coord: [-3623.18, 1801.72, 404.08]
-      - _Item<Sundelion>:
-          coord: [-3626.17, 1801.38, 420.70]
-      - _Item<Sundelion>:
-          coord: [-3648.47, 1797.70, 430.63]
-      - _OldMap::Tabantha_02<Old Map>
-      - Launch:
-          coord: [-3467.37, 1820.66, 448.00]
-      - _Enemy::FluxConstruct::SC01
-      - _SagesWill::Tabantha<Sage's Will>
-      - _Location::WestHyruleSkyArchipelago:
-          hide-icon-on-map: true
+    - Continue to Tabantha Sky Archipelago:
+        coord: [-2196.1875, 1001, 953.6875]
+    - _Location::TabanthaSkyArchipelago:
+        coord: [-3822.8125, 1001, 634.9375]
+    - _OldMap::Tabantha_01<Old Map>
+    - _Item<Starting bloack for LBS05>:
+        coord: [-3960.01, 1610.81, 649.91]
+    - _Korok::LBS05
+    - _Item<Endrua Shroom>:
+        coord: [-3978.84, 1606.50, 738.15]
+    - _Item<Endura Shroom>:
+        coord: [-3979.23, 1607.52, 742.08]
+    - _Location::LightcastIsland
+    - _Item<Starting block for LBS01>:
+        coord: [-3612.40, 1919.96, 1030.28]
+    - _Korok::LBS01
+    - _Item<Activate Terminal>:
+        coord: [-3684.8, 1902.41, 1060.34]
+    - _Item<Hearty Bass>:
+        coord: [-3645.07, 1895.22, 1016.06]
+    - _Item<Hearty Bass>:
+        coord: [-3618.44, 1895.22, 1064.22]
+    - _Item<Heary Bass>:
+        coord: [-3584.65, 1895.22, 1066.33]
+    - _Item<Hearty Bass>:
+        coord: [-3612.95, 1895.22, 953.55]
+    - _Korok::LBS03
+    - _Chest<Star Fragment>:
+        coord: [-3633.06, 1874.85, 1049.88]
+    - _Chest<Zonaite Helm>:
+        coord: [-3593.30, 1836.96, 942.66]
+    - _Shrine::Ga-ahisas:
+        comment: ガアヒササの祠
+        notes: Star Fragment
+    - _Dispenser::S00:
+        notes: Mirror, Balloon, Spring, Wing, Hover Stone
+    - _Korok::LBS02
+    - _Enemy::FluxConstruct::SH03
+    - _Npc<The Tabantha Sky Crystal>
+    - _Shrine::Ganos::Start
+    - _Item<Ice Fruit>:
+        coord: [-3577.44, 1544.79, 586.45]
+    - _Shrine::Ganos:
+        comment: ガノサの祠
+        notes: Diamond
+    - _Dispenser::S13
+    - _Item<Dazzlefruit>:
+        coord: [-3605.85, 1802.64, 414.40]
+    - _Item<Hearty Radish>:
+        coord: [-3625.17, 1801.69, 387.45]
+    - _Item<Fleet-Lotus Seeds>:
+        coord: [-3613.42, 1801.72, 401.10]
+    - _Item<Fleetp-Lotus Seeds>:
+        coord: [-3623.18, 1801.72, 404.08]
+    - _OldMap::Tabantha_02<Old Map>
+    - Launch:
+        coord: [-3467.37, 1820.66, 448.00]
+    - _Location::WestHyruleSkyArchipelago:
+        hide-icon-on-map: true
+    - _Enemy::FluxConstruct::SC01
+    - _SagesWill::Tabantha<Sage's Will>
+
+  - Starview Island:
+    - _Item<Starting block for GHS01>:
+        coord: [-3374.14, 2429.17, 12.18]
+    - _Korok::GHS01
+    - _OldMap::Tabantha_03<Old Map>
+    - _Location::StarviewIsland
+    - _SagesWill::Tabantha_02<Sage's Will>
+    - _Shrine::Mayasiar:
+        comment: マヤシアラの祠
+    - _Dispenser::S23
+    - _Location::NorthGerudoSkyArchipelago:
+        hide-icon-on-map: true
+    - _Location<Ancient Tablet (Falling)>:
+       coord: [-3605.92, 1700.00, -935.13]
 
   - Thyphlo Ruins Skyview Tower:
     - _Warp::Tower::Lindor'sBrow
@@ -2378,8 +2419,6 @@ _route:
     - _Npc::Pikango_02
     - _Chest<Rocket x3>:
         coord: [-681.50, 440.00, 2660.50]
-    - _Item<Stambulb>:
-        coord: [-672.50, 437.77, 2641.00]
     - _Korok::TR14
     - _Shrine::Kikakin:
         comment: キカクンの祠
@@ -2411,70 +2450,32 @@ _route:
         coord: [340.39, 1939.90, 2814.73]
     - _Enemy::FluxConstruct::SE01
     - _Shrine::Mayam::Start
-    - _Item<Sundelion>:
-          coord: [477.77, 1770.54, 2578.55]
-    - _Item<Stambulb>:
-        coord: [497.23, 1770.41, 2567.17]
-    - _Item<Sundelion>:
-        coord: [514.72, 1770.74, 2587.00]
-    - _Item<Stambulb>:
-        coord: [516.44, 1770.38, 2604.46]
     - _Shrine::Mayam:
         comment: マヤミイの祠
         notes: Magic Rod
-    - _Item<Sundelion>:
-        coord: [438.16, 1926.44, 2826.87]
     - _Dispenser::S09:
         notes: Shock Emitter, Light, Steering Stick, Homing Cart
     - Launch:
         coord: [387.75, 1946.58, 2817.88]
     - _Korok::TRS01
-    - _Item<Sundelion>:
-        coord: [446.46, 2348.39, 2229.57]
-    - _Item<Sundelion>:
-        coord: [441.56, 2348.22, 2228.73]
-    - _Item<Sundelion>:
-        coord: [446.24, 2348.15, 2219.81]
     - _OldMap::Eldin_01<Old Map>
     - _Item<Fire Fruit>:
         coord: [258.03, 2089.37, 2112.17]
-    - _Item<Stambulb>:
-        coord: [254.09, 2085.95, 2104.72]
     - _Item<Dazzlefruit>:
         coord: [258.18, 2087.83, 2086.02]
     - _Item<Dazzlefruit>:
         coord: [250.98, 2088.82, 2074.97]
-    - _Item<Stamella Shroom>:
-        coord: [243.22, 2087.88, 2070.91]
-    - _Item<Stambulb>:
-        coord: [214.79, 2087.64, 2076.92]
     - _Item<Dazzlefruit>:
         coord: [228.86, 2087.49, 2095.71]
-    - _Item<Stambulb>:
-        coord: [227.87, 2088.07, 2110.82]
-    - _Item<Stambulb>:
-        coord: [236.49, 2086.43, 2109.16]
     - _Location::BraveryIsland:
         coord: [229.56, 2089.86, 2069.67]
         notes: Activate terminal
     - Dive to pond through rings:
         coord: [205.50, 869.13, 2028.00]
-    - _Item<Sundelion>:
-        coord: [239.84, 859.25, 2026.97]
     - _Npc::Steward Construct_03
-    - _Item<Stambulb>:
-        coord: [228.34, 860.61, 1986.02]
-    - _Item<Sundelion>:
-        coord: [224.11, 860.65, 1977.19]
     - _Dispenser::S15
-    - _Item<Stambulb>:
-        coord: [202.94, 860.50, 1996.18]
-    - _Item<Stambulb>:
-        coord: [179.88, 859.01, 2019.31]
     - _Shrine::Simosiwak:
         comment: シモシワカの祠
-    - _Item<Sundelion>:
-        coord: [169.78, 863.67, 1951.69]
 
   - Hylian Shield:
     - _Place::HyruleCastle
@@ -2486,6 +2487,7 @@ _route:
         coord: [-254.00, 526.78, 1068.90]
     - _Chest<Champion's Leathers>:
         coord: [-254.00, 456.03, 1091.87]
+    - _SideQuest::ANewChampionsTunic
     - _Shrine::Serutabomac:
         comment: セルタボマチの祠
     - _Korok::LL03
@@ -2526,6 +2528,7 @@ _route:
         coord: [620.00, 147.66, 1316.99]
     - _Npc::Domidak:
         comment: The Treasure Hunters
+    - _SideQuest::TheTreasureHunters
     - _Korok::TR18
     - _Cave::RauruHillside00
     - _Bubbulfrog::RauruHillsideCave
@@ -2553,6 +2556,7 @@ _route:
     - _Npc<Kolton>:
         comment: The Hunt for Bubbul Gems!
         coord: [1228.03, 126.81, 1215.17]
+    - _SideAdv::TheHuntforBubbulGems
     - _Npc::Kilton:
         comment: The Search for Kolton
     - _Addison::A48
@@ -2578,74 +2582,64 @@ _route:
   - South Eldin Sky Archipelago:
     - _Location::SouthEldinSkyArchipelago:
         hide-icon-on-map: true
-    - _Item<Sundelion>:
-        coord: [1660.08, 1269.02, 1179.47]
-    - _Item<Sundelion>:
-        coord: [1662.37, 1269.20, 1175.36]
-    - _Item<Sundelion>:
-        coord: [1671.87, 1269.54, 1164.58]
-    - _Item<Sundelion>:
-        coord: [1697.80, 1269.82, 1154.57]
     - _Enemy<Soldier Construct II>:
         coord: [1699.82, 1269.23, 1167.89]
     - _Item<Dazzlefruit>:
         coord: [1714.90, 1271.07, 1169.46]
     - _Item<Dazzlefruit>:
         coord: [1704.27, 1270.74, 1178.88]
-    - _Item<Sundelion>:
-        coord: [1691.75, 1269.35, 1188.33]
     - _Korok::ECS02
+    - Ride the rail:
+        movements:
+          - to: [1677.0625, 1355, 1171.0625]
+          - to: [1717.1875, 1355, 1156.3125]
+          - to: [1772.125, 1355, 1136.4375]
+          - to: [1779.1875, 1355, 1133.625]
+          - to: [1785.1875, 1355, 1130.0625]
+          - to: [1788.0625, 1355, 1126.6875]
+          - to: [1790.375, 1355, 1123.125]
+          - to: [1791.375, 1355, 1119.0625]
+          - to: [1791.4375, 1355, 1116.875]
+          - to: [1791.5625, 1355, 1109.3125]
+          - to: [1791.5, 1355, 1089.0625]
+          - to: [1791.5, 1355, 1013.875]
     - _OldMap::Eldin<Old Map>
     - _SagesWill::Eldin_01<Sage's Will>
-    - _Item<Sundelion>:
-        coord: [1938.66, 1359.40, 1111.89]
-    - _Item<Sundelion>:
-        coord: [1937.99, 1357.12, 1153.75]
-    - _Item<Sundelion>:
-        coord: [1939.12, 1357.19, 1158.50]
-    - _Item<Sundelion>:
-        coord: [1932.70, 1357.04, 1173.29]
+    - Ride the rail:
+        movements:
+          - to: [1848.75, 1355, 992.0625]
+          - to: [1951.25, 1355, 1029.0625]
+          - to: [1957, 1355, 1031.25]
+          - to: [1960.1875, 1355, 1032.9375]
+          - to: [1962.6875, 1355, 1035.3125]
+          - to: [1964.0625, 1355, 1036.6875]
+          - to: [1965.25, 1355, 1040.75]
+          - to: [1965.3125, 1355, 1042.5625]
+          - to: [1965.1875, 1355, 1044.25]
+          - to: [1964.6875, 1355, 1047]
+          - to: [1964.0625, 1355, 1048.4375]
+          - to: [1945.75, 1355, 1105]
     - _Shrine::Kadaunar:
         comment: カダウナリの祠
         notes: Strong Construct Bow
-    - _Item<Sundelion>:
-        coord: [1904.59, 1361.19, 1214.48]
     - _Item<Dazzlefruit>:
         coord: [1919.95, 1357.87, 1265.15]
     - _Dispenser::S19:
         notes: Big Wheel, Hydrant, Battery, Fan
-    - _Item<Sundelion>:
-        coord: [1974.88, 1356.49, 1215.96]
     - Launch:
         coord: [1928.63, 1376.79, 1211.52]
     - _Korok::ECS01
-    - _Item<Stambulb>:
-        coord: [2034.84, 1380.95, 1139.95]
     - _Item<Dazzlefruit>:
         coord: [2021.79, 1382.40, 1121.14]
-    - _Item<Sundelion>:
-        coord: [2022.90, 1381.16, 1138.86]
     - _Chest<Battery x3>:
         coord: [2025.10, 1364.26, 1147.04]
-    - _Item<Sundelion>:
-        coord: [2070.91, 1163.81, 1216.27]
-    - _Item<Sundelion>:
-        coord: [2089.41, 1163.56, 1229.06]
     - _Item<Dazzlefruit>:
         coord: [2081.53, 1164.67, 1229.83]
     - _Item<Endura Shroom>:
         coord: [2083.04, 1163.81, 1252.90]
-    - _Item<Sundelion>:
-        coord: [2080.62, 1163.47, 1253.59]
-    - _Item<Sundelion>:
-        coord: [2061.20, 1164.43, 1251.02]
-    - _Item<Sundelion>:
-        coord: [2053.86, 1163.73, 1243.17]
-    - _Item<Sundelion>:
-        coord: [2041.46, 1163.44, 1237.37]
     - Return to surface:
         coord: [2015.1875, 1163, 1244.9375]
-        
+
   - Goron City:
     - _Korok::EC50
     - _Cave::LakeFerona01
@@ -2683,6 +2677,7 @@ _route:
         coord: [1704.13, 497.00, 2467.96]
     - _Item<Goddess Statue>:
         coord: [1722.25, 499.17, 2456.24]
+    - _KeyItem::SolemnVowofTulinSageofWind
     - _Npc::Dugby:
         comment: The Ancient City of Gorondia!
     - _Place::YunoboCoHQ:
@@ -2718,6 +2713,7 @@ _route:
     - _Bubbulfrog::DeathMountainWestTunnel
     - _Npc::Mota_01:
         comment: The Abandoned Laborer
+    - _SideQuest::TheAbandonedLaborer
     - Ride the rail:
         movements:
           - to: [2190.875, 500, 2646.9375]
@@ -2752,7 +2748,7 @@ _route:
         comment: Yunobo of Goron City
     - _Location<SNAP Moragia>
     - _Chasm::DeathMountain
-    
+
   - Fire Temple:
     - _Chasm::DeathMountain::Depths
     - _Lightroot::Mustis:
@@ -2762,7 +2758,19 @@ _route:
     - _Lightroot::Misisi:
         comment: メシシイの根
     - _Temple::Fire
-    - _Location<Terminal>:
+    - _Item<Main Terminal>:
+        coord: [1289.13, -697.66, 2863.57]
+    - _Item<Terminal 1>:
+        coord: [1184.75, -581.57, 2729.54]
+    - _Item<Terminal 2>:
+        coord: [1351.5, -699, 2525.5]
+    - _Item<Terminal 3>:
+        coord: [1337.5, -682, 3080.5]
+    - _Item<Terminal 4>:
+        coord: [1337.5, -614.49, 3040.99]
+    - _Item<Terminal 5>:
+        coord: [1275.88, -695, 2940.12]
+    - _Item<Main Terminal>:
         coord: [1289.13, -697.66, 2863.57]
     - _Location<SNAP Gohma>:
         coord: [1208.5, -694.99, 2847.5]
@@ -2775,14 +2783,17 @@ _route:
             to: [1648.01, 487.50, 2439.43]
     - _Npc::Yunobo_02:
         comment: Yunobo of Goron City
+    - _MainQuest::YunoboofGoronCity
     - _Npc::Bludo:
         comment: The Hidden Treasure at Lizard Lakes
     - _Npc::Volcon:
         comment: Moon-Gazing Gorons
+    - _SideQuest::MoonGazingGorons
     - _Npc::Kima_Goron_City:
         comment: Simmerstone Springs
     - _Npc::Fugo_01:
         comment: Soul of the Gorons
+    - _SideQuest::SouloftheGorons
     - _Korok::EC06::Start
     - _Korok::EC06::End
     - _Cave::IsleofRabacGallery00
@@ -2804,8 +2815,6 @@ _route:
     - _Shrine::Sikukuu:
         comment: シククチの祠
         notes: Zonaite Longsword
-    - _Item<Stamella Shroom>:
-        coord: [496.94, 287.65, 2919.46]
     - _Addison::A36
     - _Korok::TR10::Start
     - _Korok::TR10::End
@@ -2834,10 +2843,9 @@ _route:
       - _Korok::EC10::End
       - _Item<Fire Fruit>:
           coord: [2480.94, 653.51, 3031.34]
-      - _Item<Sundelion>:
-          coord: [2478.04, 653.21, 3039.24]
       - _Npc::Toren_01:
           comment: Bring Peace to Eldin!
+      - _SideAdv::BringPeacetoEldin
       - _Cave::LakeDarmanMonsterDen00
       - _Bubbulfrog::LakeDarmanMonsterDen
       - ToD Night
@@ -2845,6 +2853,7 @@ _route:
       - _Bubbulfrog::Lizard'sBurrow
       - _Chest<Vah Rudania Divine Helm>:
           coord: [2283.21, 512.50, 2990.99]
+      - _SideQuest::TheHiddenTeasureatLizardLakes
       - _Korok::EC08
       - _Item<Starting block for EC07>:
           coord: [2194.43, 613.08, 3008.75]
@@ -2979,8 +2988,10 @@ _route:
     - _Place::EastAkkalaStable
     - _Npc::Chabi:
         comment: Strongest in the World
+    - _SideQuest::StrongestintheWorld
     - _Npc::Aya:
         comment: The Gathering Pirates
+    - _SideQuest::TheGatheringPirates
     - Pony Point x2 - Quest:
         notes: 14
     - Pony Point - First Visit:
@@ -2989,7 +3000,6 @@ _route:
         notes: 16
     - _Npc::Rudi:
         comment: A Picture for East Akkala Stable
-    - Cook food
     - _Korok::UM21::Start
     - _Korok::UM21:
         coord: [3854.73, 155.04, 2685.24]
@@ -3017,9 +3027,11 @@ _route:
     - _Addison::A67
     - _Npc::Parcy:
         comment: One-Hit Wonder!
+    - _SideQuest::OneHitWonder
     - _Npc<Cucco>:
         comment: The All-Clucking Cucco
         coord: [3227.84, 324.60, 1785.56]
+    - _SideAdv::TheAllCluckingCucco
     - _Shrine::Mayachideg:
         comment: マヤチデギナの祠
         notes: Strong Zonaite Spear
@@ -3027,8 +3039,6 @@ _route:
     - _Location::ShadowHamletRuins
     - _Korok::EC27
     - _Well::ShadowHamletRuins
-    - _Chest<Ruby>:
-        coord: [3082.33, 426.74, 2310.38]
     - _Korok::UM26:
         coord: [3223.39, 233.82, 2169.83]
     - _Item<Dazzlefruit>:
@@ -3041,18 +3051,8 @@ _route:
         hide-icon-on-map: true
     - _Enemy::FluxConstruct::SA02
     - _OldMap::Akkala<Old Map>
-    - _Item<Stambulb>:
-        coord: [3777.33, 1097.22, 1846.84]
-    - _Item<Stambulb>:
-        coord: [3799.44, 1097.45, 1863.61]
-    - _Item<Sundelion>:
-        coord: [3797.03, 1097.74, 1879.87]
     - _Item<Hearty Radish>:
         coord: [3798.81, 1097.51, 1889.19]
-    - _Item<Sundelion>:
-        coord: [3779.16, 1097.45, 1893.58]
-    - _Item<Sundelion>:
-        coord: [3780.21, 1097.74, 1886.69]
     - _Item<Hearty Radish>:
         coord: [3780.21, 1097.74, 1886.69]
     - _Tablet::S11
@@ -3080,24 +3080,8 @@ _route:
         notes: Activate terminal
     - _Location<The Sky Mine Crystal>:
         coord: [4506.00, 1274.02, 2166.02]
-    - _Item<Sundelion>:
-        coord: [4547.49, 1265.09, 2139.43]
-    - _Item<Sundelion>:
-        coord: [4551.10, 1265.10, 2139.73]
     - Launch to Middle Island:
         coord: [4529.51, 1265.52, 2125.29]
-    - _Item<Sundelion>:
-        coord: [4573.34, 1342.85, 2139.74]
-    - _Item<Sundelion>:
-        coord: [4574.33, 1342.94, 2143.47]
-    - _Item<Stambulb>:
-        coord: [4578.69, 1260.64, 2148.66]
-    - _Item<Stambulb>:
-        coord: [4587.49, 1342.50, 2208.50]
-    - _Item<Sundelion>:
-        coord: [4650.38, 1342.92, 2207.89]
-    - _Item<Sundelion>:
-        coord: [4655.49, 1338.39, 2196.58]
     - Launch to UMS02 staring block:
         coord: [4619.27, 1362.62, 2178.82]
     - _Item<Starting block for UMS02>:
@@ -3107,20 +3091,8 @@ _route:
         coord: [4651.16, 1342.23, 2134.32]
     - Launch to top island:
         coord: [4619.27, 1362.62, 2178.82]
-    - _Item<Stambulb>:
-        coord: [4608.57, 1456.42, 2098.40]
     - _Item<Splash Fruit>:
         coord: [4619.52, 1457.62, 2096.41]
-    - _Item<Sundelion>:
-        coord: [4613.43, 1456.41, 2093.58]
-    - _Item<Stambulb>:
-        coord: [4681.01, 1456.77, 2082.28]
-    - _Item<Stambulb>:
-        coord: [4685.34, 1457.14, 2080.73]
-    - _Item<Stambulb>:
-        coord: [4674.10, 1456.85, 2070.33]
-    - _Item<Sundelion>:
-        coord: [4592.51, 1456.98, 2027.12]
     - Launch to sphere:
         coord: [4637.94, 1476.79, 2055.45]
     - _Chest<Zonaite Shin Guards>:
@@ -3148,6 +3120,7 @@ _route:
         coord: [4511.87, 353.01, 3166.60]
     - _Chest<Travel Medallion Prototype>:
         coord: [4523.45, 352.99, 3163.68]
+    - _KeyItem::TravelMedallion
     - _Korok::UM11
     - _Chest<Bomb Flower x10>:
         coord: [4814.00, 105.95, 3307.50]
@@ -3199,6 +3172,7 @@ _route:
     - _Enemy::FluxConstruct::DA01
     - _Location<Activate Terminal>:
         coord: [4684.4, -340.47, 3697]
+    - _SideQuest::TheLomeiLabyrinthIslandProphecy
     - _Chest<Evil Spirit Armor>:
         coord: [4654.90, -345.66, 3697.00]
     - _Lightroot::Kuhsagi:
@@ -3220,11 +3194,10 @@ _route:
     - _Addison::A75
     - _Npc::Rudi:
         comment: A Picture for East Akkala Stable
+    - _SideQuest::APictureforEastAkkalaStable
     - Pony Point - Quest:
         notes: 19
     - _Korok::UM23
-    - _Item<Razorshroom>:
-        coord: [4330.00, 186.23, 2538.48]
     - _Korok::UM17::Start
     - _Korok::UM19
     - _Korok::UM17:
@@ -3243,9 +3216,11 @@ _route:
     - _Npc::Pulcho_02:
         comment: Secrets Within
     - _Dispenser::G01
+    - _SideQuest::SecretsWithin
     - _Shop::TarreyTownRace
     - _Npc::Fernison:
         comment: Master the Vehicle Prototype
+    - _SideQuest::MastertheVehiclePrototype
     - _Cave::TarreyTownTunnel00
     - _Bubbulfrog::TarreyTownTunnel
     - _Place::TarreyTown:
@@ -3262,6 +3237,7 @@ _route:
         coord: [3926.4375, 241, 1611.625]
     - _Npc::Mattison_02:
         comment: Mattison's Independence
+    - _SideAdv::MattisonsIndependence
     - _Shop::GeneralStore15:
         notes: Buy Monster Extract
         movements:
@@ -3278,10 +3254,12 @@ _route:
     - _Npc::Kilton_01:
         comment: A Monstrous Collection III
         notes: Battle Talus
+    - _KeyItem::MonsterBridle
     - _SideAdv::AMonsterousCollectionIII
     - _Npc::Kilton_01:
         comment: A Monstrous Collection IV
         notes: Frox
+    - _KeyItem::MonsterSaddle
     - _SideAdv::AMonsterousCollectionIV
     - _Npc::Rhondson:
         comment: Home on Arrange - Rhondson
@@ -3291,6 +3269,7 @@ _route:
     - _Korok::UM33
     - _Npc::Grantéson:
         comment: Home on Arrange
+    - _SideQuest::HomeonArrange
     - _Place::LinksHouse
 
   - South Akkala 2:
@@ -3307,31 +3286,18 @@ _route:
     - _Shrine::Jochi-ihiga:
         comment: ジョチイヒガの祠
         notes: Diamond
-    - _Item<Mighty Carp x3>:
-        movements:
-          - marker: all
-          - to: [3815.88, 193.96, 1193.97]
-          - to: [3820.61, 193.96, 1200.03]
-          - to: [3828.84, 193.96, 1197.07]
     - _Location::EastSokkalaBridge
     - _Korok::UZ05
     - _Enemy<Lynel>:
         coord: [3877.23, 354.10, 950.76]
     - _Korok::UZ11
     - _Korok::UZ09
-    - _Item<Mighty Carp x5>:
-        movements:
-          - marker: all
-          - to: [3733.56, 328.74, 898.02]
-          - to: [3733.01, 328.73, 888.71]
-          - to: [3714.08, 328.72, 884.98]
-          - to: [3697.22, 328.72, 921.72]
-          - to: [3693.67, 328.72, 921.36]
     - _Location::SokkalaBridge
     - _Location::WestSokkalaBridge
     - _Korok::UZ04
     - _Npc::Toren_02:
         comment: Bring Peace to Akkala
+    - _SideAdv::BringPeacetoAkkala
     - _Korok::EC51
     - _Location::AkkalaSpan
     - _Korok::UM41
@@ -3340,6 +3306,7 @@ _route:
         coord: [2967.77, 395.13, 1471.24]
     - _Npc::Dmitri:
         comment: A Picture of South Akkala Stable
+    - _SideQuest::APictureforSouthAkkalaStable
     - Pony Point - Quest:
         notes: 20
     - _Location::AkkalaBridgeRuins
@@ -3371,14 +3338,10 @@ _route:
     - _Chest<Trousers of Twilight>:
         coord: [3319.50, -750.93, 1507.00]
     - _Enemy::Talus::DA02
-    - _Item<Ghost>:
-        coord: [3112.99, -534.64, 1665.20]
     - _Enemy<Lynel>:
         coord: [3149.83, -544.60, 1692.65]
     - _Lightroot::Gedihcayam:
         comment: ナギデチヤマの根
-    - _Item<Ghost>:
-        coord: [3141.40, -478.50, 1926.80]
     - _Location::UlriCanyonMine
     - _Chest<Large Crystallized Charge>:
         coord: [3680.33, -497.18, 2082.46]
@@ -3386,8 +3349,6 @@ _route:
         coord: [3607.33, -372.60, 2279.86]
     - _YigaSchema::Wagon
     - _Enemy::Frox::DA01
-    - _Item<Ghost>:
-        coord: [4211.64, -441.16, 1803.20]
     - _Lightroot::Kawikatisar:
         comment: カワキタシラの根
     - Entrance to Abandoned Tarrey Mine:
@@ -3445,10 +3406,6 @@ _route:
     - _Enemy<Lynel>:
         coord: [4212.09, -467.54, 2721.10]
     - _Enemy::Talus::DA01
-    - _Item<Ghost>:
-        coord: [4675.26, -339.29, 3105.11]
-    - _Item<Ghost>:
-        coord: [4490.99, -341.09, 3329.88]
     - _Chest<Large Crystallized Charge>:
         coord: [4113.09, -505.51, 3214.07]
     - _YigaSchema::HeadlightRaft
@@ -3469,10 +3426,6 @@ _route:
           - to: [3274.77, -555.17, 3699.09]
     - _YigaSchema::AssaultCart
     - _Enemy::FluxConstruct::DE02
-    - _Item<Ghost>:
-        movements:
-          - to: [2812, -587, 3577.625]
-          - to: [2696.33, -586.72, 3686.40]
     - _Enemy::Talus::DE01
     - _Location::ScorchingColiseum
     - _Chest<Zant's Helmet>:
@@ -3491,10 +3444,6 @@ _route:
     - _SchemaStone::EldinMine
     - _Chest<Large Crystallized Charge>:
         coord: [1626.61, -718.59, 2348.13]
-    - _Item<Ghost>:
-        coord: [1563.60, -670.06, 2173.46]
-    - _Item<Ghost>:
-        coord: [1595.26, -654.45, 2006.38]
     - _Enemy::Talus::DE04
     - _Lightroot::Kawamit:
         comment: カワマイテの根
@@ -3506,17 +3455,11 @@ _route:
     - _Chest<Large Crystallized Charge>:
         coord: [2669.09, -486.28, 1577.81]
     - _YigaSchema::BigRig
-    - _Chest<Arrow x10>:
-        coord: [2528.49, -526.06, 1411.20]
     - _Lightroot::Anonisik:
         comment: ナノシキの根
     - _Enemy<Lynel>:
         coord: [2604.15, -492.46, 1145.44]
     - _Enemy::Frox::DA03
-    - _Item<Ghost>:
-        coord: [2468.74, -397.87, 645.36]
-    - _Chest<Arrow x10>:
-        coord: [2504.21, -490.75, 410.08]
     - _Lightroot::Sekioam:
         comment: カスケイオマの根
     - _Lightroot::Uasnoj:
@@ -3538,18 +3481,12 @@ _route:
     - _Chest<Tunic of the Sky>:
         coord: [1021.02, -437.75, 1407.87]
     - _Location::MinshiGrove
-    - _Item<Ghost>:
-        movements:
-          - to: [1012.75, -508, 1837.3125]
-          - to: [348.32, -508.35, 1781.99]
     - _Lightroot::Sijnin:
         comment: シジンニの根
     - _Chest<Large Crystallized Charge>:
         coord: [124.73, -518.95, 1862.40]
     - _Lightroot::Ramobnukas:
         comment: ラマボンクセの根
-    - _Item<Ghost>:
-        coord: [4.67, -506.71, 2356.25]
     - _Location::ForestColiseum
     - _Enemy::Hinox::DE04
     - _Chest<Korok Mask>:
@@ -3563,9 +3500,6 @@ _route:
         movements:
           - to: [924.75, -584, 1944.625]
           - to: [1313.75, -679.52, 2614.25]
-    - _Item<Ghost>:
-        movements:
-          - to: [939.56, -584.94, 2836.80]
     - _Enemy::Hinox::DE03
     - _Lightroot::Uukukis:
         comment: チククシの根
@@ -3574,8 +3508,6 @@ _route:
     - _Chest<Large Crystallized Charge>:
         coord: [129.87, -528.81, 2869.90]
     - _YigaSchema::AerialCannon
-    - _Item<Ghost>:
-        coord: [-260.23, -521.10, 2728.53]
     - _Lightroot::Nikakik:
         comment: クカキの根
     - _Location::DrenaCanyonMine
@@ -3590,15 +3522,11 @@ _route:
     - _Enemy::Gleeok::D01
     - _Chest<Cap of Twilight>:
         coord: [263.65, -517.71, 3123.77]
-    - _Item<Ghost>:
-        coord: [-24.54, -486.08, 3169.92]
     - _Enemy::FluxConstruct::DE01
     - _Chest<Large Crystallized Charge>:
         coord: [621.53, -434.69, 3696.66]
     - _YigaSchema::ChargedCharger
     - _Enemy::Frox::DE01
-    - _Chest<Arrow x10>:
-        coord: [825.88, -535.79, 3338.33]
     - _Enemy::Talus::DT01
     - _Location::EldinDarkSkeleton
     - _Chest<Trousers of the Wild>:
@@ -3608,7 +3536,7 @@ _route:
   - Upgrade Battery/Warp Markers:
     - _Warp::Tower::LookoutLanding:
         line-color: rgb(203, 153, 255)
-    - _Location<Crystal Refinery>:
+    - Crystal Refinery:
         coord: [-219.375, 132, 191.75]
     - _Npc::Garini_Lookout_Landing:
         comment: Village Attacked by Pirates
@@ -3623,8 +3551,10 @@ _route:
     - _Warp::Shrine::Zanmik
     - _Npc::Sayge:
         comment: Photographing a Chuchu
+    - _SideQuest::PhotographingaChuchu
     - _Npc::Symin:
         comment: Teach Me a Lesson II
+    - _SideQuest::TeachMeaLessonII
     - _Npc::Uma_01:
         comment: Uma's Garden
     - _Warp::TechLab::Hateno
@@ -3643,17 +3573,11 @@ _route:
     - _Dispenser::S22:
         notes: Cart, Wing, Fan, Beam Emitter
     - _SagesWill::Lanayru<Sage's Will>
-    - _Item<Sundelion>:
-        coord: [3145.16, 1038.23, 466.00]
     - _Item<Dazzlefruit>:
         coord: [3153.01, 1040.39, 460.63]
-    - _Item<Sundelion>:
-        coord: [3169.36, 1040.28, 465.68]
     - _Item<Splash Fruit>:
         coord: [3182.09, 1042.58, 458.58]
     - _OldMap::WellspringIsland_02<Old Map>
-    - _Item<Sundelion>:
-        coord: [3156.63, 1040.27, 449.79]
     - _Item<Splash Fruit>:
         coord: [3141.51, 1039.99, 450.54]
     - _Location<Send Ancient Tablet to surface>:
@@ -3674,41 +3598,30 @@ _route:
     - _Chest<Climbing Boots>:
         coord: [2849.71, 294.08, 542.59]
     - _Cave::UplandZoranaByroad01
-    - _Item<Stamella Shroom>:
-        coord: [2946.47, 309.90, 276.43]
-    - _Item<Fleet-Lotus Seeds>:
-        coord: [2923.78, 310.32, 274.12]
-    - _Item<Splash Fruit>:
-        coord: [2909.78, 310.60, 274.45]
-    - _Item<Splash Fruit>:
-        coord: [2893.09, 312.20, 240.93]
-    - _Item<Stamella Shroom>:
-        coord: [2902.86, 311.99, 224.61]
-    - _Item<Stamella Shroom>:
-        coord: [2912.98, 311.63, 219.95]
-    - _Item<Stamella Shroom>:
-        coord: [2903.91, 313.24, 213.22]
+    - _Chest<Zora Spear>:
+        coord: [2840.31, 274.64, 192.88]
+    - _Cave::RalisChannel01
     - _Tablet::S01<SNAP Ancient Tablet>
-    - _Korok::UZ40
-    - _Item<Stamella Shroom>:
-        coord: [2941.77, 309.31, 217.97]
-    - _Item<Fleet-Lotus Seeds>:
-        coord: [2936.68, 310.32, 225.20]
-    - _Item<Fleet-Lotus Seeds>:
-        coord: [2930.44, 310.32, 227.43]
     - _Item<Fleet-Lotus Seeds>:
         coord: [2913.85, 310.32, 241.41]
+    - _Item<Splash Fruit>:
+        coord: [2893.09, 312.20, 240.93]
+    - _Item<Splash Fruit>:
+        coord: [2909.78, 310.60, 274.45]
+    - _Item<Fleet-Lotus Seeds>:
+        coord: [2923.78, 310.32, 274.12]
     - _Item<Fleet-Lotus Seeds>:
         coord: [2933.12, 310.32, 244.33]
     - _Item<Fleet-Lotus Seeds>:
-        coord: [2954.88, 310.32, 235.87]
+        coord: [2930.44, 310.32, 227.43]
+    - _Item<Fleet-Lotus Seeds>:
+        coord: [2936.68, 310.32, 225.20]
+    - _Korok::UZ40
     - _Item<Splash Fruit>:
         coord: [2958.80, 311.01, 217.24]
-    - _Item<Starting block for UZ38>:
-        coord: [3069.58, 367.53, 177.36]
-    - _Korok::UZ38
+    - _Item<Fleet-Lotus Seeds>:
+        coord: [2954.88, 310.32, 235.87]
     - _Cave::RalisChannel00
-    - _Cave::RalisChannel01
     - _Npc<The Ralis Channel Crystal>
     - _Shrine::Joniu::Start
     - _Bubbulfrog::RalisChannel
@@ -3721,6 +3634,7 @@ _route:
         coord: [2833.45, 484.41, 567.09]
     - _Npc::Bazz:
         comment: Mired in Muck
+    - _SideQuest::MiredinMuck
     - _Tower::UplandZorana:
         comment: ゾラ台地 鳥望台
     - _Korok::UZ58
@@ -3729,13 +3643,6 @@ _route:
     - _Item<Starting flower for UZ63>:
         coord: [2944.25, 285.00, -349.75]
     - _Korok::UZ63
-    - _Item<Stamella Shroom x4>:
-        movements:
-          - marker: all
-          - to: [3016.80, 292.38, -376.37]
-          - to: [3045.75, 283.68, -355.71]
-          - to: [3105.90, 252.97, -258.51]
-          - to: [3148.53, 253.46, -247.07]
     - _Item<Starting block for UZ54>:
         coord: [3292.69, 399.33, -10.05]
     - _Korok::UZ54
@@ -3748,8 +3655,6 @@ _route:
     - _Enemy::Hinox::GZ02
     - _Korok::UZ34
     - _Addison::A68
-    - _Item<Stamella Shroom>:
-        coord: [3191.77, 242.82, 220.51]
     - _Korok::UZ39
     - _Korok::UZ35
     - _Cave::UnderZora'sDomain00
@@ -3765,12 +3670,17 @@ _route:
     - _Npc<Yona>:
         comment: The Sludge-Covered Statue
         coord: [3300, 0139, 0463]
+    - _MainQuest::TheSludgeCoveredStatue
     - _Npc<Yona>:
         comment: Sidon of the Zora
         coord: [3306, 0139, 0464]
+    - Goddess Statue:
+        coord: [3316.89, 256.04, 503.94]
+    - _KeyItem::SolemnVowofYunoboSageofFire
     - _Npc<Yona>:
         comment: Restoring the Zora Armor
         coord: [3321, 0151, 0548]
+    - _MainQuest::RestoringtheZoraArmor
     - Exit Zora's Domain:
         coord: [3482.625, 0151, 487.5625]
     - _Cave::PloymusMountain00
@@ -3779,8 +3689,6 @@ _route:
         coord: [3712.38, 416.02, 494.84]
     - _Item<Fleet-Lotus Seeds>:
         coord: [3711.64, 461.45, 580.00]
-    - _Item<Stamella Shroom>:
-        coord: [3748.07, 545.98, 643.34]
     - _Chest<Topaz>:
         coord: [3763.95, 536.79, 630.68]
     - _Shrine::Ihen-a:
@@ -3794,6 +3702,7 @@ _route:
         coord: [3421.44, 510.20, 893.93]
     - _Npc::Jiahto_01:
         comment: The Broken Slate
+    - _MainQuest::TheBrokenSlate
     - _Npc::Jiahto_01:
         comment: Clues to the Sky
     - _Cave::PristineSanctum01
@@ -3816,6 +3725,7 @@ _route:
         coord: [4094.22, 692.07, 529.48]
     - _Location<Shoot King's scale through tear drop>:
         coord: [4079.875, 692, 540.25]
+    - _MainQuest::CluestotheSky
 
   - Zora Ancient Waterworks:
     - _Location<SNAP Moonlit Mipha>:
@@ -3830,7 +3740,7 @@ _route:
     - _Location::EastReservoirLake
     - _Cave::AncientZoraWaterworks00
 
-  - Water Temple:
+  - Approach the Water Temple:
     - Ride waterfall up to Wellspring Island:
         coord: [3658.0625, 1001, 274.125]
     - _Location::WellspringIsland
@@ -3851,7 +3761,23 @@ _route:
     - _Chest<Opal>:
         coord: [3458.11, 1617.73, 367.38]
     - _Korok::UZS01
+
+  - Water Temple:
     - _Temple::Water
+    - _Item<Main Terminal>:
+        coord: [3355.08, 1848.71, 778.11]
+    - _Item<Terminal 1>:
+        coord: [3445.73, 1896.75, 884.35]
+    - _Item<Terminal 2>:
+        coord: [3517.08, 1892.25, 717.22]
+    - _Item<Terminal 3>:
+        coord: [3237.90, 1879.25, 754.00]
+    - _Item<Terminal 4>:
+        coord: [3335.06, 1818.25, 727.52]
+    - _Item<Main Terminal>:
+        coord: [3355.08, 1848.71, 778.11]
+    - SNAP Mucktorok:
+        coord: [3373.03, 1848.17, 728.77]
 
   - Zora's Domain Cleanup:
     - Sage of Water:
@@ -3859,12 +3785,16 @@ _route:
         movements:
             - warp: true
               to: [3333.11, 270.16, 540.23]
+    - _MainQuest::SidonoftheZora
     - _Npc::Sidon_02:
         comment: Secret Treasure under the Great Fish
+    - _SideQuest::SecretTreasureundertheGreatFish
     - _Npc::Khira_01:
         comment: The Never-Ending Lecutre
+    - _SideQuest::TheNeverEndingLecture
     - _Npc::Seggin:
         comment: The Moonlit Princess
+    - _SideQuest::TheMoonlitPrincess
     - _Npc<Yona>:
         comment: A Token of Friendship
         coord: [3310, 0150, 0488]
@@ -3872,8 +3802,10 @@ _route:
         comment: True Treasure
     - _Npc::Cleff:
         comment: A Crabulous Deal
+    - _SideQuest::ACrabulousDeal
     - _Npc::Dento:
         comment: Glory of the Zora
+    - _SideQuest::GloryoftheZora
     - _Npc::Fronk_01:
         comment: A Wife Wafted Away
     - _Npc::Gaddison_01:
@@ -3888,6 +3820,7 @@ _route:
         coord: [3908.78, 317.00, 341.29]
     - _Npc::Ledo_01:
         comment: The Blue Stone
+    - _SideQuest::TheBlueStone
     - _Korok::UZ37::Start
     - _Korok::UZ48
     - _Korok::UZ37::End
@@ -3897,6 +3830,7 @@ _route:
     - _Enemy::Talus::SZ05
     - _Chest<Zora Greaves>:
         coord: [3585.24, 2.50, 246.84]
+    - _SideQuest::ATokenofFriendship
 
   - Water Temple Cleanup:
     - _Warp::Temple::Water
@@ -3920,58 +3854,42 @@ _route:
     - _Korok::GSI08
     - _Enemy::FluxConstruct::SC02
     - _Korok::GSI10
-    - _Item<Starting block for SSS07>:
-        coord: [1300.12, 733.69, -1977.47]
-    - _Korok::SSS07
     - _Location::WestNecludaSkyArchipelago:
         hide-icon-on-map: true
-    - _Location<The West Necluda Sky Crystal>:
-        coord: [1468.61, 704.81, -2168.89]
-    - _OldMap::Necluda<Old Map>
-    - _Item<Stambulb>:
-        coord: [1649.03, 700.95, -2148.88]
-    - _Item<Dazzlefruit>:
-        coord: [1705.25, 757.68, -1872.12]
-    - _Item<Rock for SSS06>:
-        coord: [1706.43, 799.93, -1875.70]
-    - _Korok::SSS06
-    - _Item<Stambulb>:
-        coord: [1687.35, 799.07, -1896.10]
-    - _Item<Hearty Radish>:
-        coord: [1692.42, 799.44, -1879.53]
-    - _Item<Sundelion>:
-        coord: [1673.51, 799.49, -1882.50]
     - _Item<Dazzlefruit>:
         coord: [1648.11, 799.73, -1853.93]
     - _Item<Shock Fruit>:
         coord: [1661.49, 798.67, -1843.27]
     - _Item<Dazzlefruit>:
         coord: [1679.39, 800.08, -1849.54]
-    - _Item<Stambulb>:
-        coord: [1705.19, 798.15, -1841.71]
-    - _Item<Stambulb>:
-        coord: [1745.86, 794.40, -1896.19]
+    - _Item<Hearty Radish>:
+        coord: [1692.42, 799.44, -1879.53]
     - _Item<Shock Fruit>:
         coord: [1731.52, 798.06, -1908.84]
-    - _Item<Sundelion>:
-        coord: [1676.52, 797.23, -1905.80]
+    - _Item<Rock for SSS06>:
+        coord: [1706.43, 799.93, -1875.70]
+    - _Korok::SSS06
     - _Item<Shock Fruit>:
         coord: [1670.17, 798.24, -1903.41]
-    - _Item<Stambulb>:
-        coord: [1679.68, 756.16, -1876.66]
+    - _Item<Dazzlefruit>:
+        coord: [1705.25, 757.68, -1872.12]
     - _Shrine::Ukoojisi::Start
+    - _Location<The West Necluda Sky Crystal>:
+        coord: [1468.61, 704.81, -2168.89]
     - _Shrine::Ukoojisi:
         comment: ウコオジシの祠
         notes: Mighty Zonaite Shield
+    - Launch to SSS07:
+        coord: [1380.50, 711.08, -2109.00]
+    - _Item<Starting block for SSS07>:
+        coord: [1300.12, 733.69, -1977.47]
+    - _Korok::SSS07
     - _Dispenser::S05
+    - _OldMap::Necluda<Old Map>
     - _Location::NecludaSkyArchipelago:
         hide-icon-on-map: true
     - _Location<Send Ancient Tablet to surface>:
         coord: [2082.26, 1440.00, -2731.02]
-    - _Item<Stambulb>:
-        coord: [2116.54, 1367.92, -2608.84]
-    - _Item<Sundelion>:
-        coord: [2144.05, 1367.80, -2627.42]
     - _Item<Fleet-Lotus Seeds x3>:
         movements:
           - marker: all
@@ -3990,19 +3908,9 @@ _route:
     - _Item<Hearty Bass>:
         coord: [2643.84, 1584.13, -1424.21]
     - _OldMap::Necluda_02<Old Map>
-    - _Item<Stambulb>:
-        coord: [2623.83, 1584.95, -1428.39]
-    - _Item<Stambulb>:
-        coord: [2621.50, 1585.56, -1438.61]
     - _Location::ZonaiteForgeIsland:
         notes: Activate Terminal
         coord: [2420.1, 1580.78, -1680.22]
-    - _Item<Sundelion x3>:
-        movements:
-          - marker: all
-          - to: [2409.16, 1580.87, -1675.28]
-          - to: [2403.38, 1580.88, -1684.16]
-          - to: [2393.48, 1588.95, -1665.80]
     - Go to top of island:
         movements:
           - to: [2378.625, 1580, -1669.6875]
@@ -4013,18 +3921,10 @@ _route:
         coord: [2302.84, 1936.65, -1763.24]
     - _Item<Big Hearty Radish>:
         coord: [2311.63, 1937.07, -1763.23]
-    - _Item<Sundelion>:
-        coord: [2373.62, 1936.49, -1782.47]
     - _Item<Dazzlefruit>:
         coord: [2386.10, 1938.10, -1752.16]
-    - _Item<Stambulb>:
-        coord: [2383.57, 1936.51, -1742.87]
     - _Item<Dazzlefruit>:
         coord: [2365.56, 1938.01, -1736.03]
-    - _Item<Sundelion>:
-        coord: [2332.96, 1936.48, -1716.53]
-    - _Item<Stambulb>:
-        coord: [2314.49, 1936.82, -1725.13]
     - _Shrine::Yansamin:
         comment: ヤンサミノの祠
         notes: Large Zonaite
@@ -4032,12 +3932,8 @@ _route:
         notes: Homing Cart, Beam Emitter, Flame Emitter, Frost Emitter, Time Bomb
     - _Chest<Zonaite Waistguard>:
         coord: [2374.19, 1594.56, -1774.47]
-    - _Item<Stambulb>:
-        coord: [2365.58, 1983.45, -1772.53]
     - _Item<Dazzlefruit>:
         coord: [2370.52, 1984.58, -1785.09]
-    - _Item<Stambulb>:
-        coord: [2356.45, 1983.34, -1730.67]
     - _Item<Dazzlefruit>:
         coord: [2352.68, 1984.25, -1711.41]
     - _Korok::SSS03
@@ -4062,18 +3958,19 @@ _route:
     - _Npc::Steward Construct_13:
         comment: Legend of the Great Sky Island
         coord: [447.66, 1659.81, -876.57]
-    - _Warp::Shrine::Jinodok
+    - _SideAdv::LegendoftheGreatSkyIsland
+    - _Warp::Shrine::Rakashog
+    - _Location<SNAP Sky Smile>:
+        coord: [-1845.4375, 1254, -2111.1875]
 
   - Farm Farosh:
-    - _Tower::GerudoCanyon:
-        comment: ゲルドキャニオン鳥望台
+    - _Enemy::Gleeok::G09:
         line-color: rgb(255, 80, 80)
-    - _Enemy::Gleeok::G09
     - _Chasm::HillsofBaumer:
         movements:
           - warp: true
             to: [221.94, 102.88, -2118.77]
-        
+
   - Farosh Depths:
     - _Chasm::HillsofBaumer::Depths
     - _Item<Grand Poe>:
@@ -4095,18 +3992,17 @@ _route:
         comment: マカワシの根
     - _Chasm::EastGerudo::Depths
 
-  - Lightning Temple:
+  - Approach to Lightning Temple:
     - _Chasm::EastGerudo
-    - _Warp::Tower::GerudoCanyon
-    - _Place::GerudoTown
-    - _Shrine::Soryotanog:
-        comment: ソリョタニゴの祠
-        notes: Arrow x10
+    - _Warp::Shrine::Soryotanog
     - _Location<Gerudo Secret Club>:
         coord: [-3791, 0043, -2920]
+        notes: Buy other armor
     - _Npc::Buliara_01:
         comment: Riju of Gerudo Town
-    - _Bubbulfrog::ValleyofSilentStatues
+        notes: Start Lightning Temple main quest
+    - _Bubbulfrog::ValleyofSilentStatues:
+        notes: Enter the cave through Gerudo Town underground; Behind the left-most mirror
     - _Cave::ValleyofSilentStatues00
     - _Npc::Riju_02:
         comment: Riju of Gerudo Town
@@ -4116,12 +4012,15 @@ _route:
     - _Shrine::Mayatat:
         comment: マヤタタの祠
         notes: Arrow x10
-    - _Shop::ArmorShop01
+    - _Shop::ArmorShop01:
+        notes: Buy Voe headpiece
     - _Warp::Shrine::Soryotanog
     - _Npc::Riju_01:
         comment: Riju of Gerudo Town
+        notes: Defend the town
     - _Npc::Riju_04:
         comment: Ruji of Gerudo Town
+        notes: Talk to her at the mural in the underground
     - _Location<Mirror Pillar 1>:
         coord: [-4056.82, 167.50, -3149.83]
     - _Location<Mirror Pillar 2>:
@@ -4130,7 +4029,10 @@ _route:
         coord: [-4185.51, 167.50, -3632.07]
     - _Location<Electric Switch>:
         coord: [-4260.47, 145.83, -3353.47]
+
+  - Lightning Temple:
     - _Temple::Lightning
+    - _MainQuest::RijuofGerudoTown
     - _Warp::Tower::GerudoCanyon
 
   - East Gerudo Sky Archipelago:
@@ -4138,31 +4040,6 @@ _route:
         movements:
           - to: [-2222.4375, 1001, -2390.4375]
           - to: [-2153.9375, 1001, -2404.3125]
-    - _Location::EastGerudoSkyArchipelago:
-        hide-icon-on-map: true
-    - _Item<Starting block for GCS01>:
-        coord: [-1829.72, 1305.17, -1917.68]
-    - _Korok::GCS01
-    - _SagesWill::SouthHyrule_01<Sage's Will>
-    - _OldMap::SouthHyrule_04<Old Map>
-    - _Dispenser::S16:
-        notes: Beam Emitter, Sled, Mirror, Steering Stick, Stake
-    - _Item<Sundelion>:
-        coord: [-1771.08, 1254.41, -2027.28]
-    - _Item<Sundelion>:
-        coord: [-1726.09, 1255.17, -2089.67]
-    - _Item<Sundelion>:
-        coord: [-1713.68, 1254.99, -2083.48]
-    - _Shrine::Rakashog:
-        comment: ラカショゴの祠
-    - _Item<Sundelion>:
-        coord: [-1735.50, 1255.13, -2132.33]
-    - _Item<Stambulb>:
-        coord: [-1837.65, 1254.16, -2097.59]
-    - _Item<Sundelion>:
-        coord: [-1836.48, 1254.14, -2100.50]
-    - _Location<SNAP Sky Smile>:
-        coord: [-1845.4375, 1254, -2111.1875]
     - _Location<Send Ancient Tablet to surface>:
         coord: [-2446.24, 1100.00, -3256.75]
     - _Korok::GCS02
@@ -4272,6 +4149,7 @@ _route:
     - _Enemy::FluxConstruct::DG04
     - _Location<Activate Terminal>:
         coord: [-1765.5, -417.53, -3462.5]
+    - _SideQuest::TheSouthLomeiProhecy
     - _Chest<Evil Spirit Mask>:
         coord: [-1795.00, -422.72, -3462.50]
     - _Chest<Soldier III Reaper>:
@@ -4328,6 +4206,7 @@ _route:
     - _Location::AbandonedGerudoMine
     - _Npc::Master Kohga_01:
         comment: Master Kohga of the Yiga Clan
+    - SNAP Master Kohga
     - _Chest<Huge Crystallized Charge>:
        coord: [-3841.99, -382.35, -2914.71]
     - _Shop::ForgeConstruct01
@@ -4680,13 +4559,14 @@ _route:
   - Crisis at Hyrule Castle 2:
     - _Warp::Tower::LookoutLanding:
         line-color: rgb(102, 255, 254)
-    - _Location<Crystal Refinery>:
+    - Crystal Refinery:
         coord: [-219.375, 132, 191.75]
     - _Npc::Purah_Normal:
         comment: Regional Phenomena
+    - _MainQuest::RegionalPhenomena
     - _Npc::Purah_Normal:
         comment: Crisis at Hyrule Castle
-    - _Location<General Store>:
+    - General Store:
         coord: [-205.875, 107, 76.375]
         notes: Buy Hylian Rice
     - Goddess Statue:
@@ -4702,29 +4582,156 @@ _route:
     - _Npc<Horned Statue>:
         comment: A Deal With the Statue
         coord: [-233.36, 110.21, 157.28]
+    - _SideAdv::ADealWiththeStatue
     - _Npc::Jerrin:
         comment: Who Goes There?
         movements:
           - to: [-254.04, 113.50, 129.00]
           - to: [-254.03, 114.30, 112.48]
+    - _SideAdv::WhoGoesThere
+    - Continue to Soldier's Greaves:
+        movements:
+          - to: [-0254, 0009, 0115]
+          - to: [-0253, 0008, 0135]
+          - to: [-0253, 0007, 0148]
+          - to: [-0255, 0003, 0165]
+          - to: [-0254, 0005, 0175]
+          - to: [-0251, 0001, 0192]
+          - to: [-0265, 0000, 0202]
+          - to: [-0272, 0002, 0223]
+          - to: [-0273, 0001, 0229]
+          - to: [-0275, 0001, 0250]
+          - to: [-0278, 0000, 0259]
+          - to: [-0279, -0003, 0270]
+          - to: [-0277, -0004, 0279]
+          - to: [-0289, -0006, 0293]
+          - to: [-0303, -0006, 0292]
+          - to: [-0315, -0006, 0285]
     - _Chest<Soldier's Greaves>:
        coord: [-306.40, 99.27, 280.93]
+    - Continue to the Stalnox:
+        movements:
+          - to: [-0315, -0006, 0285]
+          - to: [-0303, -0006, 0292]
+          - to: [-0289, -0006, 0293]
+          - to: [-0279, -0006, 0310]
+          - to: [-0273, -0006, 0324]
+          - to: [-0254, -0003, 0364]
+          - to: [-0252, -0005, 0374]
+          - to: [-0254, -0013, 0384]
+          - to: [-0251, -0018, 0394]
+          - to: [-0239, -0019, 0393]
+          - to: [-0237, -0029, 0376]
+          - to: [-0251, -0031, 0376]
+          - to: [-0254, -0038, 0394]
+          - to: [-0258, -0040, 0416]
+          - to: [-0270, -0038, 0421]
     - _Enemy::Hinox::GC02
+    - Continue to Soldier's Helm:
+        movements:
+          - to: [-0284, -0040, 0455]
+          - to: [-0248, -0037, 0455]
+          - to: [-0234, -0039, 0456]
+          - to: [-0222, -0039, 0463]
     - _Chest<Soldier's Helm>:
        coord: [-232.08, 66.42, 467.66]
+    - Continue to Soldier's Armor:
+        movements:
+          - to: [-0222, -0039, 0463]
+          - to: [-0234, -0039, 0456]
+          - to: [-0248, -0037, 0455]
+          - to: [-0254, -0039, 0506]
+          - to: [-0253, -0037, 0511]
+          - to: [-0252, -0038, 0522]
+          - to: [-0253, -0037, 0572]
+          - to: [-0255, -0034, 0582]
+          - to: [-0259, -0031, 0589]
+          - to: [-0257, -0035, 0610]
+          - to: [-0255, -0035, 0621]
+          - to: [-0255, -0035, 0635]
+          - to: [-0248, -0035, 0651]
+          - to: [-0243, -0044, 0650]
+          - to: [-0267, -0045, 0650]
     - _Chest<Soldier's Armor>:
        coord: [-267.60, 69.87, 637.02]
+    - Continue to Bubbul Frog:
+        movements:
+          - to: [-0267, -0045, 0650]
+          - to: [-0243, -0044, 0650]
+          - to: [-0248, -0035, 0651]
+          - to: [-0255, -0035, 0635]
+          - to: [-0255, -0035, 0621]
+          - to: [-0221, -0025, 0614]
+          - to: [-0222, -0023, 0624]
+          - to: [-0263, -0015, 0625]
+          - to: [-0264, -0015, 0629]
+          - to: [-0264, -0012, 0648]
+          - to: [-0242, -0021, 0690]
+          - to: [-0228, -0028, 0709]
     - _Bubbulfrog::RoyalHiddenPassage
-    - _Cave::RoyalHiddenPassage01
-    - _Chest<Diamond>:
-       coord: [-253.72, 193.21, 761.67]
-    - _Location::ObservationRoom
+    - Continue to Stone Tablet:
+        movements:
+          - to: [-0228, -0028, 0709]
+          - to: [-0242, -0021, 0690]
+          - to: [-0244, -0016, 0664]
+          - to: [-0254, -0002, 0677]
+          - to: [-0265, 0006, 0686]
+          - to: [-0261, 0007, 0695]
+          - to: [-0260, 0019, 0699]
+          - to: [-0252, 0020, 0712]
+          - to: [-0253, 0022, 0729]
+          - to: [-0253, 0025, 0738]
+          - to: [-0254, 0028, 0744]
+          - to: [-0254, 0028, 0760]
+    - _Item<Stone Tablet>:
+        coord: [-0253, 0028, 0767]
+    - Continue to Royal Hidden Passage exit:
+        movements:
+          - to: [-0247, 0028, 0768]
+          - to: [-0251, 0030, 0775]
+          - to: [-0257, 0032, 0775]
+          - to: [-0260, 0034, 0769]
+          - to: [-0257, 0036, 0763]
+          - to: [-0250, 0038, 0764]
+          - to: [-0247, 0040, 0770]
+          - to: [-0252, 0040, 0775]
+          - to: [-0257, 0041, 0774]
+          - to: [-0260, 0043, 0770]
+          - to: [-0256, 0045, 0763]
+          - to: [-0250, 0048, 0764]
+          - to: [-0247, 0050, 0769]
+          - to: [-0251, 0052, 0775]
+          - to: [-0258, 0053, 0774]
+          - to: [-0260, 0053, 0776]
+          - to: [-0281, 0053, 0798]
+          - to: [-0288, 0053, 0805]
+          - to: [-0295, 0053, 0808]
+          - to: [-0309, 0053, 0814]
     - _Cave::RoyalHiddenPassage02
-    - _Location::GuardsChamber
+    - Contine to Guards' Chamber:
+        movements:
+          - to: [-0324, 0053, 0796]
+          - to: [-0326, 0053, 0792]
+          - to: [-0328, 0060, 0789]
+          - to: [-0334, 0060, 0792]
+          - to: [-0330, 0065, 0802]
+          - to: [-0326, 0065, 0799]
+          - to: [-0331, 0075, 0801]
+          - to: [-0350, 0075, 0809]
+    - _Location::GuardsChamber:
+        coord: [-0353, 0075, 0811]
+    - Continue to Royal Guard Uniform>:
+        movements:
+          - to: [-0385, 0066, 0832]
+          - to: [-0399, 0063, 0844]
     - _Chest<Royal Guard Uniform>:
        coord: [-410.69, 181.38, 853.11]
     - _Location::WestPassage:
-       coord: [-401.75, 181, 736.75]
+       coord: [-0532, 0013, 0863]
+    - Continue to Royal Hyrulean Fabric:
+        movements:
+          - to: [-0528, 0013, 0903]
+          - to: [-0495, 0016, 0933]
     - _Chest<Royal Hyrulean Fabric>:
        coord: [-489.72, 126.14, 1009.97]
     - _Korok::LL04
@@ -4771,8 +4778,10 @@ _route:
     - _Warp::Shrine::Makasura
     - _Npc::Trissa:
         comment: Follow the Cuccos
+    - _SideQuest::FollowtheCuccos
     - _Npc::Lasli:
         comment: Gloom-Borne Illness
+    - _SideQuest::GloomBorneIllness
     - _Npc::Wortsworth_01:
         comment: Messages from an Ancient Era
     - _Npc::Tauro_03:
@@ -4802,6 +4811,7 @@ _route:
     - _Location::SpringofCourage
     - _Npc<Goddess Statue of Courage>:
        coord: [874.84, 125.34, -2359.00]
+    - _SideQuest::GoddessStatueofCourage
     - _Location<Enter Dragon Head>:
         coord: [974.25, 170, -2532.375]
     - _Npc::Tauro_01:
@@ -4823,6 +4833,16 @@ _route:
        coord: [651.59, 124.35, -2731.05]
     - _Chest<Large Zonai Charge>:
        coord: [591.18, 194.32, -2788.16]
+    - _Cave::FinraWoodsExcavationSite00
+    - _Chest<Large Zonai Charge>:
+       coord: [597.67, 110.38, -2930.65]
+    - _Bubbulfrog::FinraWoodsExcavationSite
+    - _Korok::PF46
+    - _Cave::FloriaRiverUpstreamExcavation00
+    - _Chest<Topaz>:
+       coord: [834.50, 102.50, -2908.57]
+    - _Bubbulfrog::FloriaRiverUpstreamExcavation
+    - _Location::ZonaiRuins
     - _Warp::Tower::PoplaFoothills
 
   - Thunderhead Isles and Dragonhead Island:
@@ -4885,39 +4905,19 @@ _route:
         hide-icon-on-map: true
     - _Chest<Mighty Zonaite Sword>:
         coord: [1320.99, 559.18, -3330.41]
-    - _Item<Sundelion>:
-        coord: [1314.18, 563.75, -3224.73]
     - _SagesWill::ThunderheadIsles_01<Sage's Will>
-    - _Item<Sundelion>:
-        coord: [1344.03, 562.90, -3224.61]
-    - _Item<Sundelion>:
-        coord: [1372.94, 573.81, -3219.11]
     - _Item<Dazzlefruit>:
         coord: [1383.40, 575.00, -3206.63]
-    - _Item<Stambulb>:
-        coord: [1393.87, 572.30, -3203.36]
-    - _Item<Sundelion>:
-        coord: [1403.57, 572.39, -3190.03]
     - _Item<Big Hearty Radish>:
         coord: [1400.00, 574.20, -3235.81]
-    - _Item<Stambulb>:
-        coord: [1413.71, 574.08, -3275.82]
     - _Item<Dazzlefruit>:
         coord: [1416.48, 575.26, -3310.65]
-    - _Item<Sundelion>:
-        coord: [1483.77, 567.99, -3293.08]
     - _Item<Shock Fruit>:
         coord: [1445.68, 569.36, -3326.41]
-    - _Item<Sundelion>:
-        coord: [1414.08, 574.26, -3371.00]
-    - _Item<Sundelion>:
-        coord: [1430.87, 568.43, -3392.84]
     - _Item<Shock Fruit>:
         coord: [1371.82, 571.50, -3433.03]
     - _Item<Big Hearty Radish>:
         coord: [1357.27, 569.01, -3431.69]
-    - _Item<Sundelion>:
-        coord: [1349.71, 574.42, -3340.80]
     - _Item<Dazzlefruit>:
         coord: [1343.78, 575.34, -3309.10]
     - _Item<Shock Fruit>:
@@ -4925,12 +4925,16 @@ _route:
     - _Shrine::Joku-u:
         comment: ジョクウの祠
         notes: Diamond
+    - _Item<Goddess Statue>:
+        coord: [1335.50, 535.35, -3311.90]
+    - _KeyItem::SolemnVowofRijuSageofLightning
     - _Npc::Mineru:
         comment: Guidance From Ages Past
         coord: [1363.90, 538.35, -3261.21]
+    - _MainQuest::SecretoftheRingRuins
     - _Dispenser::S02:
         notes: Wing, Cart, Fan, Steering Stick
-    - Head to Tobio's Hollow Chasm:
+    - Continue to Tobio's Hollow Chasm:
         coord: [1378, 0416, -3176]
 
   - Tobio's Hollow Chasm:
@@ -5026,9 +5030,11 @@ _route:
     - _Temple::Spirit
     - _Npc::Mineru:
         comment: Trail of the Master Sword
+    - _MainQuest::GuidancefromAgesPast
     - _Shop::SmithingConstruct
     - _Npc::Mining Construct_03:
         comment: Ancient Blades Below
+    - _SideQuest::AncientBladesBelow
 
   - Korok Forest and Ganondorf 1:
     - Warp to Rikonasum
@@ -5044,13 +5050,16 @@ _route:
        coord: [411.39, -481.78, 2192.07]
     - _Npc::Oaki_01:
         comment: The Secret Room
+    - _SideQuest::TheSecretRoom
     - _Npc::Walton:
         comment: Walton's Treasure Hunt
+    - _SideQuest::WaltonsTreasureHunt
     - _Npc::Kula:
         comment: Whirly Swirly Things
     - _Npc<Deku Tree>:
         coord: [0430, 0162, 2146]
         comment: Recovering the Hero's Sword
+    - _MainQuest::TrailoftheMasterSword
     - _Npc::Hestu_02:
         comment: Pouch Upgrades
     - _Npc::Maca_01:
@@ -5092,7 +5101,11 @@ _route:
         line-color: rgb(255, 80, 80)
     - _Npc::Purah_Normal:
         comment: Find the Fifth Sage
-    - _Location<General Store>:
+    - _MainQuest::FindtheFifthSage
+    - _Npc::Purah_Normal:
+        comment: Crisis at Hyrule Castle
+    - _MainQuest::CrisisatHyruleCastle
+    - General Store:
         coord: [-205.875, 107, 76.375]
         notes: Buy Hylian Rice
     - Goddess Statue:
@@ -5134,9 +5147,6 @@ _route:
     - _Shrine::Jojon:
         comment: ジョジョニウの祠
     - _Korok::SS11
-    - _Korok::SS15
-    - _Well::MoorGarrisonRuins
-    - _Location::MoorGarrisonRuins
     - _Korok::SS12
     - _Korok::SS09
     - _Korok::SS13::Start
@@ -5163,12 +5173,14 @@ _route:
        notes: 22
     - _Npc::Kish:
        comment: A Picture for Woodland Stable
+    - _SideQuest::APictureforWoodlandStable
     - Pony Point - Picture:
        notes: 23
     - _Well::WoodlandStable
     - _Npc::Penn_19:
        comment: Serenade to a Great Fairy
     - _Fairy::GreatFairyFountain03<Great Fairy Fountain>
+    - _SideAdv::SerenadetoaGreatFairy
     - _Addison::A29
     - _Korok::TR16
     - _Korok::TR15
@@ -5246,8 +5258,6 @@ _route:
        coord: [-640.91, 128.30, 441.39]
     - _Item<Fire Fruit>:
         coord: [-655.18, 130.32, 536.43]
-    - _Item<Sundelion>:
-        coord: [-659.31, 128.69, 542.57]
     - _Korok::LL35
     - _Korok::LL34
     - _Item<Rock for LL33>:
@@ -5264,7 +5274,7 @@ _route:
   - Hyrule Castle Moat West Depths:
     - _Chasm::HyruleCastleMoatWest::Depths
     - _Enemy::Frox::DC03
-    
+
   - Memory 6 Tear 4:
     - _Warp::Shrine::Tajikats:
         line-color: rgb(146, 207, 80)
@@ -5272,6 +5282,7 @@ _route:
        comment: Gourmets Gone Missing
     - _Npc::Ember:
        comment: A Picture for Riverside Stable
+    - _SideQuest::APictureforRiversideStable
     - Pony Point - Picture:
         notes: 24
     - _Npc::Beedle_06:
@@ -5294,6 +5305,7 @@ _route:
         notes: Raw meat, Hylian rice, rock salt
     - _Npc::Agus:
         comment: Gourmets Gone Missing
+    - _SideAdv::GourmetsGoneMissing
     - _Korok::PF04
     - _Korok::PF05
     - _Addison::A41
@@ -5322,6 +5334,10 @@ _route:
     - _Korok::PF09
     - _Npc::Teli_01:
        comment: Feathered Fugitives
+    - _Well::RiversideStable
+    - _Npc::Teli_01:
+       comment: Feathered Fugitives
+    - _SideQuest::FeatheredFugitives
     - _Npc::Beedle_06:
         comment: Buy Thunderwing Butterfly and Electric Darner
 
@@ -5342,8 +5358,6 @@ _route:
     - _Korok::GH12::End
     - _Korok::GH25
     - _Enemy::Talus::GG02
-    - _Chest<Zonaite x3>:
-       coord: [-2922.42, 672.42, -1295.48]
     - _Item<Ice Fruit>:
        coord: [-2925.71, 658.48, -1262.10]
     - _Location<SNAP Grizzlemaw Bear>:
@@ -5352,12 +5366,15 @@ _route:
        coord: [-3002.56, 683.11, -1051.30]
     - _Korok::GH22
     - _Korok::GH21
+    - _Korok::GH19
     - Construct Camp
     - Frost Emitter x3:
        coord: [-3439.04, 629.45, -1146.03]
     - _Item<Starting flower for GH20>:
         coord: [-3751.59, 629.02, -1081.14]
     - _Korok::GH20
+    - _Tablet::S08
+    - _Korok::GH17
     - _Item<Starting block for GH16>:
         coord: [-3721.92, 746.80, -803.17]
     - _Korok::GH16
@@ -5376,35 +5393,6 @@ _route:
     - _Bubbulfrog::Meadela'sMantleCave
     - _Tower::GerudoHighlands:
         comment: ゲルド高地 鳥望台
-
-  - North Gerudo and Tabantha Sky Archipelago:
-    - _Location::NorthGerudoSkyArchipelago:
-        hide-icon-on-map: true
-    - Place Warp Marker on Spaceship Island:
-       coord: [-3703.1875, 1001, -959.6875]
-       level: Sky
-    - _Location<Ancient Tablet (Falling)>:
-       coord: [-3605.92, 1700.00, -935.13]
-  
-  - Gerudo Highlands Ancient Tablet:
-    - _Korok::GH19:
-        level: Surface
-    - _Korok::GH17
-    - _Tablet::S08
-
-  - Starview Island:
-    - Warp Marker:
-       coord: [-3703.1875, 1001, -959.6875]
-       level: Sky
-    - _Location::StarviewIsland
-    - _SagesWill::Tabantha_02<Sage's Will>
-    - _Shrine::Mayasiar:
-        comment: マヤシアラの祠
-    - _Dispenser::S23
-    - _Item<Starting block for GHS01>:
-        coord: [-3374.14, 2429.17, 12.18]
-    - _Korok::GHS01
-    - _OldMap::Tabantha_03<Old Map>
 
   - Memory 7 Tear 5:
     - _Korok::GH39
@@ -5429,8 +5417,6 @@ _route:
           - to: [-3532.46, 559.28, -1559.65]
           - to: [-3572.54, 558.41, -1571.15]
     - _Korok::GH37
-    - _Item<Stamella Shroom>:
-       coord: [-3618.06, 572.12, -1585.85]
     - _Item<Boulder for GH38>:
         coord: [-3713.51, 565.89, -1564.59]
     - _Korok::GH38
@@ -5491,8 +5477,6 @@ _route:
     - _Well::TabanthaBridgeStable
     - _Npc::Penn_02:
        comment: White Goats Gone Missing
-    - _Chest<Zonaite x3>:
-       coord: [-2872.91, 318.65, 287.24]
     - _Item<Starting block for LB49>:
         coord: [-2918.77, 312.00, 285.46]
     - _Korok::LB49
@@ -5546,6 +5530,7 @@ _route:
     - _Korok::LB31
     - _Npc::Eustus:
        comment: The Hornist's Dramatic Escape
+    - _SideAdv::TheHornistsDramaticEscape
     - _Enemy::Gleeok::G05
     - _Location::AncientColumns
     - _Item<Starting flower for LB46>:
@@ -5574,6 +5559,7 @@ _route:
     - _Korok::LB38
     - _Npc::Dabi:
        comment: A Picture for Tabantha Bridge Stable
+    - _SideQuest::APictureforTabanthaBridgeStable
     - Pony Point - Quest:
        notes: 45
     - _Location::UltraBallHaulCheckIn
@@ -5653,10 +5639,6 @@ _route:
     - _Korok::RW07
     - _Korok::RW15
     - _Tablet::S06<SNAP Ancient Tablet>
-    - _Item<Stambulb>:
-        coord: [2056.83, 398.85, -2692.20]
-    - _Item<Stambulb>:
-        coord: [2056.70, 398.99, -2693.49]
     - _Item<Shock Fruit>:
         coord: [2058.54, 400.59, -2695.38]
     - _Item<Shock Fruit>:
@@ -5712,8 +5694,6 @@ _route:
         coord: [2854.50, 1337.71, -2902.88]
     - _Enemy::FluxConstruct::SF01
     - _Shrine::Kumamayn::Start
-    - _Item<Sundelion>:
-        coord: [3030.63, 1310.06, -2874.76]
     - _Item<Dazzlefruit>:
         coord: [3047.88, 1312.31, -2883.49]
     - _Item<Big Hearty Radish>:
@@ -5749,6 +5729,7 @@ _route:
         hide-icon-on-map: true
     - _Well::LurelinVillage
     - Remove monster infestation
+    - _SideAdv::RuffianInfestedVillage
     - _Npc::Bolson:
        comment: Lurelin Village Restoration Project
 
@@ -5773,6 +5754,7 @@ _route:
         comment: Dad's Blue Shirt
     - _Npc::Ralera_04:
        comment: Rattled Ralera
+    - _SideQuest::RattledRalera
     - _Npc<Rozel>:
        coord: [2858.63, 106.18, -3518.67]
        comment: Lurelin Resort Project
@@ -5783,6 +5765,7 @@ _route:
     - _Npc<Zuta>:
         coord: [2892.13, 106.12, -3434.30]
         comment: Dad's Blue Shirt
+    - _SideQuest::DadsBlueShirt
     - _Korok::RW29
     - _Enemy::Talus::GL04
     - _Chest<Topaz>:
@@ -5835,6 +5818,7 @@ _route:
         notes: Ruby
     - _Npc::Sesami:
        comment: Seeking The Pirate Hideout
+    - _SideQuest::SeekingthePirateHideout
     - _Chasm::EventideIsland
 
   - Lone Island Coliseum:
@@ -5896,15 +5880,19 @@ _route:
     - _Enemy::Gleeok::G01
     - _Npc::Penn_07:
        comment: Zelda's Golden Horse
+    - _SideAdv::ZeldasGoldenHorse
     - _Place::SnowfieldStable
     - Pony Point - First Visit:
        notes: 27
     - Pony Point - Register Horse:
        notes: 28
+    - _KeyItem::RoyalBridle
+    - _KeyItem::RoyalSaddle
     - Pony Point - Sleep:
        notes: 29
     - _Npc::Varke:
        comment: A Picture for Snowfield Stable
+    - _SideQuest::APictureforSnowfieldStable
     - Pony Point - Quest:
        notes: 30
     - _Npc::Nat_01:
@@ -5937,6 +5925,7 @@ _route:
     - _Korok::PS20
     - _Npc::Nat_01:
         comment: The Captured Tent
+    - _SideQuest::TheCapturedTent
     - _Npc::Nat_01:
         comment: Who Finds the Haven?
 
@@ -5947,6 +5936,7 @@ _route:
   - Memory 12 Tear 9:
     - _Npc<Goddess Statue of Wisdom>:
        coord: [3910.78, 574.69, -1328.30]
+    - _SideQuest::GoddessStatueofWisdom
     - _Korok::ML06
     - _Addison::A79
     - _Item<Ice Fruit>:
@@ -5989,6 +5979,7 @@ _route:
     - _Bubbulfrog::TarmPointCave
     - _Npc::Sasan_04:
         comment: True Treasure
+    - _SideQuest::TrueTreasure
     - _Shrine::Yomizuk:
         comment: ヨミズキの祠
         notes: Diamond
@@ -6060,12 +6051,12 @@ _route:
     - _Enemy::Hinox::GA04
     - _Bubbulfrog::UlriaGrottoEastCave
     - _Cave::UlriaGrottoEast00
+    - _Korok::UZ10
     - _Item<Construct Camp>:
         coord: [4153.20, 390.12, 988.93]
     - _Chest<Hover Stone x5>:
        coord: [4075.00, 421.19, 907.00]
     - _Korok::UZ12::Start
-    - _Korok::UZ10
     - _Korok::UZ12::End
     - _Korok::UZ16
     - _Cave::UlriaGrottoSouth00
@@ -6120,18 +6111,6 @@ _route:
         coord: [418.40, 127.50, -2877.28]
     - _Korok::PF42
     - _Location::FaronWoods
-    - _Cave::FinraWoodsExcavationSite00
-    - _Chest<Large Zonai Charge>:
-       coord: [597.67, 110.38, -2930.65]
-    - _Bubbulfrog::FinraWoodsExcavationSite
-    - _Korok::PF46
-    - _Cave::FloriaRiverUpstreamExcavation00
-    - _Chest<Topaz>:
-       coord: [834.50, 102.50, -2908.57]
-    - _Bubbulfrog::FloriaRiverUpstreamExcavation
-    - _Location::ZonaiRuins
-    - _Location::SarjonBridge
-    - _Korok::PF55
     - _Cave::PagosWoodsExcavationSite00
     - _Chest<Large Zonai Charge>:
        coord: [593.89, 119.64, -3120.04]
@@ -6139,6 +6118,9 @@ _route:
     - _Shrine::Utsushok:
         comment: ウツショキの祠
     - _Korok::PF65
+    - _Location::SarjonBridge
+    - _Korok::PF55
+    - _Enemy::Talus::GF04
     - _Korok::PF71
     - _Item<Fleet-Lotus Seeds x3>:
        movements:
@@ -6147,7 +6129,6 @@ _route:
          - to: [987.84, 127.09, -3457.72]
          - to: [996.39, 127.09, -3456.48]
     - _Location::GuchiniPlainBarrows
-    - _Enemy::Talus::GF04
     - _Korok::PF82::Start
     - _Korok::PF83
     - _Korok::PF82::End
@@ -6230,25 +6211,30 @@ _route:
        comment: The Long Dragon
     - _Chest<Topaz x3>:
        coord: [450.30, 275.44, 3084.50]
+    - _SideAdv::TheLongDragon
     - _Npc::Kazul:
        comment: The Owl Protected by Dragons
     - _Chest<Sapphire x3>:
        coord: [364.10, 275.12, 3053.50]
+    - _SideAdv::TheOwlProtectedbyDragons
     - _Npc::Kazul:
        comment: The Corridor Between Two Dragons
     - _Chest<Ruby x3>:
        coord: [247.97, 274.48, 3121.14]
+    - _SideAdv::TheCorridorbetweenTwoDragons
     - _Npc::Kazul:
         comment: The Six Dragons
     - _Chest<Opal x5>:
        coord: [167.64, 274.40, 3212.75]
+    - _SideAdv::TheSixDragons
     - _Chest<Dusk Claymore>:
        coord: [386.03, 270.38, 3170.75]
     - _Npc::Kazul_01:
         comment: Investigate the Thyphlo Ruins
+    - _SideAdv::InvestigatetheThyphloRuins
     - _Tear::G10<Memory 15 Tear 11>
     - _Korok::TR12
-  
+
   - Memory 17 Tear 12, Master Sword, Memory 18, Ganondorf 1:
     - _Warp::Shrine::Rasitakiwak
     - _Korok::UM29::Start
@@ -6260,13 +6246,16 @@ _route:
         comment: ゲミミカの祠
         notes: Mighty Zonaite Shield
     - _Tear::G11<Memory 17 Tear 12>
+    - _MainQuest::TheDragonsTears
     - _Item<Silent Princess x49>:
        coord: [4536.37, 106.61, 2145.72]
     - _Equipment::Weapon<Master Sword>
     - _Memory<Memory 18>
+    - _MainQuest::RecoveringtheHerosSword
     - _Item<Farm White Dragon>
-    - _Warp::Lightroot::Mu-ustust
+    - Warp to Mu-ustust Lightroot
     - _Warp::Shrine::Serutabomac
+    - _Chasm::HyruleCastle
     - Lynel
     - Bomb Flower x10
     - SNAP Ganondorf Phase 1
@@ -6468,18 +6457,18 @@ _route:
     - _Enemy::FluxConstruct::DL03
     - _Enemy::Hinox::DL01
 
-  - Final Main Quest:
+  - Zonai Devices 1:
     - _Warp::Tower::LookoutLanding
-    - _Npc::Purah_Normal:
-        comment: Find the Fifth Sage
-    - _Npc::Purah_Normal:
-       comment: Destroy Ganondorf
-    - _Location<Crystal Refinery>:
+    - Crystal Refinery:
         coord: [-219.375, 132, 191.75]
+    - _Npc::Garini_Lookout_Landing:
+        comment: Village Attacked by Pirates
+    - _SideQuest::VillageAttackedbyPirates
 
   - Faron Sky Archipelago:
-    - _Warp::Shrine::Nachoyah
-    - _Location<Crystal Refinery>:
+    - _Warp::Shrine::Nachoyah:
+        level: Sky
+    - Crystal Refinery:
        notes: Zonai Devices
        coord: [357.17, 2410.96, -1651.34]
     - _Location::FaronSkyArchipelago:
@@ -6522,6 +6511,7 @@ _route:
        notes: 31
     - _Npc::Padok:
         comment: A Picture for Highland Stable
+    - _SideQuest::APictureforHighlandStable
     - Pony Point - Quest:
        notes: 32
     - _Npc::Pyper_09:
@@ -6533,11 +6523,13 @@ _route:
        comment: The Flute Player's Plan
     - _Npc::Pyper_09:
        comment: The Flute Player's Plan
+    - _SideAdv::TheFlutePlayersPlan
     - _Npc::Penn_17:
        comment: An Eerie Voice
     - _Korok::PF73::Start
     - _Korok::PF73::End
     - _Well::HaranLakefront
+    - _SideAdv::AnEerieVoice
     - _Well::HighlandStable
     - _Bubbulfrog::KomoShorelineCave
     - _Chest<Ancient Blade>:
@@ -6560,6 +6552,7 @@ _route:
        coord: [98.02, 111.37, -3366.99]
     - _Npc::Flaxel_02:
         comment: Bring Peace to Faron
+    - _SideAdv::BringPeacetoFaron
     - _Korok::PF69
     - _Korok::PF88
     - _Enemy<Lynel>:
@@ -6571,13 +6564,16 @@ _route:
     - _Korok::GC44
     - _Npc::Barles:
         comment: The Great Tumbleweed Purge
+    - _SideQuest::TheGreatTumbleweedPurge
     - _Korok::GC48
     - _Korok::GC47
     - _Korok::GC43
     - _Npc::Rahdo:
        comment: Cold-Endurance Contest!
+    - _SideQuest::ColdEnduranceContest
     - _Npc::Rahdo:
        comment: Heat-Endurance Contest!
+    - _SideQuest::HeatEnduranceContest
     - _Korok::GC33
     - _Shrine::Kitawak:
        notes: Arrow x10
@@ -6641,21 +6637,26 @@ _route:
     - _Place::GerudoCanyonStable
     - _Npc::Piaffe:
        comment: Piaffe Packed Away
+    - _SideQuest::PiaffePackedAway
     - Pony Point - Quest:
        notes: 34
     - _Npc::Piaffe:
        comment: A Picture for the Closed Stable I
+    - _SideQuest::APicturefortheClosedStableI
     - Pony Point - Quest:
        notes: 35
     - _Npc::Piaffe:
        comment: A Picture for the Closed Stable II
+    - _SideQuest::APicturefortheClosedStableII
     - Pony Point - Quest:
        notes: 36
     - _Npc::Penn_06:
         comment: The Blocked Well
     - _Well::GerudoCanyon
+    - _SideAdv::TheBlockedWell
     - _Npc::Malena_01:
        comment: Gleeok Guts
+    - _SideQuest::GleeokGuts
     - _Korok::GC18
     - _Cave::GerudoCanyonMine00
     - _Bubbulfrog::GerudoCanyonMine
@@ -6686,6 +6687,7 @@ _route:
     - _Cave::MountNabooru01
     - _Npc::Quince:
        comment: Disaster in Gerudo Canyon
+    - _SideQuest::DisasterinGerudoCanyon
     - _Item<Rock for GC08<:
         coord: [-2017.12, 186.97, -2181.44]
     - _Korok::GC08
@@ -6693,6 +6695,7 @@ _route:
        coord: [-2356.15, 197.46, -1814.14]
     - _Npc::Yiga Blademaster_05:
         comment: The Yiga Clan Exam
+    - _SideAdv::TheYigaClanExam
     - _Chest<Ruby>:
        coord: [-2504.78, 244.06, -1781.56]
     - _Chest<Eightfold Longblade>:
@@ -6709,6 +6712,7 @@ _route:
     - _Addison::A11
     - _Npc::Penn_03:
        comment: White Goats Gone Missing
+    - _SideAdv::WhiteGoatsGoneMissing
     - _Korok::LB44
     - _Korok::LB47
     - _Korok::LB43::Start
@@ -6728,6 +6732,7 @@ _route:
     - SNAP Geoglyph
     - _Npc::Sprinn:
        comment: A Picture for New Serenne Stable
+    - _SideQuest::APictureforNewSerenneStable
     - Pony Point - Quest:
        notes: 37
     - _Npc::Penn_08:
@@ -6806,6 +6811,21 @@ _route:
          - to: [-2304.01, 454.91, -338.89]
     - SNAP Cherry Tree
     - _Cave::SatoriMountain00
+    - Continue to Bubbul Frog:
+        movements:
+          - to: [-2166, 0278, -0368]
+          - to: [-2175, 0278, -0356]
+          - to: [-2193, 0277, -0363]
+          - to: [-2205, 0276, -0384]
+          - to: [-2220, 0277, -0392]
+          - to: [-2222, 0277, -0404]
+          - to: [-2236, 0277, -0405]
+          - to: [-2240, 0264, -0415]
+          - to: [-2247, 0256, -0423]
+          - to: [-2258, 0255, -0424]
+          - to: [-2271, 0253, -0422]
+          - to: [-2279, 0255, -0437]
+          - to: [-2282, 0253, -0457]
     - _Bubbulfrog::SatoriMountainCave
     - _Enemy::Talus::GC04
     - _Korok::HF16
@@ -6905,21 +6925,26 @@ _route:
        coord: [-1409.72, 160.61, -1173.91]
     - _Npc::Toffa:
        comment: The Horse Guard's Request
+    - _SideQuest::TheHorseGuardsRequest
     - Pony Point - Quest:
        notes: 39
     - _Npc::Embry:
        comment: A Picture for Outskirt Stable
+    - _SideQuest::APictureforOutskirtStable
     - Pony Point - Quest:
        notes: 40
     - _Npc::Mastro_04:
         comment: Serenade to Kaysa
     - _Fairy::GreatFairyFountain02<Great Fairy Fountain>
+    - _SideAdv::SerenadetoKaysa
     - _Location::ColiseumRuins
     - _Enemy::Gleeok::G07
     - _Cave::ColiseumRuins00
     - _Chest<Trousers of Awakening>:
        coord: [-1156.73, 140.47, -1264.05]
+    - _SideQuest::MiskosTreasureofAwakeningII
     - _Npc<Misko's Treasure of Awakening III>
+    - _SideQuest::MiskosTreasureofAwakeningIII
     - _Bubbulfrog::ColiseumRuinsCave
     - Make Night
     - _Location::AquameBridge
@@ -6934,6 +6959,8 @@ _route:
     - _Item<Rock for LL61>:
         coord: [-1109.44, 200.55, -557.77]
     - _Korok::LL61
+    - _Item<Starting block for LL55>:
+        coord: [-1109.67, 167.70, -420.47]
     - _Korok::LL55
     - _Korok::LL52
     - _Location::GiantsForest
@@ -6956,6 +6983,7 @@ _route:
     - _Location::EldinGreatSkeleton
     - _Npc::Loone:
         comment: Eldin's Colossal Fossil
+    - _SideQuest::EldinsColossalFossil
     - _Npc::Loone:
         comment: Hebras's Colossal Fossil
     - _Shrine::Mayak:
@@ -7014,13 +7042,16 @@ _route:
           - to: [1753.875, 395.55, 1570.5]
     - _Npc::Mezer:
        comment: Meat for Meat
+    - _SideQuest::MeatforMeat
     - _Npc::Cooke:
        comment: Rock Roast or Dust
     - Go back to East Restaurant Cave for another rock roast
     - _Npc::Cooke:
        comment: Rock Roast or Dust
+    - _SideQuest::RockRoastorDust
     - _Npc::Gomo:
        comment: Cash In on Ripened Flint
+    - _SideQuest::CashInonRipenedFlint
     - _Cave::WestRestaurant00
     - _Bubbulfrog::WestRestaurantCave
     - _Korok::EC36::Start
@@ -7035,12 +7066,17 @@ _route:
     - _Chest<Ember Shirt>:
        coord: [1382.41, 399.97, 2225.35]
     - _Npc<Misko's Treasure of Awakening I>
+    - _SideQuest::MiskosTreasureofAwakeningI
     - _Korok::EC26
     - _Korok::EC29
     - _Warp::Shrine::Marakuguc
     - SNAP Daruk sculpture
+    - _Item<Goddess Statue>:
+        coord: [1722.25, 499.17, 2456.24]
+    - _KeyItem::SolemnVowofMineruSageofSpirit
     - _Npc::Ramella:
        comment: Amber Dealer
+    - _SideQuest::AmberDealer
     - _Npc::Dugby_01:
         comment: The Ancient City Gorondia?
     - Ride the rail with Dugby:
@@ -7060,6 +7096,7 @@ _route:
           - to: [1580.9375, 399.97, 2072.375]
           - to: [1582.125, 399.97, 2060.125]
           - to: [1582.375, 399.97, 2054.375]
+    - _SideQuest::TheAncientCityGorondia
     - _Item<Starting block for EC28>:
         coord: [1799.11, 602.53, 2210.18]
     - _Korok::EC28
@@ -7089,6 +7126,7 @@ _route:
     - _Location::SpringofPower
     - _Npc<Goddess Statue of Power>:
        coord: [3760.55, 111.16, 2679.37]
+    - _SideQuest::GoddessStatueofPower
 
   - Eldin Cleanup:
     - _Warp::Shrine::Timawak:
@@ -7096,13 +7134,16 @@ _route:
     - _Cave::SouthernMine00
     - _Npc::Bayge_02:
        comment: Mine-Cart Land Open for Business!
+    - _SideQuest::MineCartLandOpenforBusiness
     - _Npc::Heehl_02:
         comment: Mine-Cart Land Quickshot Course
+    - _SideQuest::MineCartLandQuickshotCourse
     - _Bubbulfrog::SouthernMine
     - _Warp::Shrine::Sitsum
     - _Npc::Kabetta_02:
         comment: Mine-Cart Land Death Mountain
         notes: Goron fabric
+    - _SideQuest::MineCartLandDeathMountain
     - _Item<Boulder for EC30>:
         coord: [2016.67, 552.79, 2165.57]
     - _Korok::EC30
@@ -7113,6 +7154,7 @@ _route:
        coord: [2163.34, 499.31, 2040.15]
     - _Npc::Kima_02:
        comment: Simmerstone Springs
+    - _SideQuest::SimmerstoneSprings
     - _Bubbulfrog::GorkoTunnel
     - _Enemy::Talus::GE06
     - _Item<Starting flower for EC34>:
@@ -7136,20 +7178,23 @@ _route:
     - _Korok::EC47
     - _Npc<Domidak>:
         coord: [2604.28, 256.19, 1327.55]
-        comment: Misko's Cave of Treasures
+        comment: Misko's Cave of Chests
     - _Cave::CephlaLake00
     - _Bubbulfrog::CephlaLakeCave
     - _Chest<Ember Trousers>:
        coord: [2578.40, 240.65, 1430.50]
+    - _SideQuest::MiskosCaveofChests
     - _Npc<Misko's Treasure The Fierce Deity>
     - _Chest<Fierce Deity Sword>:
        coord: [2624.09, 241.94, 1417.55]
+    - _SideQuest::MiskosTreasureTheFierceDiety
     - _Npc<Domidak>:
         coord: [2611.00, 254.92, 1316.50]
         comment: Misko's Treasure Twins Manuscript
     - _Npc<Domidak>:
         coord: [2611.00, 254.92, 1316.50]
         comment: Misko's Treasure Pirate Manuscript
+    - _SideQuest::MiskosTreasurePirateManuscript
     - _Npc<Domidak>:
         coord: [2611.00, 254.92, 1316.50]
         comment: Misko's Treasure Heroines Manuscript
@@ -7172,6 +7217,7 @@ _route:
     - _Addison::A57
     - _Npc::Penn_23:
        comment: For Our Princess!
+    - _SideAdv::ForOurPrincess
     - _Place::FoothillStable
     - Pony Point - First Visit:
        notes: 41
@@ -7179,6 +7225,7 @@ _route:
        notes: 42
     - _Npc::Ozunda:
        comment: A Picture for Foothill Stable
+    - _SideQuest::APictureforFoothillStable
     - Pony Point - Quest:
        notes: 43
     - _Well::FoothillStable
@@ -7201,10 +7248,10 @@ _route:
     - _Korok::UZ24
     - _Npc::Gaddison_01:
         comment: The Fort at Ja'Abu Ridge
+    - _SideQuest::TheFortatJaAbuRidge
     - _Npc::Fronk:
         comment: A Wife Wafted Away
-    - _Npc::Seggin:
-       comment: The Moonlit Princess
+    - _SideQuest::AWifeWaftedAway
     - _Item<Rock for UZ20>:
         coord: [3156.69, 216.16, 554.29]
     - _Korok::UZ20
@@ -7213,6 +7260,9 @@ _route:
     - _Item<Starting block for UZ29>:
         coord: [3105.06, 278.17, 461.80]
     - _Korok::UZ29
+    - _Item<Starting block for UZ38>:
+        coord: [3069.58, 367.53, 177.36]
+    - _Korok::UZ38
     - _Location::LutosCrossing
     - _Cave::Luto'sChannel00
     - _Bubbulfrog::Luto'sChannel
@@ -7262,16 +7312,14 @@ _route:
   - Wetlands Old Map:
     - _OldMap::Necluda_05<Old Map>:
        level: Sky
-  
+
   - Floret Sandbar:
     - _Well::GopongaVillageRuins
     - _Korok::SS16::Start
+    - _Location::GopongaVillageRuins
     - _Korok::SS16::End
     - _Addison::A49
     - _Chasm::LanayruWetlands
-    - _Shrine::Jonsau:
-        comment: ジョンサウの祠
-        notes: Strong Construct Bow
     - _Item<Fleet-Lotus Seeds x5>:
         movements:
           - marker: all
@@ -7330,11 +7378,10 @@ _route:
           - to: [1966.37, 115.89, -394.99]
           - to: [1971.53, 115.89, -396.31]
           - to: [1960.23, 115.89, -411.10]
-    - _Location::GopongaVillageRuins
-    - _Well::ZauzIsland
-    - _Enemy::Hinox::GZ04
+    - _Warp::Shrine::Tukarok
     - _Npc::Lawdon:
         comment: A Picture for Wetland Stable
+    - _SideQuest::APictureforWetlandStable
     - Pony Point - Quest:
        notes: 44
     - _Npc::Penn_13:
@@ -7342,6 +7389,7 @@ _route:
     - _Npc::Izra:
        comment: The Missing Farm Tools
     - _Location::FloretSandbar
+    - _SideAdv::TheMissingFarmTools
 
   - Hebra Cleanup:
     - _Warp::Shrine::Sisuran:
@@ -7360,6 +7408,7 @@ _route:
     - _Bubbulfrog::HebraGreatSkeleton
     - _Npc::Loone_03:
         comment: Hebra's Colossal Fossil
+    - _SideQuest::HebrasColossalFossil
     - _Npc::Loone_03:
         comment: Gerudo's Colossal Fossil
     - _Korok::RP05
@@ -7431,11 +7480,13 @@ _route:
     - _Cave::NorthBironSnowshelf00
     - _Chest<Vah Medoh Divine Helm>:
        coord: [-3960.80, 245.61, 3268.18]
+    - _SideQuest::TreasureoftheSecretSprings
     - _Bubbulfrog::NorthBironSnowshelfCave
     - _Korok::RP22
     - _Warp::Shrine::Rutafu-um
     - _Npc::Selmie:
        comment: The Duchess Who Disappeared
+    - _SideQuest::TheDuchessWhoDissapeared
     - _Korok::RP11
     - _Korok::RP09
     - _Location::GoflamsSecretHotSpring
@@ -7452,13 +7503,12 @@ _route:
     - _Location::SturnidaSecretHotSpring
     - _Cave::SturnidaSprings00
     - _Bubbulfrog::SturnidaSpringsCave
+    - _SideQuest::WhoFindstheHaven
     - _Cave::LakeKilsie00
     - _Bubbulfrog::LakeKilsieCave
     - _Chest<Frostbite Headdress>:
        coord: [-3881.77, 98.97, 2887.96]
-    - _Warp::Shrine::Sahirow    
-    - _Korok::RP39
-    - _Item<Voltfin Trout x5>
+    - _Warp::Shrine::Sahirow
     - _Item<Rock for RP48>:
         coord: [-2805.55, 375.35, 1953.59]
     - _Korok::RP48
@@ -7483,17 +7533,20 @@ _route:
     - _Korok::PS25
     - _Npc::Huck_01:
        comment: Supply-Eyeing Fliers
+    - _SideQuest::SupplyEyeingFliers
     - _Korok::PS27
     - _Korok::PS28
     - _Npc::Flaxel:
         comment: Bring Peace to Hebra!
+    - _SideAdv::BringPeacetoHebra
     - _Korok::PS24
     - _Addison::A18
     - _Korok::PS19
     - _Npc::Mastro_02:
         comment: Serenade to Mija
     - _Fairy::GreatFairyFountain01<Great Fairy Fountain>
-    
+    - _SideAdv::SerenadetoMija
+
   - South Hebra Sky Archipelago:
     - _Warp::Shrine::Ijo-o:
         level: Sky
@@ -7502,7 +7555,7 @@ _route:
     - _SagesWill::Tabantha_01<Sage's Will>
     - _Location::NorthTabanthaSkyArchipelago:
         hide-icon-on-map: true
-    - _OldMap::Tabantha
+    - _OldMap::Tabantha<Old Map>
     - _Location::SouthHebraSkyArchipelago
     - _Item<Starting block for RPS04>:
         coord: [-3063.68, 798.42, 2136.81]
@@ -7516,12 +7569,14 @@ _route:
     - _Place::FlightRange
     - _Npc::Kaneli:
         comment: Kaneli's Flight Training
+    - _SideQuest::KanelisFlightTraining
     - _Equipment::Bow<Swallow Bow>:
        coord: [-3793.13, 268.29, 2324.26]
     - _Korok::RP51
     - _Korok::RP52
     - _Npc::Teba_01:
        comment: Legacy of the Rito
+    - _SideQuest::LegacyoftheRito
     - _Chasm::RitoVillage
 
   - Abandoned Hebra Mine:
@@ -7535,6 +7590,7 @@ _route:
        coord: [-3497.20, -311.19, 1849.10]
     - _Chest<Huge Crystallized Charge>:
        coord: [-3497.72, -311.19, 1851.07]
+    - _SideAdv::MasterKohgaoftheYigaClan
     - _Npc::Steward Construct_15
     - _Shop::ForgeConstruct04
     - _SchemaStone::HebraMine
@@ -7596,6 +7652,7 @@ _route:
        comment: To the Ruins!
     - _Shop::SandSealRentalShop
     - _Location::EastGerudoRuins
+    - _SideQuest::TotheRuins
     - _Item<Starting block for GC28>:
         coord: [-2731.97, 140.68, -2820.41]
     - _Korok::GC28
@@ -7607,6 +7664,7 @@ _route:
     - _Korok::GC22::End
     - _Npc::Boraa:
        comment: Decorate with Passion
+    - _SideQuest::DecoratewithPassion
     - _Chest<Arrow x10>:
        coord: [-3232.40, 128.88, -2518.94]
     - _Shop::GeneralStore13:
@@ -7624,6 +7682,7 @@ _route:
     - _Warp::Shrine::Mayatat
     - _Npc::Ponthos:
        comment: Lost in the Dunes
+    - _SideQuest::LostintheDunes
     - _Item<Transport ball 1>:
        coord: [-3316.50, 130.25, -2579.00]
     - _Location::DesertRift
@@ -7644,6 +7703,7 @@ _route:
     - _Npc::Dalia:
         coord: [-3815.00, 148.98, -2873.00]
         comment: Dalia's Game
+    - _SideQuest::DaliasGame
     - _Item<Transport ball 6>:
        coord: [-3813.5, 149.5, -2872.5]
     - _Npc::Rotana:
@@ -7660,6 +7720,7 @@ _route:
     - _Npc::Rotana:
         coord: [-3886, 0033, -2971]
         comment: The Heroines' Secret
+    - _SideQuest::TheHeroinesSecret
     - _Item<Transport Ball 7>:
         coord: [-3887.75, 139.87, -2973.25]
     - _Npc::Rotana:
@@ -7670,6 +7731,7 @@ _route:
     - _Location::NorthernIcehouse
     - _Npc::Anche:
        comment: The Iceless Icehouse
+    - _SideQuest::TheIcelessIcehouse
     - _Korok::GC20
     - _Cave::GerudoSanctuary01
     - Read Tablet
@@ -7691,9 +7753,10 @@ _route:
     - _Npc::Mimos:
         comment: Infiltrating the Yiga Clan
     - _Place::YigaClanHideout
+    - _SideAdv::InfiltratingtheYigaClan
     - _Npc::Yiga Blademaster_01:
         comment: Yiga Clan Training
-    - _Item<Earthwake Manual>
+    - _KeyItem::EarthwakeManual
     - _Item<Thunderhelm>
     - _Warp::Shrine::Kudanisar
     - _Korok::GH52
@@ -7710,6 +7773,7 @@ _route:
     - _Bubbulfrog::WestGerudoUndergroundRuins
     - _Chest<Vah Naboris Divine Helm>:
        coord: [-4673.20, 105.76, -2091.71]
+    - _SideQuest::TreasureoftheGerudoDesert
     - _Enemy::Molduga::SG04
     - _Npc::Isha:
         comment: The Missing Owner
@@ -7719,7 +7783,9 @@ _route:
     - _Korok::GC45::Start
     - _Korok::GC45::End
     - _Cave::GerudoGreatSkeleton00
-    - _Npc::Loone_02
+    - _Npc::Loone_02:
+        comment: Gerudo's Colossal Fossil
+    - _SideQuest::GerudosColossalFossil
     - _Korok::GC49
     - _Bubbulfrog::GerudoGreatSkeleton
 
@@ -7752,10 +7818,16 @@ _route:
         notes: Underground
     - _Npc::Cara_01:
        comment: The Missing Owner
+    - _SideQuest::TheMissingOwner
     - _Npc::Isha_01:
        comment: Pride of the Gerudo
+    - _SideQuest::PrideoftheGerudo
+    - _Item<Goddess Statue>:
+        coord: [-3873.08, 139.27, -2971.81]
+    - _KeyItem::SolemnVowofSidonSageofWater
     - _Npc::Rotana:
        comment: The Mysterious Eitghth
+    - _SideQuest::TheMysteriousEighth
     - _Warp::Tower::GerudoHighlands
     - _Addison::A01
     - _Enemy::Hinox::GG01
@@ -7780,6 +7852,7 @@ _route:
     - _Cave::StatueoftheEighthHeroine00
     - _Chest<Tingle's Hood>:
        coord: [-4449.19, 562.60, -640.47]
+    - _SideQuest::MiskosTreasureHeroinesManuscript
     - _Bubbulfrog::StatueoftheEighthHeroineCave
     - _Chasm::GerudoSummit
     - _Korok::GH11
@@ -7796,6 +7869,7 @@ _route:
     - _Well::RikokaHills
     - _Npc::Moza:
        comment: The Ultimate Dish?
+    - _SideQuest::TheUltimateDish
     - _Korok::SS33
     - _Cave::ByroadtoLanayruWetlands01
     - _Bubbulfrog::ByroadtoLanayruWetlands
@@ -7931,6 +8005,7 @@ _route:
     - _Korok::PF75
     - _Npc::Anly:
         comment: A Picture for Lakeside Stable
+    - _SideQuest::APictureforLakesideStable
     - Pony Ponint - Quest:
         notes: 46
     - _Addison::A53
@@ -7963,11 +8038,13 @@ _route:
         coord: [1539.24, 199.22, -3238.76]
     - _Korok::PF57
     - _Npc::Cima:
-       comment: The Beast and the Princess 
+       comment: The Beast and the Princess
     - _Npc::Penn_22:
        comment: The Beast and the Princess
+    - _SideAdv::TheBeastandthePrincess
     - _Npc::Kampo:
         comment: Ousting the Giants
+    - _SideQuest::OustingtheGiants
     - Warp to Ukoojisi
     - _Enemy::Hinox::GF03:
         movements:
@@ -7979,11 +8056,13 @@ _route:
     - _Bubbulfrog::DuelingPeaksSouthCave
     - _Chest<Tingle's Shirt>:
        coord: [1215.86, 378.96, -2053.35]
+    - _SideQuest::MiskosTreasureTwinsManuscript
     - _Item<Starting block for SS70>:
         coord: [1243.54, 541.58, -1941.41]
     - _Korok::SS70
     - _Npc::Penn_21:
        comment: Princess Zelda Kidnapped
+    - _SideAdv::PrincessZeldaKidnapped
     - _Korok::SS69
 
   - Lanayru Cleanup:
@@ -8028,12 +8107,8 @@ _route:
     - _Npc::Chumin:
         coord: [4515.10, 106.79, -2310.12]
         comment: A Bottled Cry for Help
+    - _SideQuest::ABottleCryforHelp
     - _Korok::ML36
-    - _Korok::ML11
-    - _Item<Boulder for ML10>:
-        coord: [4435.19, 137.13, -1432.99]
-    - _Korok::ML10
-    - _Korok::ML20
     - _Cave::DeepbackBay00
     - _Shrine::Anedamimik:
         comment: アネダミミカの祠
@@ -8093,10 +8168,12 @@ _route:
     - _Korok::SS43
     - _Npc::Wortsworth_01:
        comment: Messages from an Ancient Era
+    - _SideAdv::MessagesfromanAncientEra
     - _Korok::SS49
     - _Addison::A62
     - _Npc::Beetz_17:
        comment: Honey, Bee Mine
+    - _SideAdv::HoneyBeeMine
     - _Korok::SS53
     - _Korok::SS52
     - _Item<Boulder for SS56>:
@@ -8108,8 +8185,16 @@ _route:
     - _Place::DuelingPeaksStable
     - _Npc::Tasseren:
         comment: A Picture for Dueling Peaks
+    - _SideQuest::APictureforDuelingPeaksStable
     - Pony Point - Quest:
         notes: 47
+    - _KeyItem::ExtravagantBridle
+    - _KeyItem::ExtravagantSaddle
+    - _KeyItem::KnightsBridle
+    - _KeyItem::KnightsSaddle
+    - _KeyItem::TowingHarness
+    - _KeyItem::TravelersBridle
+    - _KeyItem::TravelersSaddle
     - _Well::DuelingPeaksStable
     - _Npc::Mastro_14:
         comment: Serenade to Cotera
@@ -8117,6 +8202,7 @@ _route:
     - _Npc::Mastro_15:
         comment: Serenade to Cotera
     - _Fairy::GreatFairyFountain<Great Fairy Fountain>
+    - _SideAdv::SerenadetoCotera
     - _Location::LittleTwinBridge
     - _Korok::RW11
     - _Item<Starting flower for RW08>:
@@ -8134,6 +8220,7 @@ _route:
     - _Bubbulfrog::FortHatenoCave
     - _Npc::Hoz_02:
        comment: Bring Peace to Necluda!
+    - _SideAdv::BringPeacetoNecluda
     - _Korok::SS62
     - _Location::FortHateno:
         hide-icon-on-map: true
@@ -8147,7 +8234,8 @@ _route:
     - _Korok::ML19::End
     - _Korok::ML18
     - _Npc::Koltin_06:
-        comment: The Hunt for Bubbul Gems!
+        comment: The Search for Koltin
+    - _SideAdv::TheSearchforKoltin
     - _Korok::ML17
     - _Korok::ML27
     - _Korok::ML32
@@ -8168,10 +8256,12 @@ _route:
        comment: Manny's Beloved
     - _Npc::Manny:
        comment: Manny's Beloved
+    - _SideQuest::MannysBeloved
     - _Npc::Leop:
         comment: Team Cece or Team Reede?
     - _Npc::Reede:
        comment: A New Signature Food
+    - _SideAdv::ANewSignatureFood
     - _Npc::Clavia:
        comment: Reede's Secret
     - _Npc::Worten:
@@ -8188,10 +8278,12 @@ _route:
     - _Well::HatenoVillageNorth
     - _Npc::Clavia:
        comment: Reede's Secret
+    - _SideAdv::ReedesSecret
     - _Npc::Medda:
        comment: Team Cece or Team Reede?
     - _Npc::Uma:
        comment: Uma's Garden
+    - _SideQuest::UmasGarden
     - _Npc::Uma:
        comment: Team Cece or Team Reede?
     - _Npc::Tamana:
@@ -8201,17 +8293,23 @@ _route:
        comment: Cece's Secret
     - _Npc::Sophie:
        comment: Cece's Secret
+    - _SideAdv::CecesSecret
     - _Npc::Cece:
        comment: Team Cece or Team Reede?
+    - _SideAdv::TeamCeceorTeamReede
     - _Npc::Sophie:
        comment: The Mayoral Election
+    - _SideAdv::TheMayoralElection
     - _Npc::Reede:
        comment: Homegrown in Hateno
+    - _SideQuest::HomegrowninHateno
     - Sell items for rupees to complete compendium
     - _Npc::Robbie_01:
        comment: Presenting The Travel Medallion!
+    - _SideAdv::PresentingTheTravelMedallion
     - _Npc::Robbie_01:
        comment: Filling Out the Compendium
+    - _SideAdv::FillingouttheCompendium
     - _Npc::Sayge:
         comment: Turn in fabrics
 
@@ -8219,21 +8317,26 @@ _route:
     - _Warp::Shrine::Ukouh
     - _Chest<Ancient Hero's Aspect>:
        coord: [453.51, 1573.47, -765.25]
+    - _SideQuest::TheShrineExplorer
 
   - 100% Surface Cleanup:
     - _Warp::Tower::UlriMountain
     - _Npc::Fernison:
        comment: The Tarrey Town Race Is On!
+    - _SideQuest::TheTarreyTownRaceIsOn
     - _Npc::Shabonne_01:
        comment: Lurelin Resort Project
     - _Npc::Kilton_01:
         comment: A Monstrous Collection V
         notes: King Gleeok
+    - _SideAdv::AMonsterousCollectionV
     - _Warp::Shrine::Oromuwak
     - _Npc::Traysi:
        comment: Potential Princess Sightings!
+    - _SideAdv::PotentialPrincessSightings
     - _Npc::Gesane_03:
        comment: The Rito Rope Bridge
+    - _SideQuest::TheRitoRopeBridge
     - _Warp::Shrine::Sifumim
     - _Npc::Bolson:
         coord: [2972.94, 106.64, -3674.28]
@@ -8242,14 +8345,18 @@ _route:
     - _Warp::Shrine::Mayausiy
     - The Mother Goddess Statue:
        coord: [-1057.92, 20.77, 2697.54]
+    - _SideQuest::TheMotherGoddessStatue
     - _Warp::Shrine::Musanokir
-    - _Npc::Hestu_02:
-        comment: Hestu's Gift
+    - _Npc::Hestu_02
+    - _KeyItem::HestusGift
     - _Npc::Kula:
        comment: Whirly Swirly Things
+    - _SideQuest::WhirlySwirlyThings
     - _Warp::Tower::LookoutLanding
     - _Npc::Fera_06:
         comment: Where Are The Wells?
+    - _SideQuest::WhereAretheWells
+    - _KeyItem::AllsWell
     - _Npc::Lester:
        comment: Spotting Spot
     - _Npc<Spot>:
@@ -8257,28 +8364,40 @@ _route:
         comment: Spotting Spot
     - _Npc::Lester:
        comment: Spotting Spot
+    - _SideQuest::SpottingSpot
     - _Npc::Gralens:
        comment: WANTED Stone Talus
+    - _SideQuest::WANTEDStoneTalus
     - _Npc::Gralens:
        comment: WANTED Hinox
+    - _SideQuest::WANTEDHinox
     - _Npc::Gralens:
        comment: WANTED Molduga
+    - _SideQuest::WANTEDMolduga
     - _Npc::Gralens:
-       comment: Unkown Sky Giant
+       comment: Unknown Sky Giant
+    - _SideQuest::UnknownSkyGiant
     - _Npc::Gralens:
-       comment: Unkown Three
+       comment: Unknown Three-Headed Monster
+    - _SideQuest::UnknownThreeHeadedMonster
     - _Npc::Gralens:
-       comment: Unkown Huge Silhouette
-    - 6 Monster Medals
+       comment: Unknown Huge Silhouette
+    - _SideQuest::UnknownHugeSilhouette
+    - _KeyItem::StoneTalusMonsterMedal
+    - _KeyItem::HinoxMonsterMedal
+    - _KeyItem::MoldugaMonsterMedal
+    - _KeyItem::FluxConstructMonsterMedal
+    - _KeyItem::GleeokMonsterMedal
+    - _KeyItem::FroxMonsterMedal
     - _Warp::Shrine::Serutabomac
     - _Chasm::HyruleCastle
 
   - Save Hyrule:
     - _Chasm::HyruleCastle::Depths
     - _Lightroot::Camobatures
-    - Destroy Ganondorf
-    - Find Princess Zelda
-
+    - _KeyItem::DispellingDarknessMedal
+    - _MainQuest::DestroyGanondorf
+    - _MainQuest::FindPrincessZelda
 
 
 
